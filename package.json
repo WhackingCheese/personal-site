@@ -1,0 +1,38 @@
+{
+  "name": "personal-site",
+  "version": "0.0.1",
+  "description": "My personal website",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./app.js",
+    "stylelint": "stylelint ./src/styles/*.scss --syntax scss",
+    "eslint": "eslint *js ./src/*.js --fix",
+    "build:sass": "node-sass --source-map-enabled ./src/styles/styles.scss ./public/styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch ./src/styles/styles.scss ./public/styles.css",
+    "nodemon": "nodemon ./app.js",
+    "dev": "concurrently \"npm:nodemon\" \"npm:sass-watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhackingCheese/personal-site.git"
+  },
+  "author": "Mikolaj Cymcyk (WhackingCheese)",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
