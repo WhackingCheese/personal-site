@@ -10,6 +10,7 @@ import { fileURLToPath } from 'url';
 import { router as indexRouter } from './src/index.js';
 import { router as aboutRouter } from './src/about.js';
 import { router as cvRouter } from './src/cv.js';
+import { getPages, getSocials } from './src/util.js';
 
 /**
  * Gets environment variables for host and port from .env file.
@@ -47,6 +48,12 @@ app.set('view engine', 'ejs');
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/cv', cvRouter);
+
+
+// global ejs variables
+app.locals.pages = getPages();
+app.locals.socials = getSocials();
+
 
 
 
