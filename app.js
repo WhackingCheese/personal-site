@@ -70,6 +70,7 @@ app.use(notFoundHandler);
  * Renders and servers the user the "500.ejs" error page.
  */
 function errorHandler(err, req, res, next) {
+    console.log(err);
     res.status(500).render('500');
 }
 app.use(errorHandler);

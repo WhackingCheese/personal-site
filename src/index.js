@@ -8,4 +8,7 @@ async function pageCreate(req, res) {
     res.render('index');
 }
 
+
+
+
 router.get('/', catchErrors(pageCreate));

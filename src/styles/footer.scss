@@ -1,84 +1,57 @@
 @import './vars';
 
 .footer {
-    height: $--footer_height;
     background-color: $--footer_background-color;
+    color: $--footer_font-color;
+    font-family: $--theme_margin-font;
 
     &__inner {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
         max-width: $--max_width;
+        margin: auto;
     }
-    
-    &__icons {
+
+    &__links {
         display: flex;
         justify-content: center;
+        height: $--footer_icon-container-height;
+        padding-top: $--footer_links-padding;
+        padding-bottom: $--footer_links-padding;
     }
-
-    #yeet {
-        color: red;
-    }
-
-}
-
-.icon__container {
-
 }
 
 .icon {
-
-    &__inner {
-
-    }
-
-    &__icon {
+    &__svg {
         width: $--footer_icon-size;
+        height: $--footer_icon-size;
         padding: $--footer_icon-padding;
+        fill: $--footer_icon-color;
+        transition: $--header_animation-time;
+
+        &:hover {
+            fill: $--footer_font-color-hover;
+        }
     }
 }
 
 .copyright {
-
-
-    &__inner {
-    }
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: $--footer_padding;
 }
 
-
-/*
-.footer {
-    background-color: $--footer_background-color;
-
-    &__info {
-        max-width: $--max_width;
-        margin: auto;
-    }
-
-    .item {
-        margin: 0 $--gutter-neg-half;
-    }
-
-    a {
+.nav {
+    display: flex;
+    justify-content: center;
+    padding-top: $--footer_padding;
+    
+    &__item {
         color: $--footer_font-color;
-    }
-}
+        font-size: $--footer_nav-font-size;
+        padding: 0 $--footer_nav-padding;
+        transition: $--header_animation-time;
 
-.email {
-    &__icon {
-
-        &__icon {
-
-        }
-    }
-
-    &__emails {
-        &__university {
-            
-        }
-        &__personal {
-
+        &:hover {
+            color: $--footer_font-color-hover;
         }
     }
 }
-*/

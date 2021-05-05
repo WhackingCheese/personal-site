@@ -29,19 +29,15 @@
             display: flex;
             font-size: $--header_font-size-pages;
             
-            &__cv {
-                padding: $--header_padding-pages;
-            }
-
-            &__about {
+            &__page {
                 padding: $--header_padding-pages;
             }
         }
 
         &__seperator {
             overflow: hidden;
-            background-color: white;
-            width: 2px;
+            background-color: $--header_seperator-color;
+            width: $--header_seperator-width;
             height: $--header_font-size-pages;
             margin: $--header_padding-pages 0;
             padding: 0;
