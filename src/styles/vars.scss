@@ -1,9 +1,7 @@
+/* stylelint-disable scss/dollar-variable-pattern */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
-
 $--max_width: 1200px;
-
-
 
 $--offset: 20px;
 $--columns: 12;
@@ -14,14 +12,12 @@ $--repeating-width: calc(100% / #{$--columns});
 $--column-width: calc((100% / #{$--columns}) - #{$--gutter});
 $--background-width: calc(100% + #{$--gutter});
 
-
-
 /**
  * Theme variables
 */
-$--theme_margin-color: white;
-$--theme_margin-hover-color: tomato;
-$--theme_margin-background-color: black;
+$--theme_margin-color: #fff;
+$--theme_margin-hover-color: #ff6347;
+$--theme_margin-background-color: #000;
 $--theme_margin-font: 'Josefin Sans', sans-serif;
 $--theme_margin-animation-time: 0.25s;
 

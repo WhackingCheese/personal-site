@@ -1,55 +1,56 @@
+/* stylelint-disable max-nesting-depth */
 @import 'vars';
 
 .header {
-    background-color: $--header_background-color;
-    font-family: $--header_font-family;
-    height: $--header_height;
+  background-color: $--header_background-color;
+  font-family: $--header_font-family;
+  height: $--header_height;
 
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-        max-height: $--header_height;
-        max-width: $--max_width;
-        overflow: hidden;
-        vertical-align: bottom;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-height: $--header_height;
+    max-width: $--max_width;
+    overflow: hidden;
+    vertical-align: bottom;
 
-        &__home {
-            display: flex;
-            font-size: $--header_font-size;
-            padding: $--header_padding-home;
+    &__home {
+      display: flex;
+      font-size: $--header_font-size;
+      padding: $--header_padding-home;
 
-            &__inner {
-                text-transform: uppercase;
-                letter-spacing: $--header_name-letter-spacing;
-            }
-        }
-
-        &__pages {
-            display: flex;
-            font-size: $--header_font-size-pages;
-            
-            &__page {
-                padding: $--header_padding-pages;
-            }
-        }
-
-        &__seperator {
-            overflow: hidden;
-            background-color: $--header_seperator-color;
-            width: $--header_seperator-width;
-            height: $--header_font-size-pages;
-            margin: $--header_padding-pages 0;
-            padding: 0;
-        }
-
-        a {
-            color: $--header_font-color;
-            transition: $--header_animation-time;
-
-            &:hover {
-                color: $--header_font-color-hover;
-            }
-        }
+      &__inner {
+        letter-spacing: $--header_name-letter-spacing;
+        text-transform: uppercase;
+      }
     }
+
+    &__pages {
+      display: flex;
+      font-size: $--header_font-size-pages;
+
+      &__page {
+        padding: $--header_padding-pages;
+      }
+    }
+
+    &__seperator {
+      background-color: $--header_seperator-color;
+      height: $--header_font-size-pages;
+      margin: $--header_padding-pages 0;
+      overflow: hidden;
+      padding: 0;
+      width: $--header_seperator-width;
+    }
+
+    a {
+      color: $--header_font-color;
+      transition: $--header_animation-time;
+
+      &:hover {
+        color: $--header_font-color-hover;
+      }
+    }
+  }
 }

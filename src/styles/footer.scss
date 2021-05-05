@@ -1,57 +1,57 @@
 @import './vars';
 
 .footer {
-    background-color: $--footer_background-color;
-    color: $--footer_font-color;
-    font-family: $--theme_margin-font;
+  background-color: $--footer_background-color;
+  color: $--footer_font-color;
+  font-family: $--theme_margin-font;
 
-    &__inner {
-        max-width: $--max_width;
-        margin: auto;
-    }
+  &__inner {
+    margin: auto;
+    max-width: $--max_width;
+  }
 
-    &__links {
-        display: flex;
-        justify-content: center;
-        height: $--footer_icon-container-height;
-        padding-top: $--footer_links-padding;
-        padding-bottom: $--footer_links-padding;
-    }
+  &__links {
+    display: flex;
+    height: $--footer_icon-container-height;
+    justify-content: center;
+    padding-bottom: $--footer_links-padding;
+    padding-top: $--footer_links-padding;
+  }
 }
 
 .icon {
-    &__svg {
-        width: $--footer_icon-size;
-        height: $--footer_icon-size;
-        padding: $--footer_icon-padding;
-        fill: $--footer_icon-color;
-        transition: $--header_animation-time;
+  &__svg {
+    fill: $--footer_icon-color;
+    height: $--footer_icon-size;
+    padding: $--footer_icon-padding;
+    transition: $--header_animation-time;
+    width: $--footer_icon-size;
+  }
 
-        &:hover {
-            fill: $--footer_font-color-hover;
-        }
-    }
+  &__svg:hover {
+    fill: $--footer_font-color-hover;
+  }
 }
 
 .copyright {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: $--footer_padding;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: $--footer_padding;
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    padding-top: $--footer_padding;
-    
-    &__item {
-        color: $--footer_font-color;
-        font-size: $--footer_nav-font-size;
-        padding: 0 $--footer_nav-padding;
-        transition: $--header_animation-time;
+  display: flex;
+  justify-content: center;
+  padding-top: $--footer_padding;
 
-        &:hover {
-            color: $--footer_font-color-hover;
-        }
-    }
+  &__item {
+    color: $--footer_font-color;
+    font-size: $--footer_nav-font-size;
+    padding: 0 $--footer_nav-padding;
+    transition: $--header_animation-time;
+  }
+
+  &__item:hover {
+    color: $--footer_font-color-hover;
+  }
 }
