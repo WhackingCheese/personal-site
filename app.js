@@ -3,6 +3,7 @@
  */
 import express from 'express';
 import dotenv from 'dotenv';
+import favicon from 'serve-favicon';
 
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -10,7 +11,7 @@ import { fileURLToPath } from 'url';
 import { router as indexRouter } from './src/index.js';
 import { router as aboutRouter } from './src/about.js';
 import { router as cvRouter } from './src/cv.js';
-import { getPages, getSocials } from './src/util.js';
+import { catchErrors, getPages, getSocials } from './src/util.js';
 
 /**
  * Gets environment variables for host and port from .env file.
@@ -30,12 +31,16 @@ const app = express();
 const path = dirname(fileURLToPath(import.meta.url));
 
 /**
+ * Sets the path and allows serving of the favicon.
  * Binds the public folder as the static folder.
- * As well as all the views subdirectories to the view engine.
+ * Bind all the view subdirectories to the view list.
+ * Selects EJS as the servers view engine.
  */
+app.use(favicon(join(path, 'public', 'favicon.ico')));
 app.use(express.static(join(path, 'public')));
 app.set('views', [ join(path, 'views/errors'), join(path, 'views/pages'), join(path, 'views/errors')]);
 app.set('view engine', 'ejs');
+
 
 
 
@@ -49,10 +54,12 @@ app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/cv', cvRouter);
 
-
 // global ejs variables
 app.locals.pages = getPages();
 app.locals.socials = getSocials();
+
+// error catching global middleware
+app.use(catchErrors);
 
 
 
@@ -77,7 +84,6 @@ app.use(notFoundHandler);
  * Renders and servers the user the "500.ejs" error page.
  */
 function errorHandler(err, req, res, next) {
-    console.log(err);
     res.status(500).render('500');
 }
 app.use(errorHandler);

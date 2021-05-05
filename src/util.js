@@ -4,8 +4,14 @@ export function catchErrors(fn) {
 
 export function getPages() {
     return [
-        { name: "CV",    href: "/cv"    },
-        { name: "About", href: "/about" }
+        {
+            name: "CV",
+            href: "/cv"
+        },
+        {
+            name: "About",
+            href: "/about"
+        }
     ]
 }
 

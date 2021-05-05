@@ -11,7 +11,7 @@
             <% socials.forEach(social => { %>
                 <div class="icon__container">
                     <div class="icon">
-                        <a class="icon__inner" href="<% social.href %>">
+                        <a class="icon__inner" href="<%= social.href %>">
                             <%- include(social.svg) -%>
                         </a>
                     </div>
