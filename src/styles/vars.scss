@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+$--max_width: 1200px;
+
+
+
+$--offset: 20px;
+$--columns: 12;
+$--gutter: 20px;
+$--gutter-neg-half: calc(-#{$--gutter} / 2);
+$--color: hsla(204, 80%, 72%, 0.25);
+$--repeating-width: calc(100% / #{$--columns});
+$--column-width: calc((100% / #{$--columns}) - #{$--gutter});
+$--background-width: calc(100% + #{$--gutter});
+
+
+
+/**
+ * Variables for the header fragment.
+ */
+$--header_height: 50px;
+$--header_font-size: 14px;
+$--header_font-size-pages: 18px;
+$--header_font-color: #fff;
+$--header_font-color-hover: tomato;
+$--header_animation-time: 0.5s;
+$--header_background-color: #000;
+$--header_font-family: 'Josefin Sans', sans-serif;
+$--header_name-letter-spacing: 6px;
+$--header_padding-pages: calc((#{$--header_height} - #{$--header_font-size-pages}) / 2);
+$--header_padding-home: calc((#{$--header_height} - #{$--header_font-size}) / 2);
+
+/**
+ * Variables for the footer fragment.
+ */
+$--footer_background-color: #000;
+$--footer_font-color: #fff;
+$--footer_icon-size: 32px;
+$--footer_icon-padding: 10px;
+$--footer_height: 250px;
+$--footer_icon-container-width: 208px;

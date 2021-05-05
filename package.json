@@ -11,7 +11,8 @@
     "build:sass": "node-sass --source-map-enabled ./src/styles/styles.scss ./public/styles.css",
     "sass-watch": "node-sass --source-map-embed --watch ./src/styles/styles.scss ./public/styles.css",
     "nodemon": "nodemon ./app.js",
-    "dev": "concurrently \"npm:nodemon\" \"npm:sass-watch\""
+    "browser-sync": "browser-sync start --proxy 'localhost:3000' --files 'public' './public/styles.css' './src/*'",
+    "dev": "concurrently \"npm:nodemon\" \"npm:sass-watch\" \"npm:browser-sync\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "author": "Mikolaj Cymcyk (WhackingCheese)",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "concurrently": "^6.0.2",
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
