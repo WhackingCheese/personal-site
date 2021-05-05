@@ -37,6 +37,10 @@
   display: flex;
   justify-content: space-around;
   padding-bottom: $--footer_padding;
+
+  p {
+    font-size: $--footer_copyright-font-size;
+  }
 }
 
 .nav {

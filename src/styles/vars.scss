@@ -15,10 +15,15 @@ $--background-width: calc(100% + #{$--gutter});
 /**
  * Theme variables
 */
-$--theme_margin-color: #fff;
-$--theme_margin-hover-color: #ff6347;
-$--theme_margin-background-color: #000;
-$--theme_margin-font: 'Josefin Sans', sans-serif;
+$--theme_color-primary: #333;
+$--theme_color-secondary: #555; 
+$--theme_color-font-primary: #fff;
+$--theme_color-font-secondary: #ff6347;
+$--theme_font-family: 'Josefin Sans', sans-serif;
+$--theme_margin-color: $--theme_color-font-primary;
+$--theme_margin-hover-color: $--theme_color-font-secondary;
+$--theme_margin-background-color: $--theme_color-primary;
+$--theme_margin-font: $--theme_font-family;
 $--theme_margin-animation-time: 0.25s;
 
 /**
@@ -54,3 +59,21 @@ $--footer_nav-font-size: 18px;
 $--footer_font-color-hover: $--theme_margin-hover-color;
 $--footer_nav-padding: 10px;
 $--footer_icon-color: $--theme_margin-color;
+$--footer_copyright-font-size: 16px;
+
+/**
+ * Variables for error page.
+*/
+$--error_height: calc(
+    100% - (
+        #{$--header_height} +
+        #{$--footer_nav-font-size} + 1px +
+        #{$--footer_icon-container-height} +
+        #{$--footer_copyright-font-size} +
+        (#{$--footer_links-padding} * 2) +
+        (#{$--footer_padding} * 2)
+    )
+);
+$--error_font-family: $--theme_font-family;
+$--error_message-padding: 10px;
+$--error_message-font-size: 24px;

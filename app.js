@@ -38,18 +38,12 @@ const path = dirname(fileURLToPath(import.meta.url));
  */
 app.use(favicon(join(path, 'public', 'favicon.ico')));
 app.use(express.static(join(path, 'public')));
-app.set('views', [ join(path, 'views/errors'), join(path, 'views/pages'), join(path, 'views/errors')]);
+app.set('views', [ join(path, 'views/errors'), join(path, 'views/pages')]);
 app.set('view engine', 'ejs');
 
-
-
-
-
-
-
-
-
-
+/**
+ * Creates routing for all of my pages.
+ */
 app.use('/', indexRouter);
 app.use('/index', (req, res) => {
     res.status(301).redirect("/");
@@ -57,28 +51,24 @@ app.use('/index', (req, res) => {
 app.use('/about', aboutRouter);
 app.use('/cv', cvRouter);
 
-// global ejs variables
+/**
+ * Sets global variables for EJS.
+ */
 app.locals.pages = getPages();
 app.locals.socials = getSocials();
 app.locals.language = "en";
-app.locals.title = "title";
-
-
-
-
-
-
-
-
-
-
+app.locals.title = "Mikolaj Cymcyk";
 
 /**
  * Handler for 404 Not Found HTTP Status Codes.
  * Renders and servers the user the "404.ejs" error page.
  */
 function notFoundHandler(req, res, next) {
-    res.status(404).render('404');
+    res.status(404).render('error', {
+        error_message_1: "404",
+        error_message_2:  "Page Not Found",
+        title: "404 Not Found"
+    });
 }
 app.use(notFoundHandler);
 
@@ -87,7 +77,10 @@ app.use(notFoundHandler);
  * Renders and servers the user the "500.ejs" error page.
  */
 function errorHandler(err, req, res, next) {
-    res.status(500).render('500');
+    res.status(500).render('error', {
+        error_message: "500",
+        title: "500 Internal Server Error"
+    });
 }
 app.use(errorHandler);
 
