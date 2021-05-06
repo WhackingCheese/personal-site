@@ -12,9 +12,6 @@ $--repeating-width: calc(100% / #{$--columns});
 $--column-width: calc((100% / #{$--columns}) - #{$--gutter});
 $--background-width: calc(100% + #{$--gutter});
 
-/**
- * Theme variables
-*/
 $--theme_color-primary: #333;
 $--theme_color-secondary: #555; 
 $--theme_color-font-primary: #fff;
@@ -26,9 +23,6 @@ $--theme_margin-background-color: $--theme_color-primary;
 $--theme_margin-font: $--theme_font-family;
 $--theme_margin-animation-time: 0.25s;
 
-/**
- * Variables for the header fragment.
-*/
 $--header_height: 50px;
 $--header_font-size: 14px;
 $--header_font-size-pages: 18px;
@@ -43,10 +37,6 @@ $--header_font-color: $--theme_margin-color;
 $--header_font-color-hover: $--theme_margin-hover-color;
 $--header_background-color: $--theme_margin-background-color;
 
-/**
- * Variables for the footer fragment.
-*/
-$--footer_icon-number: 4;
 $--footer_icon-size: 32px;
 $--footer_icon-padding: 10px;
 $--footer_icon-container-height: calc(#{$--footer_icon-size} + (#{$--footer_icon-padding} * 2));
@@ -61,9 +51,6 @@ $--footer_nav-padding: 10px;
 $--footer_icon-color: $--theme_margin-color;
 $--footer_copyright-font-size: 16px;
 
-/**
- * Variables for error page.
-*/
 $--error_height: calc(
     100% - (
         #{$--header_height} +

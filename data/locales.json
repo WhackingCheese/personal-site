@@ -1,0 +1,128 @@
+{
+    "/cv": {
+        "en": {
+            "contact": {
+                "ssid": "170999-3479",
+                "address": "Sæmundargata 21, ap. 115, 102 Reykjavík",
+                "phone": "857-2287",
+                "email": "mikolaj.cymcyk@gmail.com"
+            },
+            "education": {
+                "title": "Education",
+                "data": [
+                    {
+                        "institution": "University of Iceland",
+                        "degree": "Computer Science",
+                        "level": "BS",
+                        "start": "2018",
+                        "end": "2021",
+                        "complete": false
+                    },
+                    {
+                        "institution": "Ísafjörður Gymnasium",
+                        "degree": "Natural Sciences Program",
+                        "level": "High School Diploma",
+                        "start": "2015",
+                        "end": "2018",
+                        "complete": true
+                    }
+                ]
+            },
+            "experience": {
+                "title": "Experience",
+                "data": [
+                    {
+                        "company": "Íslenska Flatbakan",
+                        "position": "Pizzabaker, Waiter & Cashier",
+                        "description": "Performed almost all possible tasks; everything from waiting tables and servicing customers, baking pizzas to prepping and cleaning.",
+                        "start": "2019",
+                        "end": "2021"
+                    },
+                    {
+                        "company": "Kópavogur Municipality",
+                        "position": "Work School Team Leader",
+                        "description": "Was primarily a substitute team leader, took over other team leader's groups when they got sick or went on holiday. While few or no team leaders were unavailable I worked on other projects for the municipality.",
+                        "start": "2019",
+                        "end": "2019"
+                    },
+                    {
+                        "company": "Melabúðin",
+                        "position": "General Employee",
+                        "description": "Threw myself at all the tasks that needed solving; from refills in the shop, servicing customers at the register and the butcher counter to preparing hot foods.",
+                        "start": "2019",
+                        "end": "2019"
+                    },
+                    {
+                        "company": "Vestfiskur",
+                        "position": "Factory Labourer",
+                        "description": "Worked on manufacturing high-quality dried fish products. Was involved in the entire process; from the receipt of raw materials and products, through production to packaging and preparation of shipments.",
+                        "start": "2015",
+                        "end": "2018"
+                    }
+                ]
+            }
+        },
+        "is": {
+            "contact": {
+                "ssid": "170999-3479",
+                "address": "Sæmundargata 21, íbúð 115, 102 Reykjavík",
+                "phone": "857-2287",
+                "email": "mikolaj.cymcyk@gmail.com"
+            },
+            "education": {
+                "title": "Menntun",
+                "data": [
+                    {
+                        "institution": "Háskóli Íslands",
+                        "degree": "Tölvunarfræði",
+                        "level": "BS",
+                        "start": "2018",
+                        "end": "2021",
+                        "complete": false
+                    },
+                    {
+                        "institution": "Menntaskólinn á Ísafirði",
+                        "degree": "Náttúrufræðibraut",
+                        "level": "Stúdentspróf",
+                        "start": "2015",
+                        "end": "2018",
+                        "complete": true
+                    }
+                ]
+            },
+            "experience": {
+                "title": "Starfsreynsla",
+                "data": [
+                    {
+                        "company": "Íslenska Flatbakan",
+                        "position": "Pizzabakari, Þjónn & Afgreiðslumaður",
+                        "description": "Sinnti nær öllum mögulegum hlutverkfum á staðnum; allt frá því að þjóna til borðs og afgreiðslu, pizzabaksturs til undirbúnings og þrifs.",
+                        "start": "2019",
+                        "end": "2021"
+                    },
+                    {
+                        "company": "Kópavogsbær",
+                        "position": "Flokkstjóri Vinnuskólans",
+                        "description": "Vann aðallega í afleysingum og greip því í þegar aðrir flokkstjórar veiktust eða fóru í frí og tók yfir hópunum þeirra. Meðan vantaði fáa eða enga flokkstjóra sinnti ég í öðrum verkefnum fyrir bæjarfélagið.",
+                        "start": "2019",
+                        "end": "2019"
+                    },
+                    {
+                        "company": "Melabúðin",
+                        "position": "Almenn Starfsmaður",
+                        "description": "Henti mér í öll þau verkefni sem þurfti að leysa; frá áfyllingum í búðinni, afgreiðslu viðskiptavina á kassa og á kjötborðinu til undirbúnings heitra matvæla.",
+                        "start": "2019",
+                        "end": "2019"
+                    },
+                    {
+                        "company": "Vestfiskur",
+                        "position": "Starfsmaður í Framleiðslu",
+                        "description": "Vann í framleiðslu hágæða harðfisks. Starfaði við allt ferlið; frá móttöku hráefna og vara, í gegnum alla framleiðslu til pökkunar og undirbúningu sendinga.",
+                        "start": "2015",
+                        "end": "2018"
+                    }
+                ]
+            }
+        }
+    }
+}

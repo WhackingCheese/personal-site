@@ -11,7 +11,7 @@ import { fileURLToPath } from 'url';
 import { router as indexRouter } from './src/index.js';
 import { router as aboutRouter } from './src/about.js';
 import { router as cvRouter } from './src/cv.js';
-import { getPages, getSocials } from './src/util.js';
+import { getStructure, getSocials, getCourses } from './src/utils.js';
 
 /**
  * Gets environment variables for host and port from .env file.
@@ -35,29 +35,38 @@ const path = dirname(fileURLToPath(import.meta.url));
  * Binds the public folder as the static folder.
  * Bind all the view subdirectories to the view list.
  * Selects EJS as the servers view engine.
+ * Loads and sets the global variables for the EJS template engine.
  */
 app.use(favicon(join(path, 'public', 'favicon.ico')));
 app.use(express.static(join(path, 'public')));
 app.set('views', [ join(path, 'views/errors'), join(path, 'views/pages')]);
 app.set('view engine', 'ejs');
+setLocals();
 
 /**
  * Creates routing for all of my pages.
  */
 app.use('/', indexRouter);
 app.use('/index', (req, res) => {
-    res.status(301).redirect("/");
+    res.status(301).redirect('/');
 });
 app.use('/about', aboutRouter);
 app.use('/cv', cvRouter);
+app.use('/update', (req, res) => {
+    setLocals();
+    res.status(200).redirect('/');
+});
 
 /**
- * Sets global variables for EJS.
+ * Helper function used for setting global variables for EJS.
  */
-app.locals.pages = getPages();
-app.locals.socials = getSocials();
-app.locals.language = "en";
-app.locals.title = "Mikolaj Cymcyk";
+function setLocals() {
+    app.locals.structure = getStructure();
+    app.locals.socials = getSocials();
+    app.locals.courses = getCourses();
+    app.locals.language = "en";
+    app.locals.title = "Mikolaj Cymcyk";
+}
 
 /**
  * Handler for 404 Not Found HTTP Status Codes.
@@ -78,7 +87,8 @@ app.use(notFoundHandler);
  */
 function errorHandler(err, req, res, next) {
     res.status(500).render('error', {
-        error_message: "500",
+        error_message_1: "500",
+        error_message_2: "Internal Server Error",
         title: "500 Internal Server Error"
     });
 }

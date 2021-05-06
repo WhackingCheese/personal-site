@@ -4,11 +4,11 @@
             <a class="header__nav__home__inner" href="/"><p>Mikolaj Cymcyk</p></a>
         </div>
         <div class="header__nav__pages">
-            <% for(var i = 0; i < pages.length; i++) { %>
-                <a class="header__nav__pages__page" href="<%= pages[i].href %>">
-                    <p><%= pages[i].name %></p>
+            <% for(var i = 0; i < structure.length; i++) { %>
+                <a class="header__nav__pages__page" href="<%= structure[i].href %>">
+                    <p><%= structure[i].name %></p>
                 </a>
-                <% if (i+1 < pages.length) { %>
+                <% if (i+1 < structure.length) { %>
                     <span class="header__nav__seperator"></span>
                 <% } %>
             <% } %>

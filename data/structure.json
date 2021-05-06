@@ -1,0 +1,12 @@
+{
+    "structure": [
+        {
+            "name": "CV",
+            "href": "/cv"
+        },
+        {
+            "name": "About",
+            "href": "/about"
+        }
+    ]
+}
