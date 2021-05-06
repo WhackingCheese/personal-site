@@ -11,12 +11,6 @@ export function getStructure() {
     return data.structure;
 }
 
-export function getSocials() {
-    const rawdata = fs.readFileSync(join(path, '../data/socials.json'));
-    const data = JSON.parse(rawdata);
-    return data.socials;
-}
-
 export function getLocales() {
     const rawdata = fs.readFileSync(join(path, '../data/locales.json'));
     const data = JSON.parse(rawdata);

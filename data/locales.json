@@ -1,11 +1,41 @@
 {
+    "contacts": [
+        {
+            "type": "Phone",
+            "text": "857-2287",
+            "href": "tel:003548572287",
+            "svg": "../svg/phone.svg"
+        },
+        {
+            "type": "Email",
+            "text": "mikolaj.cymcyk@gmail.com",
+            "href": "mailto:mikolaj.cymcyk@gmail.com",
+            "svg": "../svg/email.svg"
+        },
+        {
+            "type": "GitHub",
+            "text": "WhackingCheese",
+            "href": "https://github.com/WhackingCheese/",
+            "svg": "../svg/github.svg"
+        },
+        {
+            "type": "LinkedIn",
+            "text": "Mikolaj Cymcyk",
+            "href": "https://www.linkedin.com/in/mikolajcymcyk",
+            "svg": "../svg/linkedin.svg"
+        },
+        {
+            "type": "Instagram",
+            "text": "mikkicym",
+            "href": "https://www.instagram.com/mikkicym/",
+            "svg": "../svg/instagram.svg"
+        }
+    ],
     "/cv": {
         "en": {
-            "contact": {
-                "ssid": "170999-3479",
-                "address": "Sæmundargata 21, ap. 115, 102 Reykjavík",
-                "phone": "857-2287",
-                "email": "mikolaj.cymcyk@gmail.com"
+            "info": {
+                "title": "Mikolaj Cymcyk",
+                "subtitle": "Third year Computer Science undergraduate at the University of Iceland"
             },
             "education": {
                 "title": "Education",
@@ -16,6 +46,8 @@
                         "level": "BS",
                         "start": "2018",
                         "end": "2021",
+                        "href": "cv/courses",
+                        "href_description": "See my completed courses",
                         "complete": false
                     },
                     {
@@ -63,11 +95,9 @@
             }
         },
         "is": {
-            "contact": {
-                "ssid": "170999-3479",
-                "address": "Sæmundargata 21, íbúð 115, 102 Reykjavík",
-                "phone": "857-2287",
-                "email": "mikolaj.cymcyk@gmail.com"
+            "info": {
+                "title": "Mikolaj Cymcyk",
+                "subtitle": "Þriðja árs nemi í Tölvunarfræði við Háskóla Íslands"
             },
             "education": {
                 "title": "Menntun",
@@ -78,6 +108,8 @@
                         "level": "BS",
                         "start": "2018",
                         "end": "2021",
+                        "href": "/courses",
+                        "href_description": "Sjá mína áfanga",
                         "complete": false
                     },
                     {

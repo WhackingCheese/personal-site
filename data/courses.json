@@ -1,432 +1,518 @@
 {
     "is": {
+        "title": "Mikolaj Cymcyk",
+        "subtitle": "Yfirlit á núverandi og loknum áföngum",
         "degree": "Tölvunarfræði, BS",
+        "headers": [
+            "Áfangi",
+            "Áfanganúmer",
+            "Einingar",
+            "Lokið"
+        ],
         "courses": [
             {
                 "semester": "des 2021",
-                "course_name": "Tæknistjórnun",
-                "course_number": "IÐN103G",
-                "credits": "6.0",
-                "passed": null
-            },
-            {
-                "semester": "des 2021",
-                "course_name": "Inngangur að fjárhagsbókhaldi",
-                "course_number": "VIÐ103G",
-                "credits": "6.0",
-                "passed": null
-            },
-            {
-                "semester": "maí 2021",
-                "course_name": "Tölvuöryggi innviða",
-                "course_number": "HBV603M",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "maí 2021",
-                "course_name": "Keppnisforritun",
-                "course_number": "TÖL607G",
-                "credits": "6.0",
-                "passed": null
+                "data": [
+                    {
+                        "semester": "des 2021",
+                        "course_name": "Tæknistjórnun",
+                        "course_number": "IÐN103G",
+                        "credits": "6.0",
+                        "passed": "Ólokið"
+                    },
+                    {
+                        "semester": "des 2021",
+                        "course_name": "Inngangur að fjárhagsbókhaldi",
+                        "course_number": "VIÐ103G",
+                        "credits": "6.0",
+                        "passed": "Ólokið"
+                    }
+                ]
             },
             {
                 "semester": "maí 2021",
-                "course_name": "Vefforritun 2",
-                "course_number": "HBV403G",
-                "credits": "6.0",
-                "passed": null
-            },
-            {
-                "semester": "maí 2021",
-                "course_name": "Hugbúnaðarverkefni 2",
-                "course_number": "HBV601G",
-                "credits": "6.0",
-                "passed": null
+                "data": [
+                    {
+                        "semester": "maí 2021",
+                        "course_name": "Tölvuöryggi innviða",
+                        "course_number": "HBV603M",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "maí 2021",
+                        "course_name": "Keppnisforritun",
+                        "course_number": "TÖL607G",
+                        "credits": "6.0",
+                        "passed": "Ólokið"
+                    },
+                    {
+                        "semester": "maí 2021",
+                        "course_name": "Vefforritun 2",
+                        "course_number": "HBV403G",
+                        "credits": "6.0",
+                        "passed": "Ólokið"
+                    },
+                    {
+                        "semester": "maí 2021",
+                        "course_name": "Hugbúnaðarverkefni 2",
+                        "course_number": "HBV601G",
+                        "credits": "6.0",
+                        "passed": "Ólokið"
+                    }
+                ]
             },
             {
                 "semester": "des 2020",
-                "course_name": "Inngangur að máltækni",
-                "course_number": "TÖL025M",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2020",
-                "course_name": "Rafmyntir",
-                "course_number": "STÆ532M",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2020",
-                "course_name": "Skýjaforritun og stórgögn",
-                "course_number": "REI504M",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2020",
-                "course_name": "Hugbúnaðarverkefni 1",
-                "course_number": "HBV501G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "maí 2020",
-                "course_name": "Tölfræði og gagnavinnsla",
-                "course_number": "STÆ209G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "maí 2020",
-                "course_name": "Tölvugrafík",
-                "course_number": "TÖL203M",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "des 2020",
+                        "course_name": "Inngangur að máltækni",
+                        "course_number": "TÖL025M",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2020",
+                        "course_name": "Rafmyntir",
+                        "course_number": "STÆ532M",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2020",
+                        "course_name": "Skýjaforritun og stórgögn",
+                        "course_number": "REI504M",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2020",
+                        "course_name": "Hugbúnaðarverkefni 1",
+                        "course_number": "HBV501G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    }
+                ]
             },
             {
                 "semester": "maí 2020",
-                "course_name": "Greining reiknirita",
-                "course_number": "TÖL403G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "maí 2020",
-                "course_name": "Stýrikerfi",
-                "course_number": "TÖL401G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "maí 2020",
-                "course_name": "Þróun hugbúnaðar",
-                "course_number": "HBV401G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2019",
-                "course_name": "Tölvutækni og forritun",
-                "course_number": "TÖL309G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2019",
-                "course_name": "Formleg mál og reiknanleiki",
-                "course_number": "TÖL301G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2019",
-                "course_name": "Tölvunet og öryggi",
-                "course_number": "TÖL305G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2019",
-                "course_name": "Forritunarmál",
-                "course_number": "TÖL304G",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "maí 2020",
+                        "course_name": "Tölfræði og gagnavinnsla",
+                        "course_number": "STÆ209G",
+                        "credits": "8.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "maí 2020",
+                        "course_name": "Tölvugrafík",
+                        "course_number": "TÖL203M",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "maí 2020",
+                        "course_name": "Greining reiknirita",
+                        "course_number": "TÖL403G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "maí 2020",
+                        "course_name": "Stýrikerfi",
+                        "course_number": "TÖL401G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "maí 2020",
+                        "course_name": "Þróun hugbúnaðar",
+                        "course_number": "HBV401G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    }
+                ]
             },
             {
                 "semester": "des 2019",
-                "course_name": "Gagnasafnsfræði",
-                "course_number": "TÖL303G",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "des 2019",
+                        "course_name": "Tölvutækni og forritun",
+                        "course_number": "TÖL309G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2019",
+                        "course_name": "Formleg mál og reiknanleiki",
+                        "course_number": "TÖL301G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2019",
+                        "course_name": "Tölvunet og öryggi",
+                        "course_number": "TÖL305G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2019",
+                        "course_name": "Forritunarmál",
+                        "course_number": "TÖL304G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2019",
+                        "course_name": "Gagnasafnsfræði",
+                        "course_number": "TÖL303G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    }
+                ]
             },
             {
                 "semester": "maí 2019",
-                "course_name": "Greining og hönnun stafrænna rása - verklegt",
-                "course_number": "TÖV202G",
-                "credits": "2.0",
-                "passed": true
-            },
-            {
-                "semester": "maí 2019",
-                "course_name": "Tölvunarfræði 2",
-                "course_number": "TÖL203G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "maí 2019",
-                "course_name": "Stærðfræði og reiknifræði",
-                "course_number": "REI201G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "maí 2019",
-                "course_name": "Viðmótsforritun",
-                "course_number": "HBV201G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "maí 2019",
-                "course_name": "Greining og hönnun stafrænna rása",
-                "course_number": "TÖV201G",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "maí 2019",
+                        "course_name": "Greining og hönnun stafrænna rása - verklegt",
+                        "course_number": "TÖV202G",
+                        "credits": "2.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "maí 2019",
+                        "course_name": "Tölvunarfræði 2",
+                        "course_number": "TÖL203G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "maí 2019",
+                        "course_name": "Stærðfræði og reiknifræði",
+                        "course_number": "REI201G",
+                        "credits": "8.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "maí 2019",
+                        "course_name": "Viðmótsforritun",
+                        "course_number": "HBV201G",
+                        "credits": "8.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "maí 2019",
+                        "course_name": "Greining og hönnun stafrænna rása",
+                        "course_number": "TÖV201G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    }
+                ]
             },
             {
                 "semester": "des 2018",
-                "course_name": "Hagnýt stærðfræðigreining",
-                "course_number": "STÆ105G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2018",
-                "course_name": "Vefforritun 1",
-                "course_number": "TÖL107G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2018",
-                "course_name": "Stærðfræðimynstur",
-                "course_number": "TÖL104G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "des 2018",
-                "course_name": "Tölvunarfræði 1",
-                "course_number": "TÖL101G",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "des 2018",
+                        "course_name": "Hagnýt stærðfræðigreining",
+                        "course_number": "STÆ105G",
+                        "credits": "8.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2018",
+                        "course_name": "Vefforritun 1",
+                        "course_number": "TÖL107G",
+                        "credits": "8.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2018",
+                        "course_name": "Stærðfræðimynstur",
+                        "course_number": "TÖL104G",
+                        "credits": "8.0",
+                        "passed": "Já"
+                    },
+                    {
+                        "semester": "des 2018",
+                        "course_name": "Tölvunarfræði 1",
+                        "course_number": "TÖL101G",
+                        "credits": "6.0",
+                        "passed": "Já"
+                    }
+                ]
             }
         ],
         "keys": [
-            "passed",
             "credits",
             "course_name",
+            "semester",
             "course_number",
-            "semester"
+            "passed"
         ]
     },
     "en": {
+        "title": "Mikolaj Cymcyk",
+        "subtitle": "Overview of current and completed courses",
         "degree": "Computer Science, BS",
+        "headers": [
+            "Course",
+            "Number",
+            "Units",
+            "Finished"
+        ],
         "courses": [
             {
                 "semester": "Dec 2021",
-                "course_name": "Engineering Management",
-                "course_number": "IÐN103G",
-                "credits": "6.0",
-                "passed": null
-            },
-            {
-                "semester": "Dec 2021",
-                "course_name": "Introduction to Financial Accounting",
-                "course_number": "VIÐ103G",
-                "credits": "6.0",
-                "passed": null
-            },
-            {
-                "semester": "May 2021",
-                "course_name": "Cybersecurity for Critical Infrastructure",
-                "course_number": "HBV603M",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "May 2021",
-                "course_name": "Competitive programming",
-                "course_number": "TÖL607G",
-                "credits": "6.0",
-                "passed": null
+                "data": [
+                    {
+                        "semester": "Dec 2021",
+                        "course_name": "Engineering Management",
+                        "course_number": "IÐN103G",
+                        "credits": "6.0",
+                        "passed": "Unfinished"
+                    },
+                    {
+                        "semester": "Dec 2021",
+                        "course_name": "Introduction to Financial Accounting",
+                        "course_number": "VIÐ103G",
+                        "credits": "6.0",
+                        "passed": "Unfinished"
+                    }
+                ]
             },
             {
                 "semester": "May 2021",
-                "course_name": "Web Programming 2",
-                "course_number": "HBV403G",
-                "credits": "6.0",
-                "passed": null
-            },
-            {
-                "semester": "May 2021",
-                "course_name": "Software Project 2",
-                "course_number": "HBV601G",
-                "credits": "6.0",
-                "passed": null
+                "data": [
+                    {
+                        "semester": "May 2021",
+                        "course_name": "Cybersecurity for Critical Infrastructure",
+                        "course_number": "HBV603M",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "May 2021",
+                        "course_name": "Competitive programming",
+                        "course_number": "TÖL607G",
+                        "credits": "6.0",
+                        "passed": "Unfinished"
+                    },
+                    {
+                        "semester": "May 2021",
+                        "course_name": "Web Programming 2",
+                        "course_number": "HBV403G",
+                        "credits": "6.0",
+                        "passed": "Unfinished"
+                    },
+                    {
+                        "semester": "May 2021",
+                        "course_name": "Software Project 2",
+                        "course_number": "HBV601G",
+                        "credits": "6.0",
+                        "passed": "Unfinished"
+                    }
+                ]
             },
             {
                 "semester": "Dec 2020",
-                "course_name": "Introduction to language technology",
-                "course_number": "TÖL025M",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2020",
-                "course_name": "Cryptocurrency",
-                "course_number": "STÆ532M",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2020",
-                "course_name": "Cloud Computing and Big Data",
-                "course_number": "REI504M",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2020",
-                "course_name": "Software Project 1",
-                "course_number": "HBV501G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "May 2020",
-                "course_name": "Statistics and Data Analysis",
-                "course_number": "STÆ209G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "May 2020",
-                "course_name": "Computer Graphics",
-                "course_number": "TÖL203M",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "Dec 2020",
+                        "course_name": "Introduction to language technology",
+                        "course_number": "TÖL025M",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2020",
+                        "course_name": "Cryptocurrency",
+                        "course_number": "STÆ532M",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2020",
+                        "course_name": "Cloud Computing and Big Data",
+                        "course_number": "REI504M",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2020",
+                        "course_name": "Software Project 1",
+                        "course_number": "HBV501G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    }
+                ]
             },
             {
                 "semester": "May 2020",
-                "course_name": "Analysis of Algorithms",
-                "course_number": "TÖL403G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "May 2020",
-                "course_name": "Operating Systems",
-                "course_number": "TÖL401G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "May 2020",
-                "course_name": "Software Development",
-                "course_number": "HBV401G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2019",
-                "course_name": "Computer organization and programming",
-                "course_number": "TÖL309G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2019",
-                "course_name": "Formal Languages and Computability",
-                "course_number": "TÖL301G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2019",
-                "course_name": "Computer Networks and Security",
-                "course_number": "TÖL305G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2019",
-                "course_name": "Programming Languages",
-                "course_number": "TÖL304G",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "May 2020",
+                        "course_name": "Statistics and Data Analysis",
+                        "course_number": "STÆ209G",
+                        "credits": "8.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "May 2020",
+                        "course_name": "Computer Graphics",
+                        "course_number": "TÖL203M",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "May 2020",
+                        "course_name": "Analysis of Algorithms",
+                        "course_number": "TÖL403G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "May 2020",
+                        "course_name": "Operating Systems",
+                        "course_number": "TÖL401G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "May 2020",
+                        "course_name": "Software Development",
+                        "course_number": "HBV401G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    }
+                ]
             },
             {
                 "semester": "Dec 2019",
-                "course_name": "Data Base Theory and Practice",
-                "course_number": "TÖL303G",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "Dec 2019",
+                        "course_name": "Computer organization and programming",
+                        "course_number": "TÖL309G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2019",
+                        "course_name": "Formal Languages and Computability",
+                        "course_number": "TÖL301G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2019",
+                        "course_name": "Computer Networks and Security",
+                        "course_number": "TÖL305G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2019",
+                        "course_name": "Programming Languages",
+                        "course_number": "TÖL304G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2019",
+                        "course_name": "Data Base Theory and Practice",
+                        "course_number": "TÖL303G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    }
+                ]
             },
             {
                 "semester": "May 2019",
-                "course_name": "Digital Circuit Design and Analysis - lab",
-                "course_number": "TÖV202G",
-                "credits": "2.0",
-                "passed": true
-            },
-            {
-                "semester": "May 2019",
-                "course_name": "Computer Science 2",
-                "course_number": "TÖL203G",
-                "credits": "6.0",
-                "passed": true
-            },
-            {
-                "semester": "May 2019",
-                "course_name": "Mathematics and Scientific Computing",
-                "course_number": "REI201G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "May 2019",
-                "course_name": "Graphical User Interface Programming",
-                "course_number": "HBV201G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "May 2019",
-                "course_name": "Digital Circuit Design and Analysis",
-                "course_number": "TÖV201G",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "May 2019",
+                        "course_name": "Digital Circuit Design and Analysis - lab",
+                        "course_number": "TÖV202G",
+                        "credits": "2.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "May 2019",
+                        "course_name": "Computer Science 2",
+                        "course_number": "TÖL203G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "May 2019",
+                        "course_name": "Mathematics and Scientific Computing",
+                        "course_number": "REI201G",
+                        "credits": "8.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "May 2019",
+                        "course_name": "Graphical User Interface Programming",
+                        "course_number": "HBV201G",
+                        "credits": "8.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "May 2019",
+                        "course_name": "Digital Circuit Design and Analysis",
+                        "course_number": "TÖV201G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    }
+                ]
             },
             {
                 "semester": "Dec 2018",
-                "course_name": "Practical Mathematical Analysis",
-                "course_number": "STÆ105G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2018",
-                "course_name": "Web Programming 1",
-                "course_number": "TÖL107G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2018",
-                "course_name": "Mathematical Structure",
-                "course_number": "TÖL104G",
-                "credits": "8.0",
-                "passed": true
-            },
-            {
-                "semester": "Dec 2018",
-                "course_name": "Computer Science 1",
-                "course_number": "TÖL101G",
-                "credits": "6.0",
-                "passed": true
+                "data": [
+                    {
+                        "semester": "Dec 2018",
+                        "course_name": "Practical Mathematical Analysis",
+                        "course_number": "STÆ105G",
+                        "credits": "8.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2018",
+                        "course_name": "Web Programming 1",
+                        "course_number": "TÖL107G",
+                        "credits": "8.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2018",
+                        "course_name": "Mathematical Structure",
+                        "course_number": "TÖL104G",
+                        "credits": "8.0",
+                        "passed": "Yes"
+                    },
+                    {
+                        "semester": "Dec 2018",
+                        "course_name": "Computer Science 1",
+                        "course_number": "TÖL101G",
+                        "credits": "6.0",
+                        "passed": "Yes"
+                    }
+                ]
             }
         ],
         "keys": [
-            "passed",
             "credits",
             "course_name",
+            "semester",
             "course_number",
-            "semester"
+            "passed"
         ]
     }
 }

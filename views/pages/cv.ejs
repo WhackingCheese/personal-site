@@ -1,14 +1,119 @@
 <%- include('../fragments/head.ejs') -%>
 <%- include('../fragments/header.ejs') -%>
-
-
-
-
-
-<h1>Cv</h1>
-
-
-
-
+<div class="cv">
+    <div class="cv__inner">
+        <div class="cv__card">
+            <div class="cv__card__inner">
+                <% if (course_draw) { %>
+                    <div class="courses">
+                        <div class="top__titles">
+                            <h1 class="top__title"><%= courses.title %></h1>
+                            <h2 class="top__subtitle"><%= courses.subtitle %></h2>
+                        </div>
+                        <table class="courses__table">
+                            <tbody class="courses__head">
+                                <tr class="courses__headers">
+                                    <% courses.headers.forEach(header => { %>
+                                        <td class="courses__header"><%= header %></td> 
+                                    <% }); %>
+                                </tr>
+                            </tbody>
+                            <% courses.courses.forEach(semester => { %>
+                                <tbody class="courses__tbody">
+                                    <tr class="courses__semester">
+                                        <td class="courses__semester__inner"><%= semester.semester %></td>
+                                    </tr>
+                                    <% semester.data.forEach(course => { %> 
+                                        <tr class="courses__row">
+                                            <td class="courses__name"><%= course.course_name %></td>
+                                            <td class="courses__number"><%= course.course_number %></td>
+                                            <td class="courses__credits"><%= course.credits %></td>
+                                            <td class="courses__finished"><%= course.passed %></td>
+                                        </tr>
+                                    <% }); %>
+                                </tbody>
+                            <% }); %>
+                        </table>
+                    </div>
+                <% } else { %>
+                    <div class="top">
+                        <div class="top__titles">
+                            <h1 class="top__title"><%= data.info.title %></h1>
+                            <h2 class="top__subtitle"><%= data.info.subtitle %></h2>
+                        </div>
+                        <div class="top__about">
+                            <div class="about">
+                                <img class="about__image" src="../profile.jpg">
+                            </div>
+                            <div>
+        
+                            </div>
+                        </div>
+                        <div class="top__contact">
+                            <% contacts.forEach(contact => { %>
+                                <% if (cv_link_list.includes(contact.type)) { %> 
+                                    <div class="contact">
+                                        <div class="contact__icon">
+                                            <% if (contact.href) { %>
+                                                <a class="contact__inner" href="<%= contact.href %>">
+                                                    <%- include(contact.svg) -%>
+                                                </a>
+                                            <% } else { %>
+                                                <div class="contact__inner">
+                                                    <%- include(contact.svg) -%>
+                                                </div>
+                                            <% } %>
+                                        </div>
+                                        <% if (contact.href) { %>
+                                            <a href="<%= contact.href %>">
+                                                <p class="contact__text linked"><%= contact.text %></p>
+                                            </a>
+                                        <% } else { %>
+                                            <p class="contact__text"><%= contact.text %></p>
+                                        <% } %>
+                                    </div>
+                                <% } %>
+                            <% }); %>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h3 class="education__header"><%= data.education.title %></h3>
+                        <% data.education.data.forEach(element => { %>
+                            <div class="education__item">
+                                <div class="education__title">
+                                    <h3 class="education__institution"><%= element.institution %></h3>
+                                    <h3 class="education__time"><%= element.start %> - <%= element.end %></h3>
+                                </div>
+                                <p class="education__description"><%= element.degree %></p>
+                                <% if (element.href) { %>
+                                    <a class="education__href" href="<%= element.href %>">
+                                        <p class="education__href__inner"><%= element.href_description %></p>
+                                    </a>
+                                <% } %> 
+                            </div>
+                        <% }); %>
+                    </div>
+                    <div class="experience">
+                        <h3 class="experience__header"><%= data.experience.title %> </h3>
+                        <% data.experience.data.forEach(element => { %>
+                            <div class="experience__item">
+                                <div class="experience__title">
+                                    <h3 class="experience__company"><%= element.company %></h3>
+                                    <% if (element.start != element.end) { %>
+                                        <h3 class="experience__time"><%= element.start %> - <%= element.end %></h3>
+                                    <% } else { %>
+                                        <h3 class="experience__time"><%= element.start %></h3>
+                                    <% } %>
+                                </div>
+                                <h3 class="experience__subtitle"><%= element.position %></h3>
+                                <p class="experience__description"><%= element.description %></p>
+                            </div>
+                        <% }); %>
+                    </div>
+                <% } %> 
+            </div>
+        </div>
+    </div>
+</div>
 <%- include('../fragments/footer.ejs') -%>
 <%- include('../fragments/tail.ejs') -%>

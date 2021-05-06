@@ -1,5 +1,6 @@
 /* stylelint-disable scss/dollar-variable-pattern */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 $--max_width: 1200px;
 
@@ -64,3 +65,5 @@ $--error_height: calc(
 $--error_font-family: $--theme_font-family;
 $--error_message-padding: 10px;
 $--error_message-font-size: 24px;
+
+$--cv_font-family: 'Ubuntu', sans-serif;

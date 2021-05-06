@@ -8,14 +8,16 @@
             <% }); %>
         </div>
         <div class="footer__links">
-            <% socials.forEach(social => { %>
-                <div class="icon__container">
-                    <div class="icon">
-                        <a class="icon__inner" href="<%= social.href %>">
-                            <%- include(social.svg) -%>
-                        </a>
+            <% contacts.forEach(contact => { %>
+                <% if (footer_link_list.includes(contact.type)) { %> 
+                    <div class="icon__container">
+                        <div class="icon">
+                            <a class="icon__inner" href="<%= contact.href %>">
+                                <%- include(contact.svg) -%>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                <% } %> 
             <% }); %>
         </div>
         <div class="copyright">

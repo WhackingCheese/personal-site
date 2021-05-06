@@ -1,0 +1,187 @@
+@import 'vars';
+
+body {
+    min-width: 1000px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.cv {
+    background-color: grey;
+    color: black;
+    font-family: $--cv_font-family;
+
+    &__inner {
+        max-width: 1000px;
+        min-width: 1000px;
+        margin: auto;
+    }
+
+    &__card {
+        margin: auto;
+        padding: 40px 0;
+        
+        &__inner {
+            padding: 40px;
+            background-color: white;
+            box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.top {
+    &__titles {
+    }
+    &__title {
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        padding-top: 20px;
+        margin: 0;
+    }
+    &__subtitle {
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        padding-top: 15px;
+        margin: 0;
+        font-size: 20px;
+    }
+    &__contact {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__about {
+
+    }
+}
+
+.about {
+    &__image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+}
+
+.contact {
+    &__icon {
+        display: flex;
+        justify-content: center;
+
+    }
+    &__inner {
+        svg {
+            fill: black;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &__text {
+        font-size: 20px;
+        transition: 0.25s;
+        &:hover {
+            color: tomato;
+        }
+    }
+}
+
+.education {
+    &__item {
+
+    }
+    &__header {
+
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__institution {
+
+    }
+    &__time {
+
+    }
+    &__description {
+
+    }
+}
+
+.experience {
+    &__header {
+
+    }
+    &__item {
+
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__company {
+
+    }
+    &__time {
+
+    }
+}
+
+.courses {
+    &__table {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    &__row {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    &__semester__inner {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__credits {
+        text-align: center;
+    }
+
+    &__head::after {
+        content: '';
+        display: block;
+        height: 10px;
+    }
+
+    &__tbody::after {
+        content: '';
+        display: block;
+        height: 25px;
+    }
+
+    &__header {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    
+    &__header:last-child {
+        text-align: center;
+    }
+
+    &__header:nth-last-child(2) {
+        text-align: center;
+    }
+
+    td {
+        padding: 5px 0;
+    }
+
+    &__finished {
+        text-align: center;
+    }
+}
