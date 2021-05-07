@@ -1,6 +1,11 @@
 {
     "contacts": [
         {
+            "type": "SSN",
+            "text": "170999-3479",
+            "svg": "../svg/hashtag.svg"
+        },
+        {
             "type": "Phone",
             "text": "857-2287",
             "href": "tel:003548572287",
@@ -31,130 +36,145 @@
             "svg": "../svg/instagram.svg"
         }
     ],
+    "footer_links": [
+        "Email",
+        "GitHub",
+        "LinkedIn",
+        "Instagram"
+    ],
     "/cv": {
-        "en": {
-            "info": {
-                "title": "Mikolaj Cymcyk",
-                "subtitle": "Third year Computer Science undergraduate at the University of Iceland"
-            },
-            "education": {
-                "title": "Education",
-                "data": [
-                    {
-                        "institution": "University of Iceland",
-                        "degree": "Computer Science",
-                        "level": "BS",
-                        "start": "2018",
-                        "end": "2021",
-                        "href": "cv/courses",
-                        "href_description": "See my completed courses",
-                        "complete": false
-                    },
-                    {
-                        "institution": "Ísafjörður Gymnasium",
-                        "degree": "Natural Sciences Program",
-                        "level": "High School Diploma",
-                        "start": "2015",
-                        "end": "2018",
-                        "complete": true
-                    }
-                ]
-            },
-            "experience": {
-                "title": "Experience",
-                "data": [
-                    {
-                        "company": "Íslenska Flatbakan",
-                        "position": "Pizzabaker, Waiter & Cashier",
-                        "description": "Performed almost all possible tasks; everything from waiting tables and servicing customers, baking pizzas to prepping and cleaning.",
-                        "start": "2019",
-                        "end": "2021"
-                    },
-                    {
-                        "company": "Kópavogur Municipality",
-                        "position": "Work School Team Leader",
-                        "description": "Was primarily a substitute team leader, took over other team leader's groups when they got sick or went on holiday. While few or no team leaders were unavailable I worked on other projects for the municipality.",
-                        "start": "2019",
-                        "end": "2019"
-                    },
-                    {
-                        "company": "Melabúðin",
-                        "position": "General Employee",
-                        "description": "Threw myself at all the tasks that needed solving; from refills in the shop, servicing customers at the register and the butcher counter to preparing hot foods.",
-                        "start": "2019",
-                        "end": "2019"
-                    },
-                    {
-                        "company": "Vestfiskur",
-                        "position": "Factory Labourer",
-                        "description": "Worked on manufacturing high-quality dried fish products. Was involved in the entire process; from the receipt of raw materials and products, through production to packaging and preparation of shipments.",
-                        "start": "2015",
-                        "end": "2018"
-                    }
-                ]
+        "link_list": [
+            "SSN",
+            "Phone",
+            "Email",
+            "GitHub",
+            "LinkedIn"
+        ],
+        "info": {
+            "title": "Mikolaj Cymcyk",
+            "subtitle": {
+                "en": "Third year Computer Science undergraduate at the University of Iceland",
+                "is": "Þriðja árs nemi í Tölvunarfræði við Háskóla Íslands"
             }
         },
-        "is": {
-            "info": {
-                "title": "Mikolaj Cymcyk",
-                "subtitle": "Þriðja árs nemi í Tölvunarfræði við Háskóla Íslands"
+        "education": {
+            "title": {
+                "en": "Education",
+                "is": "Menntun"
             },
-            "education": {
-                "title": "Menntun",
-                "data": [
-                    {
-                        "institution": "Háskóli Íslands",
-                        "degree": "Tölvunarfræði",
-                        "level": "BS",
-                        "start": "2018",
-                        "end": "2021",
-                        "href": "/courses",
-                        "href_description": "Sjá mína áfanga",
-                        "complete": false
+            "data": [
+                {
+                    "institution": {
+                        "en": "University of Iceland",
+                        "is": "Háskóli Íslands"
                     },
-                    {
-                        "institution": "Menntaskólinn á Ísafirði",
-                        "degree": "Náttúrufræðibraut",
-                        "level": "Stúdentspróf",
-                        "start": "2015",
-                        "end": "2018",
-                        "complete": true
-                    }
-                ]
+                    "degree": {
+                        "en": "Computer Science",
+                        "is": "Tölvunarfræði"
+                    },
+                    "level": {
+                        "en": "BS",
+                        "is": "BS"
+                    },
+                    "start": "2018",
+                    "end": "2021",
+                    "href": "cv/courses",
+                    "href_description": {
+                        "en": "See my course history here",
+                        "is": "Sjá mína áfangasögu"
+                    },
+                    "complete": false
+                },
+                {
+                    "institution": {
+                        "en": "Ísafjörður Gymnasium",
+                        "is": "Menntaskólinn á Ísafirði"
+                    },
+                    "degree": {
+                        "en": "Natural Sciences Program",
+                        "is": "Náttúrufræðibraut"
+                    },
+                    "level": {
+                        "en": "High School Diploma",
+                        "is": "Stúdentspróf"
+                    },
+                    "start": "2015",
+                    "end": "2018",
+                    "complete": true
+                }
+            ]
+        },
+        "experience": {
+            "title": {
+                "en": "Work Experience",
+                "is": "Starfsreynsla"
             },
-            "experience": {
-                "title": "Starfsreynsla",
-                "data": [
-                    {
-                        "company": "Íslenska Flatbakan",
-                        "position": "Pizzabakari, Þjónn & Afgreiðslumaður",
-                        "description": "Sinnti nær öllum mögulegum hlutverkfum á staðnum; allt frá því að þjóna til borðs og afgreiðslu, pizzabaksturs til undirbúnings og þrifs.",
-                        "start": "2019",
-                        "end": "2021"
+            "data": [
+                {
+                    "company": {
+                        "en": "Íslenska Flatbakan",
+                        "is": "Íslenska Flatbakan"
                     },
-                    {
-                        "company": "Kópavogsbær",
-                        "position": "Flokkstjóri Vinnuskólans",
-                        "description": "Vann aðallega í afleysingum og greip því í þegar aðrir flokkstjórar veiktust eða fóru í frí og tók yfir hópunum þeirra. Meðan vantaði fáa eða enga flokkstjóra sinnti ég í öðrum verkefnum fyrir bæjarfélagið.",
-                        "start": "2019",
-                        "end": "2019"
+                    "position": {
+                        "en": "Pizzabaker, Waiter & Cashier",
+                        "is": "Pizzabakari, Þjónn & Afgreiðslumaður"
                     },
-                    {
-                        "company": "Melabúðin",
-                        "position": "Almenn Starfsmaður",
-                        "description": "Henti mér í öll þau verkefni sem þurfti að leysa; frá áfyllingum í búðinni, afgreiðslu viðskiptavina á kassa og á kjötborðinu til undirbúnings heitra matvæla.",
-                        "start": "2019",
-                        "end": "2019"
+                    "description": {
+                        "en": "Performed almost all possible tasks; everything from waiting tables and servicing customers, baking pizzas to prepping and cleaning.",
+                        "is": "Sinnti nær öllum mögulegum hlutverkfum á staðnum; allt frá því að þjóna til borðs og afgreiðslu, pizzabaksturs til undirbúnings og þrifs."
                     },
-                    {
-                        "company": "Vestfiskur",
-                        "position": "Starfsmaður í Framleiðslu",
-                        "description": "Vann í framleiðslu hágæða harðfisks. Starfaði við allt ferlið; frá móttöku hráefna og vara, í gegnum alla framleiðslu til pökkunar og undirbúningu sendinga.",
-                        "start": "2015",
-                        "end": "2018"
-                    }
-                ]
-            }
+                    "start": "2019",
+                    "end": "2021"
+                },
+                {
+                    "company": {
+                        "en": "Kópavogur Municipality",
+                        "is": "Kópavogsbær"
+                    },
+                    "position": {
+                        "en": "Work School Team Leader",
+                        "is": "Flokkstjóri Vinnuskólans"
+                    },
+                    "description": {
+                        "en": "Was primarily a substitute team leader, took over other team leader's groups when they got sick or went on holiday. While few or no team leaders were unavailable I worked on other projects for the municipality.",
+                        "is": "Vann aðallega í afleysingum og greip því í þegar aðrir flokkstjórar veiktust eða fóru í frí og tók yfir hópunum þeirra. Meðan vantaði fáa eða enga flokkstjóra sinnti ég í öðrum verkefnum fyrir bæjarfélagið."
+                    },
+                    "start": "2019",
+                    "end": "2019"
+                },
+                {
+                    "company": {
+                        "en": "Melabúðin",
+                        "is": "Melabúðin"
+                    },
+                    "position": {
+                        "en": "General Employee",
+                        "is": "Almenn Starfsmaður"
+                    },
+                    "description": {
+                        "en": "Threw myself at all the tasks that needed solving; from refills in the shop, servicing customers at the register and the butcher counter to preparing hot foods.",
+                        "is": "Henti mér í öll þau verkefni sem þurfti að leysa; frá áfyllingum í búðinni, afgreiðslu viðskiptavina á kassa og á kjötborðinu til undirbúnings heitra matvæla."
+                    },
+                    "start": "2019",
+                    "end": "2019"
+                },
+                {
+                    "company": {
+                        "en": "Vestfiskur",
+                        "is": "Vestfiskur"
+                    },
+                    "position": {
+                        "en": "Factory Labourer",
+                        "is": "Starfsmaður í Framleiðslu"
+                    },
+                    "description": {
+                        "en": "Worked on manufacturing high-quality dried fish products. Was involved in the entire process; from the receipt of raw materials and products, through production to packaging and preparation of shipments.",
+                        "is": "Vann í framleiðslu hágæða harðfisks. Starfaði við allt ferlið; frá móttöku hráefna og vara, í gegnum alla framleiðslu til pökkunar og undirbúningu sendinga."
+                    },
+                    "start": "2015",
+                    "end": "2018"
+                }
+            ]
         }
     }
 }

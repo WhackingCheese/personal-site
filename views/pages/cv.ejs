@@ -8,12 +8,12 @@
                     <div class="courses">
                         <div class="top__titles">
                             <h1 class="top__title"><%= courses.title %></h1>
-                            <h2 class="top__subtitle"><%= courses.subtitle %></h2>
+                            <h2 class="top__subtitle"><%= courses.subtitle[lang] %></h2>
                         </div>
                         <table class="courses__table">
                             <tbody class="courses__head">
                                 <tr class="courses__headers">
-                                    <% courses.headers.forEach(header => { %>
+                                    <% courses.headers[lang].forEach(header => { %>
                                         <td class="courses__header"><%= header %></td> 
                                     <% }); %>
                                 </tr>
@@ -21,14 +21,14 @@
                             <% courses.courses.forEach(semester => { %>
                                 <tbody class="courses__tbody">
                                     <tr class="courses__semester">
-                                        <td class="courses__semester__inner"><%= semester.semester %></td>
+                                        <td class="courses__semester__inner"><%= semester.semester[lang] %></td>
                                     </tr>
                                     <% semester.data.forEach(course => { %> 
                                         <tr class="courses__row">
-                                            <td class="courses__name"><%= course.course_name %></td>
+                                            <td class="courses__name"><%= course.course_name[lang] %></td>
                                             <td class="courses__number"><%= course.course_number %></td>
                                             <td class="courses__credits"><%= course.credits %></td>
-                                            <td class="courses__finished"><%= course.passed %></td>
+                                            <td class="courses__finished"><%= course.passed[lang] %></td>
                                         </tr>
                                     <% }); %>
                                 </tbody>
@@ -39,19 +39,19 @@
                     <div class="top">
                         <div class="top__titles">
                             <h1 class="top__title"><%= data.info.title %></h1>
-                            <h2 class="top__subtitle"><%= data.info.subtitle %></h2>
+                            <h2 class="top__subtitle"><%= data.info.subtitle[lang] %></h2>
                         </div>
                         <div class="top__about">
                             <div class="about">
-                                <img class="about__image" src="../profile.jpg">
+                                <img class="about__image" src="../img/profile.jpg">
                             </div>
                             <div>
-        
+                                
                             </div>
                         </div>
                         <div class="top__contact">
-                            <% contacts.forEach(contact => { %>
-                                <% if (cv_link_list.includes(contact.type)) { %> 
+                            <% locales.contacts.forEach(contact => { %>
+                                <% if (data.link_list.includes(contact.type)) { %> 
                                     <div class="contact">
                                         <div class="contact__icon">
                                             <% if (contact.href) { %>
@@ -77,36 +77,36 @@
                         </div>
                     </div>
                     <div class="education">
-                        <h3 class="education__header"><%= data.education.title %></h3>
+                        <h3 class="education__header"><%= data.education.title[lang] %></h3>
                         <% data.education.data.forEach(element => { %>
                             <div class="education__item">
                                 <div class="education__title">
-                                    <h3 class="education__institution"><%= element.institution %></h3>
+                                    <h3 class="education__institution"><%= element.institution[lang] %></h3>
                                     <h3 class="education__time"><%= element.start %> - <%= element.end %></h3>
                                 </div>
-                                <p class="education__description"><%= element.degree %></p>
+                                <p class="education__description"><%= element.degree[lang] %></p>
                                 <% if (element.href) { %>
                                     <a class="education__href" href="<%= element.href %>">
-                                        <p class="education__href__inner"><%= element.href_description %></p>
+                                        <p class="education__href__inner"><%= element.href_description[lang] %></p>
                                     </a>
                                 <% } %> 
                             </div>
                         <% }); %>
                     </div>
                     <div class="experience">
-                        <h3 class="experience__header"><%= data.experience.title %> </h3>
+                        <h3 class="experience__header"><%= data.experience.title[lang] %> </h3>
                         <% data.experience.data.forEach(element => { %>
                             <div class="experience__item">
                                 <div class="experience__title">
-                                    <h3 class="experience__company"><%= element.company %></h3>
+                                    <h3 class="experience__company"><%= element.company[lang] %></h3>
                                     <% if (element.start != element.end) { %>
                                         <h3 class="experience__time"><%= element.start %> - <%= element.end %></h3>
                                     <% } else { %>
                                         <h3 class="experience__time"><%= element.start %></h3>
                                     <% } %>
                                 </div>
-                                <h3 class="experience__subtitle"><%= element.position %></h3>
-                                <p class="experience__description"><%= element.description %></p>
+                                <h3 class="experience__subtitle"><%= element.position[lang] %></h3>
+                                <p class="experience__description"><%= element.description[lang] %></p>
                             </div>
                         <% }); %>
                     </div>

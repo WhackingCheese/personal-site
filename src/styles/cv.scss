@@ -1,9 +1,5 @@
 @import 'vars';
 
-body {
-    min-width: 1000px;
-}
-
 h1, h2, h3 {
     margin: 0;
     font-weight: 500;
@@ -76,12 +72,12 @@ h1, h2, h3 {
     &__inner {
         svg {
             fill: black;
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
         }
     }
     &__text {
-        font-size: 20px;
+        font-size: 16px;
         transition: 0.25s;
         &:hover {
             color: tomato;
@@ -133,7 +129,7 @@ h1, h2, h3 {
 
 .courses {
     &__table {
-        padding-top: 20px;
+        padding-top: 30px;
         width: 100%;
     }
 

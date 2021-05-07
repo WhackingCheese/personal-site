@@ -5,14 +5,13 @@ export const router = express.Router();
 async function createCvPage(req, res) {
     res.render('cv', {
         course_draw: false,
-        data: req.app.locals.locales['/cv']['en']
+        data: req.app.locals.locales['/cv']
     });
 }
 
 async function createCoursePage(req, res) {
     res.render('cv', {
-        course_draw: true,
-        courses: req.app.locals.courses['en']
+        course_draw: true
     });
 }
 

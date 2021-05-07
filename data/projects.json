@@ -1,0 +1,78 @@
+{
+    "is": {
+        "projects": {
+            "university": [
+                {
+                    "name": "3D Snake",
+                    "description": "Þrívíddar sjálfvirkur Snake leikur með helling af stillingum",
+                    "course" : "Tölvugrafík - TÖL203M",
+                    "href": "https://notendur.hi.is/mic5/3D-Snake/",
+                    "repo": "https://github.com/WhackingCheese/3D-Snake",
+                    "img": "../img/3dsnake.png"
+                },
+                {
+                    "name": "3D Frogger.",
+                    "description": "Þrívíddar Frogger leikur",
+                    "course" : "Tölvugrafík - TÖL203M",
+                    "href": "https://notendur.hi.is/mic5/3D-Frogger/",
+                    "repo": "https://github.com/WhackingCheese/3D-Frogger",
+                    "img": "../img/3dfrogger.png"
+                },
+                {
+                    "name": "Íslenskt Stafsetningarforrit",
+                    "description": "Leiðréttari fyrir íslenska stafsetningu.",
+                    "course" : "Innagngur að Máltækni - TÖL025M",
+                    "href": "https://notendur.hi.is/mic5/Icelandic-Spellchecker/",
+                    "repo": "https://github.com/WhackingCheese/Icelandic-Spellchecker",
+                    "img": "../img/spellchecker.png"
+                },
+                {
+                    "name": "Út-Að-Borða Vefsíða",
+                    "description": "Vefsíða sem gefur þér upplýsingar um alla veitinga og matsölustaði á Íslandi. Vann aðallega í gagnaöflun og framenda.",
+                    "course" : "Hugbúnaðarverkefni 1 - HBV501G",
+                    "href": "https://ut-ad-borda.herokuapp.com/",
+                    "repo": "https://github.com/thth168/ut-ad-borda",
+                    "img": "../img/utadbordawebsite.png"
+                },
+                {
+                    "name": "Út-Að-Borða App",
+                    "description": "App tengt við vefsíðuna. Tinder fyrir veitingastaði.",
+                    "course" : "Hugbúnaðarverkefni 2 - HBV601G",
+                    "href": "https://github.com/thth168/ut-ad-borda",
+                    "repo": "https://github.com/thth168/ut-ad-borda",
+                    "img": "../img/utadbordaapp.png"
+                },
+                {
+                    "name": "Jarðskjálftakort",
+                    "description": "Vefapp sem sýnir jarðskjálfta af ákveðinni stærð á korti. Notar Caching með redis.",
+                    "course": "Vefforritun 2 - HBV403G",
+                    "href": "https://mic5-v4.herokuapp.com/",
+                    "repo": "https://github.com/WhackingCheese/vef2-2021-v4",
+                    "img": "../img/earthquakes.png"
+                },
+                {
+                    "name": "RÚV Fréttir",
+                    "description": "React vefapp sem sýnir nýjustu fréttirnar frá Ríkisútvarpinu eftir flokkum.",
+                    "course": "Vefforritun 2 - HBV403G",
+                    "href": "https://mic5-v5.herokuapp.com/",
+                    "repo": "https://github.com/WhackingCheese/vef2-2021-v5",
+                    "img": "../img/news.png"
+                }
+            ],
+            "personal": [
+                {
+                    "name": "Persónuleg Vefsíða",
+                    "description": "Þessi vefsíða. Notuð til að birta allt það sem mig langar í. Notar Node, Express, EJS, SCSS og js til að útfæra síðuna.",
+                    "href": "https://github.com/WhackingCheese/personal-site",
+                    "repo": "https://github.com/WhackingCheese/personal-site"
+                },
+                {
+                    "name": "Barbarian Bot - Discord Spjallbotti",
+                    "description": "Discord spjallbotti með helling af fítusum gert fyrir nokkra þúsund meðlima netsamfélag sem ég bjó til og sá um sem er nú yfirgefið.",
+                    "href": "https://github.com/WhackingCheese/Barbarian-Bot",
+                    "repo": "https://github.com/WhackingCheese/Barbarian-Bot"
+                }
+            ]
+        }
+    }
+}

@@ -11,6 +11,7 @@ import { fileURLToPath } from 'url';
 import { router as indexRouter } from './src/index.js';
 import { router as aboutRouter } from './src/about.js';
 import { router as cvRouter } from './src/cv.js';
+import { router as projectsRouter } from './src/projects.js';
 import { getStructure, getCourses, getLocales } from './src/utils.js';
 
 /**
@@ -56,6 +57,7 @@ app.use('/update', (req, res) => {
     setLocals();
     res.status(200).redirect('/');
 });
+app.use('/projects', projectsRouter);
 
 /**
  * Helper function used for setting global variables for EJS.
@@ -64,11 +66,8 @@ function setLocals() {
     app.locals.structure = getStructure();
     app.locals.locales = getLocales();
     app.locals.courses = getCourses();
-    app.locals.language = "en";
+    app.locals.lang = "en";
     app.locals.title = "Mikolaj Cymcyk";
-    app.locals.contacts = app.locals.locales.contacts,
-    app.locals.footer_link_list = ["Email", "GitHub", "LinkedIn", "Instagram"],
-    app.locals.cv_link_list = ["Phone", "Email", "GitHub", "LinkedIn"]
 }
 
 /**
@@ -87,15 +86,15 @@ app.use(notFoundHandler);
 /**
  * Handler for 500 Server Error HTTP Status Codes.
  * Renders and servers the user the "500.ejs" error page.
- function errorHandler(err, req, res, next) {
-     res.status(500).render('error', {
-         error_message_1: "500",
-         error_message_2: "Internal Server Error",
-         title: "500 Internal Server Error"
-        });
-    }
-    app.use(errorHandler);
-*/
+function errorHandler(err, req, res, next) {
+    res.status(500).render('error', {
+        error_message_1: "500",
+        error_message_2: "Internal Server Error",
+        title: "500 Internal Server Error"
+    });
+}
+app.use(errorHandler);
+ */
 
 /**
  * Starts the app and listens on port.

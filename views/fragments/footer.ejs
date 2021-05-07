@@ -8,8 +8,8 @@
             <% }); %>
         </div>
         <div class="footer__links">
-            <% contacts.forEach(contact => { %>
-                <% if (footer_link_list.includes(contact.type)) { %> 
+            <% locales.contacts.forEach(contact => { %>
+                <% if (locales.footer_links.includes(contact.type)) { %> 
                     <div class="icon__container">
                         <div class="icon">
                             <a class="icon__inner" href="<%= contact.href %>">
