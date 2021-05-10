@@ -17,6 +17,10 @@
     padding-bottom: $--footer_links-padding;
     padding-top: $--footer_links-padding;
   }
+
+  svg:hover {
+    fill: $--footer_font-color-hover;
+  }
 }
 
 .icon {
@@ -26,10 +30,6 @@
     padding: $--footer_icon-padding;
     transition: $--header_animation-time;
     width: $--footer_icon-size;
-  }
-
-  &__svg:hover {
-    fill: $--footer_font-color-hover;
   }
 }
 

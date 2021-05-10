@@ -3,7 +3,7 @@
         {
             "type": "SSN",
             "text": "170999-3479",
-            "svg": "../svg/hashtag.svg"
+            "svg": "../svg/profile.svg"
         },
         {
             "type": "Phone",
@@ -42,13 +42,178 @@
         "LinkedIn",
         "Instagram"
     ],
+    "projects": [
+        {
+            "type": {
+                "en": "University Project",
+                "is": "Háskólaverkenfi"
+            },
+            "data": [
+                {
+                    "name": {
+                        "en": "3D Snake",
+                        "is": "3D Snake"
+                    },
+                    "description": {
+                        "en": "3D Automated snake game with a lot of settings.",
+                        "is": "Þrívíddar sjálfvirkur Snake leikur með helling af stillingum."
+                    },
+                    "course": {
+                        "en": "Computer Graphics - TÖL203M",
+                        "is": "Tölvugrafík - TÖL203M"
+                    },
+                    "href": "https://notendur.hi.is/mic5/3D-Snake/",
+                    "repo": "https://github.com/WhackingCheese/3D-Snake",
+                    "img": "../img/3dsnake.png"
+                },
+                {
+                    "name": {
+                        "en": "3D Frogger",
+                        "is": "3D Frogger"
+                    },
+                    "description": {
+                        "en": "3D Frogger game.",
+                        "is": "Þrívíddar Frogger leikur."
+                    },
+                    "course": {
+                        "en": "Computer Graphics - TÖL203M",
+                        "is": "Tölvugrafík - TÖL203M"
+                    },
+                    "href": "https://notendur.hi.is/mic5/3D-Frogger/",
+                    "repo": "https://github.com/WhackingCheese/3D-Frogger",
+                    "img": "../img/3dfrogger.png"
+                },
+                {
+                    "name": {
+                        "en": "Icelandic Spellchecker",
+                        "is": "Íslenskt Stafsetningarforrit"
+                    },
+                    "description": {
+                        "en": "Spellchecker for Icelandic grammar.",
+                        "is": "Leiðréttari fyrir íslenska stafsetningu."
+                    },
+                    "course": {
+                        "en": "Introduction to language technology - TÖL025M",
+                        "is": "Innagngur að Máltækni - TÖL025M"
+                    },
+                    "href": "https://notendur.hi.is/mic5/Icelandic-Spellchecker/",
+                    "repo": "https://github.com/WhackingCheese/Icelandic-Spellchecker",
+                    "img": "../img/spellchecker.png"
+                },
+                {
+                    "name": {
+                        "en": "Out-To-Eat Website",
+                        "is": "Út-Að-Borða Vefsíða"
+                    },
+                    "description": {
+                        "en": "Website that gives information about all restaurants, cafés and all other places that sell some type of food in Iceland. Worked mainly on data gathering and on the front end.",
+                        "is": "Vefsíða sem gefur þér upplýsingar um alla veitingahús, matsölustaði, kaffihús og alla aðra staði sem selja einhversskonar mat á Íslandi. Vann aðallega í gagnaöflun og framenda."
+                    },
+                    "course": {
+                        "en": "Software Project 1 - HBV501G",
+                        "is": "Hugbúnaðarverkefni 1 - HBV501G"
+                    },
+                    "href": "https://ut-ad-borda.herokuapp.com/",
+                    "repo": "https://github.com/thth168/ut-ad-borda",
+                    "img": "../img/utadbordawebsite.png"
+                },
+                {
+                    "name": {
+                        "en": "Out-To-Eat App",
+                        "is": "Út-Að-Borða App"
+                    },
+                    "description": {
+                        "en": "App connected to the Out-To-Eat Website from Software Project 1 - HBV501G. Tinder for Restaurants with multiplayer lobbies and a mobile app version of the website.",
+                        "is": "App tengt við Út-Að-Borða Vefsíðuna úr Hugbúnaðarverkefni 1 - HBV501G. Tinder fyrir veitingastaði með multiplayer lobbies og farsímaútgáfa af síðunni."
+                    },
+                    "course": {
+                        "en": "Software Project 2",
+                        "is": "Hugbúnaðarverkefni 2 - HBV601G"
+                    },
+                    "href": "https://github.com/thth168/ut-ad-borda",
+                    "repo": "https://github.com/thth168/ut-ad-borda",
+                    "img": "../img/utadbordaapp.png"
+                },
+                {
+                    "name": {
+                        "en": "Earthquake Map",
+                        "is": "Jarðskjálftakort"
+                    },
+                    "description": {
+                        "en": "Webapp that shows earthquakes of a certain size on a map. Uses chaching with redis.",
+                        "is": "Vefapp sem sýnir jarðskjálfta af ákveðinni stærð á korti. Notar Caching með redis."
+                    },
+                    "course": {
+                        "en": "Web Programming 2 - HBV403G",
+                        "is": "Vefforritun 2 - HBV403G"
+                    },
+                    "href": "https://mic5-v5.herokuapp.com/",
+                    "repo": "https://github.com/WhackingCheese/vef2-2021-v5",
+                    "img": "../img/news.png"
+                },
+                {
+                    "name": {
+                        "en": "RÚV News",
+                        "is": "RÚV Fréttir"
+                    },
+                    "description": {
+                        "en": "React newsaggregator webapp that shows the newest news from the Icelandic National Broadcasting Service by category.",
+                        "is": "React fréttaraðili vefapp sem sýnir nýjustu fréttirnar frá Ríkisútvarpinu eftir flokkum."
+                    },
+                    "course": {
+                        "en": "Web Programming 2 - HBV403G",
+                        "is": "Vefforritun 2 - HBV403G"
+                    },
+                    "href": "https://mic5-v5.herokuapp.com/",
+                    "repo": "https://github.com/WhackingCheese/vef2-2021-v5",
+                    "img": "../img/news.png"
+                }
+            ]
+        },
+        {
+            "type": {
+                "en": "Personal Project",
+                "is": "Einkaverkefni"
+            },
+            "data": [
+                {
+                    "name": {
+                        "en": "Personal Website",
+                        "is": "Persónuleg Vefsíða"
+                    },
+                    "description": {
+                        "en": "This website. Used to show anything that i want. Created with Node, Express, EJS, SCSS og js.",
+                        "is": "Þessi vefsíða. Notuð til að birta allt það sem mig langar í. Utfærð með Node, Express, EJS, SCSS og js."
+                    },
+                    "href": "https://github.com/WhackingCheese/personal-site",
+                    "repo": "https://github.com/WhackingCheese/personal-site"
+                },
+                {
+                    "name": {
+                        "en": "Barbarian Bot - Discord Chat Bot",
+                        "is": "Barbarian Bot - Discord Spjallbotti"
+    
+                    },
+                    "description": {
+                        "en": "Discord chat bot with a whole bunch of features made for a couple-thousand member online community that i created and ran for a couple of years that is now derilict.",
+                        "is": "Discord spjallbotti með helling af fítusum gert fyrir nokkra þúsund meðlima netsamfélag sem ég bjó til og sá um í nokkur ár sem er nú yfirgefið."
+                    },
+                    "href": "https://github.com/WhackingCheese/Barbarian-Bot",
+                    "repo": "https://github.com/WhackingCheese/Barbarian-Bot"
+                }
+            ]
+        }
+    ],
     "/cv": {
-        "link_list": [
+        "list_link": [
             "SSN",
             "Phone",
             "Email",
             "GitHub",
             "LinkedIn"
+        ],
+        "list_project": [
+            ""
         ],
         "info": {
             "title": "Mikolaj Cymcyk",
@@ -64,43 +229,53 @@
             },
             "data": [
                 {
-                    "institution": {
+                    "title": {
                         "en": "University of Iceland",
                         "is": "Háskóli Íslands"
                     },
-                    "degree": {
+                    "subtitle": {
                         "en": "Computer Science",
                         "is": "Tölvunarfræði"
                     },
-                    "level": {
+                    "sub_subtitle": {
                         "en": "BS",
                         "is": "BS"
+                    },
+                    "description": {
+                        "en": "",
+                        "is": ""
                     },
                     "start": "2018",
                     "end": "2021",
                     "href": "cv/courses",
                     "href_description": {
                         "en": "See my course history here",
-                        "is": "Sjá mína áfangasögu"
+                        "is": "Sjá mína áfangasögu hér"
                     },
-                    "complete": false
+                    "complete": false,
+                    "img": "./img/education/hi.png"
                 },
                 {
-                    "institution": {
+                    "title": {
                         "en": "Ísafjörður Gymnasium",
                         "is": "Menntaskólinn á Ísafirði"
                     },
-                    "degree": {
+                    "subtitle": {
                         "en": "Natural Sciences Program",
                         "is": "Náttúrufræðibraut"
                     },
-                    "level": {
+                    "sub_subtitle": {
                         "en": "High School Diploma",
                         "is": "Stúdentspróf"
                     },
+                    "description": {
+                        "en": "",
+                        "is": ""
+                    },
                     "start": "2015",
                     "end": "2018",
-                    "complete": true
+                    "complete": true,
+                    "img": "./img/education/mi.png"
                 }
             ]
         },
@@ -111,27 +286,28 @@
             },
             "data": [
                 {
-                    "company": {
+                    "title": {
                         "en": "Íslenska Flatbakan",
                         "is": "Íslenska Flatbakan"
                     },
-                    "position": {
+                    "subtitle": {
                         "en": "Pizzabaker, Waiter & Cashier",
                         "is": "Pizzabakari, Þjónn & Afgreiðslumaður"
                     },
                     "description": {
-                        "en": "Performed almost all possible tasks; everything from waiting tables and servicing customers, baking pizzas to prepping and cleaning.",
-                        "is": "Sinnti nær öllum mögulegum hlutverkfum á staðnum; allt frá því að þjóna til borðs og afgreiðslu, pizzabaksturs til undirbúnings og þrifs."
+                        "en": "Performed almost all possible tasks; everything from waiting tables, servicing customers and baking pizzas to prepping and cleaning.",
+                        "is": "Sinnti nær öllum mögulegum hlutverkfum á staðnum; allt frá því að þjóna til borðs, afgreiðslu og pizzabaksturs til undirbúnings og þrifs."
                     },
                     "start": "2019",
-                    "end": "2021"
+                    "end": "2021",
+                    "img": "../img/experience/flatbakan.png"
                 },
                 {
-                    "company": {
+                    "title": {
                         "en": "Kópavogur Municipality",
                         "is": "Kópavogsbær"
                     },
-                    "position": {
+                    "subtitle": {
                         "en": "Work School Team Leader",
                         "is": "Flokkstjóri Vinnuskólans"
                     },
@@ -140,14 +316,15 @@
                         "is": "Vann aðallega í afleysingum og greip því í þegar aðrir flokkstjórar veiktust eða fóru í frí og tók yfir hópunum þeirra. Meðan vantaði fáa eða enga flokkstjóra sinnti ég í öðrum verkefnum fyrir bæjarfélagið."
                     },
                     "start": "2019",
-                    "end": "2019"
+                    "end": "2019",
+                    "img": "../img/experience/kopavogur.png"
                 },
                 {
-                    "company": {
+                    "title": {
                         "en": "Melabúðin",
                         "is": "Melabúðin"
                     },
-                    "position": {
+                    "subtitle": {
                         "en": "General Employee",
                         "is": "Almenn Starfsmaður"
                     },
@@ -156,14 +333,15 @@
                         "is": "Henti mér í öll þau verkefni sem þurfti að leysa; frá áfyllingum í búðinni, afgreiðslu viðskiptavina á kassa og á kjötborðinu til undirbúnings heitra matvæla."
                     },
                     "start": "2019",
-                    "end": "2019"
+                    "end": "2019",
+                    "img": "../img/experience/melabudin.png"
                 },
                 {
-                    "company": {
+                    "title": {
                         "en": "Vestfiskur",
                         "is": "Vestfiskur"
                     },
-                    "position": {
+                    "subtitle": {
                         "en": "Factory Labourer",
                         "is": "Starfsmaður í Framleiðslu"
                     },
@@ -172,7 +350,8 @@
                         "is": "Vann í framleiðslu hágæða harðfisks. Starfaði við allt ferlið; frá móttöku hráefna og vara, í gegnum alla framleiðslu til pökkunar og undirbúningu sendinga."
                     },
                     "start": "2015",
-                    "end": "2018"
+                    "end": "2018",
+                    "img": "../img/experience/vestfiskur.png"
                 }
             ]
         }

@@ -5,7 +5,8 @@ export const router = express.Router();
 async function createCvPage(req, res) {
     res.render('cv', {
         course_draw: false,
-        data: req.app.locals.locales['/cv']
+        data: req.app.locals.locales['/cv'],
+        show_images: true
     });
 }
 

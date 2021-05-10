@@ -29,21 +29,25 @@ h1, h2, h3 {
 }
 
 .top {
+    margin-bottom: 40px;
     &__titles {
+        display: flex;
+        flex-direction: column;
     }
     &__title {
         display: flex;
         justify-content: center;
         font-weight: 500;
         padding-top: 20px;
+        padding-bottom: 10px;
         margin: 0;
     }
     &__subtitle {
         display: flex;
         justify-content: center;
+        text-align: center;
         font-weight: 400;
-        padding-top: 15px;
-        margin: 0;
+        margin: 0 100px;
         font-size: 20px;
     }
     &__contact {
@@ -51,7 +55,7 @@ h1, h2, h3 {
         justify-content: space-around;
     }
     &__about {
-
+        margin: 40px;
     }
 }
 
@@ -67,14 +71,20 @@ h1, h2, h3 {
     &__icon {
         display: flex;
         justify-content: center;
-
     }
     &__inner {
+        transition: 0.25s;
         svg {
             fill: black;
             width: 35px;
             height: 35px;
         }
+        &:hover {
+            svg {
+                fill: tomato;
+            }
+        }
+
     }
     &__text {
         font-size: 16px;
@@ -85,31 +95,18 @@ h1, h2, h3 {
     }
 }
 
-.education {
+.center {
+    padding: 0 25px;
+
     &__item {
-
-    }
-    &__header {
-
-    }
-    &__title {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__institution {
-
-    }
-    &__time {
-
-    }
-    &__description {
 
     }
 }
 
-.experience {
+.center__item {
     &__header {
-
+        font-size: 26px;
+        font-weight: 400;
     }
     &__item {
 
@@ -117,13 +114,41 @@ h1, h2, h3 {
     &__title {
         display: flex;
         justify-content: space-between;
-
     }
-    &__company {
-
+    &__place {
+        font-weight: 400;
+        font-size: 24px;
     }
     &__time {
+        &.hasimg {
+            width: 100px;
+            text-align: center;
+        }
+    }
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        &.hasimg {
+            padding-right: 55px;
+        }
+    }
+    &__subtitle {
 
+    }
+    &__description {
+        text-align: justify;
+    }
+    &__image {
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        padding: 0 10px;
     }
 }
 
