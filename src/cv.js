@@ -6,13 +6,16 @@ async function createCvPage(req, res) {
     res.render('cv', {
         course_draw: false,
         data: req.app.locals.locales['/cv'],
-        show_images: true
+        projects: req.app.locals.locales.projects,
+        show_images: true,
+        lang: 'is'
     });
 }
 
 async function createCoursePage(req, res) {
     res.render('cv', {
-        course_draw: true
+        course_draw: true,
+        lang: 'is'
     });
 }
 

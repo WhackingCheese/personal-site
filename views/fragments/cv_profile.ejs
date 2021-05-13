@@ -1,0 +1,45 @@
+<div class="profile">
+    <div class="profile__titles">
+        <h1 class="profile__title"><%= data.info.title %></h1>
+        <h2 class="profile__subtitle"><%= data.info.subtitle[lang] %></h2>
+    </div>
+
+
+
+    <div class="profile__about">
+        <div class="about">
+            <img class="about__image" src="../img/profile.png">
+        </div>
+        <div>
+            
+        </div>
+    </div>
+
+
+    <div class="profile__container">
+        <div class="profile__contact">
+            <% locales.contacts.forEach(contact => { %>
+                <% if (data.list_link.includes(contact.type)) { %> 
+                    <div class="profile__contact__container">
+                        <div class="profile__contact__icon">
+                            <% if (contact.href) { %>
+                                <a class="profile__contact__inner" href="<%= contact.href %>">
+                                    <%- include(contact.svg); -%>
+                                </a>
+                            <% } else { %>
+                                <div class="profile__contact__inner">
+                                    <%- include(contact.svg); -%>
+                                </div>
+                            <% } %>
+                        </div>
+                        <% if (contact.href) { %>
+                            <a class="profile__contact__text" href="<%= contact.href %>"><%= contact.text %></a>
+                        <% } else { %>
+                            <p class="profile__contact__text"><%= contact.text %></p>
+                        <% } %>
+                    </div>
+                <% } %>
+            <% }); %>
+        </div>
+    </div>
+</div>

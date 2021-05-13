@@ -42,168 +42,206 @@
         "LinkedIn",
         "Instagram"
     ],
-    "projects": [
-        {
-            "type": {
-                "en": "University Project",
-                "is": "Háskólaverkenfi"
-            },
-            "data": [
-                {
-                    "name": {
-                        "en": "3D Snake",
-                        "is": "3D Snake"
-                    },
-                    "description": {
-                        "en": "3D Automated snake game with a lot of settings.",
-                        "is": "Þrívíddar sjálfvirkur Snake leikur með helling af stillingum."
-                    },
-                    "course": {
-                        "en": "Computer Graphics - TÖL203M",
-                        "is": "Tölvugrafík - TÖL203M"
-                    },
-                    "href": "https://notendur.hi.is/mic5/3D-Snake/",
-                    "repo": "https://github.com/WhackingCheese/3D-Snake",
-                    "img": "../img/3dsnake.png"
-                },
-                {
-                    "name": {
-                        "en": "3D Frogger",
-                        "is": "3D Frogger"
-                    },
-                    "description": {
-                        "en": "3D Frogger game.",
-                        "is": "Þrívíddar Frogger leikur."
-                    },
-                    "course": {
-                        "en": "Computer Graphics - TÖL203M",
-                        "is": "Tölvugrafík - TÖL203M"
-                    },
-                    "href": "https://notendur.hi.is/mic5/3D-Frogger/",
-                    "repo": "https://github.com/WhackingCheese/3D-Frogger",
-                    "img": "../img/3dfrogger.png"
-                },
-                {
-                    "name": {
-                        "en": "Icelandic Spellchecker",
-                        "is": "Íslenskt Stafsetningarforrit"
-                    },
-                    "description": {
-                        "en": "Spellchecker for Icelandic grammar.",
-                        "is": "Leiðréttari fyrir íslenska stafsetningu."
-                    },
-                    "course": {
-                        "en": "Introduction to language technology - TÖL025M",
-                        "is": "Innagngur að Máltækni - TÖL025M"
-                    },
-                    "href": "https://notendur.hi.is/mic5/Icelandic-Spellchecker/",
-                    "repo": "https://github.com/WhackingCheese/Icelandic-Spellchecker",
-                    "img": "../img/spellchecker.png"
-                },
-                {
-                    "name": {
-                        "en": "Out-To-Eat Website",
-                        "is": "Út-Að-Borða Vefsíða"
-                    },
-                    "description": {
-                        "en": "Website that gives information about all restaurants, cafés and all other places that sell some type of food in Iceland. Worked mainly on data gathering and on the front end.",
-                        "is": "Vefsíða sem gefur þér upplýsingar um alla veitingahús, matsölustaði, kaffihús og alla aðra staði sem selja einhversskonar mat á Íslandi. Vann aðallega í gagnaöflun og framenda."
-                    },
-                    "course": {
-                        "en": "Software Project 1 - HBV501G",
-                        "is": "Hugbúnaðarverkefni 1 - HBV501G"
-                    },
-                    "href": "https://ut-ad-borda.herokuapp.com/",
-                    "repo": "https://github.com/thth168/ut-ad-borda",
-                    "img": "../img/utadbordawebsite.png"
-                },
-                {
-                    "name": {
-                        "en": "Out-To-Eat App",
-                        "is": "Út-Að-Borða App"
-                    },
-                    "description": {
-                        "en": "App connected to the Out-To-Eat Website from Software Project 1 - HBV501G. Tinder for Restaurants with multiplayer lobbies and a mobile app version of the website.",
-                        "is": "App tengt við Út-Að-Borða Vefsíðuna úr Hugbúnaðarverkefni 1 - HBV501G. Tinder fyrir veitingastaði með multiplayer lobbies og farsímaútgáfa af síðunni."
-                    },
-                    "course": {
-                        "en": "Software Project 2",
-                        "is": "Hugbúnaðarverkefni 2 - HBV601G"
-                    },
-                    "href": "https://github.com/thth168/ut-ad-borda",
-                    "repo": "https://github.com/thth168/ut-ad-borda",
-                    "img": "../img/utadbordaapp.png"
-                },
-                {
-                    "name": {
-                        "en": "Earthquake Map",
-                        "is": "Jarðskjálftakort"
-                    },
-                    "description": {
-                        "en": "Webapp that shows earthquakes of a certain size on a map. Uses chaching with redis.",
-                        "is": "Vefapp sem sýnir jarðskjálfta af ákveðinni stærð á korti. Notar Caching með redis."
-                    },
-                    "course": {
-                        "en": "Web Programming 2 - HBV403G",
-                        "is": "Vefforritun 2 - HBV403G"
-                    },
-                    "href": "https://mic5-v5.herokuapp.com/",
-                    "repo": "https://github.com/WhackingCheese/vef2-2021-v5",
-                    "img": "../img/news.png"
-                },
-                {
-                    "name": {
-                        "en": "RÚV News",
-                        "is": "RÚV Fréttir"
-                    },
-                    "description": {
-                        "en": "React newsaggregator webapp that shows the newest news from the Icelandic National Broadcasting Service by category.",
-                        "is": "React fréttaraðili vefapp sem sýnir nýjustu fréttirnar frá Ríkisútvarpinu eftir flokkum."
-                    },
-                    "course": {
-                        "en": "Web Programming 2 - HBV403G",
-                        "is": "Vefforritun 2 - HBV403G"
-                    },
-                    "href": "https://mic5-v5.herokuapp.com/",
-                    "repo": "https://github.com/WhackingCheese/vef2-2021-v5",
-                    "img": "../img/news.png"
-                }
-            ]
+    "projects": {
+        "title": {
+            "en": "Projects",
+            "is": "Verkefni"
         },
-        {
-            "type": {
-                "en": "Personal Project",
-                "is": "Einkaverkefni"
-            },
-            "data": [
-                {
-                    "name": {
-                        "en": "Personal Website",
-                        "is": "Persónuleg Vefsíða"
-                    },
-                    "description": {
-                        "en": "This website. Used to show anything that i want. Created with Node, Express, EJS, SCSS og js.",
-                        "is": "Þessi vefsíða. Notuð til að birta allt það sem mig langar í. Utfærð með Node, Express, EJS, SCSS og js."
-                    },
-                    "href": "https://github.com/WhackingCheese/personal-site",
-                    "repo": "https://github.com/WhackingCheese/personal-site"
+        "repo_text": {
+            "en": "See the source code here",
+            "is": "Sjá frumkóðann hér"
+        },
+        "data": [
+            {
+                "type": {
+                    "en": "University Projects",
+                    "is": "Háskólaverkenfi"
                 },
-                {
-                    "name": {
-                        "en": "Barbarian Bot - Discord Chat Bot",
-                        "is": "Barbarian Bot - Discord Spjallbotti"
-    
+                "data": [
+                    {
+                        "name": {
+                            "en": "3D Snake",
+                            "is": "3D Snake"
+                        },
+                        "description": {
+                            "en": "3D Automated snake game with a lot of settings. Allows general control of the snake through chaning of its movement specific variables.",
+                            "is": "Þrívíddar sjálfvirkur Snake leikur með helling af stillingum. Leyfir manni að stjórna snákinn með breytingu breyta sem tengjast hreyfingu hanns."
+                        },
+                        "course": {
+                            "en": "Computer Graphics - TÖL203M",
+                            "is": "Tölvugrafík - TÖL203M"
+                        },
+                        "href": "https://notendur.hi.is/mic5/3D-Snake/",
+                        "repo": "https://github.com/WhackingCheese/3D-Snake",
+                        "img": "../img/projects/3dsnake.png",
+                        "id": 0
                     },
-                    "description": {
-                        "en": "Discord chat bot with a whole bunch of features made for a couple-thousand member online community that i created and ran for a couple of years that is now derilict.",
-                        "is": "Discord spjallbotti með helling af fítusum gert fyrir nokkra þúsund meðlima netsamfélag sem ég bjó til og sá um í nokkur ár sem er nú yfirgefið."
+                    {
+                        "name": {
+                            "en": "3D Frogger",
+                            "is": "3D Frogger"
+                        },
+                        "description": {
+                            "en": "Simple 3D Frogger game. The goal is to get to the other side of the board as often as possible. Coded in an object oriented fasion. Uses OpenGL for graphics.",
+                            "is": "Einfaldur Þrívíddar Frogger leikur. Markmiðið er að komast sem oftast á hinu hliðina á borðinu. Forritað með hlutbundnum hætti. Notar OpenGL fyrir grafík."
+                        },
+                        "course": {
+                            "en": "Computer Graphics - TÖL203M",
+                            "is": "Tölvugrafík - TÖL203M"
+                        },
+                        "href": "https://notendur.hi.is/mic5/3D-Frogger/",
+                        "repo": "https://github.com/WhackingCheese/3D-Frogger",
+                        "img": "../img/projects/3dfrogger.png",
+                        "id": 1
                     },
-                    "href": "https://github.com/WhackingCheese/Barbarian-Bot",
-                    "repo": "https://github.com/WhackingCheese/Barbarian-Bot"
-                }
-            ]
-        }
-    ],
+                    {
+                        "name": {
+                            "en": "Icelandic Spellchecker",
+                            "is": "Íslenskt Stafsetningarforrit"
+                        },
+                        "description": {
+                            "en": "Spellchecker for Icelandic grammar. Uses a giant list of Icelandic words as a point of reference and shows possible fixes to misspellings.",
+                            "is": "Leiðréttari fyrir íslenska stafsetningu. Notar stóran orðmyndalista með flest öll íslensk orð sem viðmið og sýnir mögulegar lagfæringar á stafsetningu."
+                        },
+                        "course": {
+                            "en": "Introduction to language technology - TÖL025M",
+                            "is": "Innagngur að Máltækni - TÖL025M"
+                        },
+                        "href": "https://notendur.hi.is/mic5/Icelandic-Spellchecker/",
+                        "repo": "https://github.com/WhackingCheese/Icelandic-Spellchecker",
+                        "img": "../img/projects/spellchecker.png",
+                        "id": 2
+                    },
+                    {
+                        "name": {
+                            "en": "Out-To-Eat Website",
+                            "is": "Út-Að-Borða Vefsíða"
+                        },
+                        "description": {
+                            "en": "Website that gives information about all restaurants, cafés and all other places that sell some type of food in Iceland. Worked mainly on data gathering and on the front end.",
+                            "is": "Vefsíða sem gefur þér upplýsingar um alla veitingahús, matsölustaði, kaffihús og alla aðra staði sem selja einhversskonar mat á Íslandi. Vann aðallega í gagnaöflun og framenda."
+                        },
+                        "course": {
+                            "en": "Software Project 1 - HBV501G",
+                            "is": "Hugbúnaðarverkefni 1 - HBV501G"
+                        },
+                        "href": "https://ut-ad-borda.herokuapp.com/",
+                        "repo": "https://github.com/thth168/ut-ad-borda",
+                        "img": "../img/projects/utadbordawebsite.png",
+                        "id": 3
+                    },
+                    {
+                        "name": {
+                            "en": "Out-To-Eat App",
+                            "is": "Út-Að-Borða App"
+                        },
+                        "description": {
+                            "en": "App connected to the Out-To-Eat Website from Software Project 1 - HBV501G. Tinder for Restaurants with multiplayer lobbies and a mobile app version of the website.",
+                            "is": "App tengt við Út-Að-Borða Vefsíðuna úr Hugbúnaðarverkefni 1 - HBV501G. Tinder fyrir veitingastaði með multiplayer lobbies og farsímaútgáfa af síðunni."
+                        },
+                        "course": {
+                            "en": "Software Project 2",
+                            "is": "Hugbúnaðarverkefni 2 - HBV601G"
+                        },
+                        "href": "https://github.com/thth168/ut-ad-borda",
+                        "repo": "https://github.com/thth168/ut-ad-borda",
+                        "img": "../img/projects/utadbordaapp.png",
+                        "id": 4
+                    },
+                    {
+                        "name": {
+                            "en": "Earthquake Map",
+                            "is": "Jarðskjálftakort"
+                        },
+                        "description": {
+                            "en": "Webapp that shows earthquakes of a certain size on a map. Uses chaching with redis.",
+                            "is": "Vefapp sem sýnir jarðskjálfta af ákveðinni stærð á korti. Notar Caching með redis."
+                        },
+                        "course": {
+                            "en": "Web Programming 2 - HBV403G",
+                            "is": "Vefforritun 2 - HBV403G"
+                        },
+                        "href": "https://mic5-v4.herokuapp.com/",
+                        "repo": "https://github.com/WhackingCheese/vef2-2021-v4",
+                        "img": "../img/projects/earthquakes.png",
+                        "id": 5
+                    },
+                    {
+                        "name": {
+                            "en": "RÚV News",
+                            "is": "RÚV Fréttir"
+                        },
+                        "description": {
+                            "en": "React newsaggregator webapp that shows the newest news from the Icelandic National Broadcasting Service by category.",
+                            "is": "React fréttaraðili vefapp sem sýnir nýjustu fréttirnar frá Ríkisútvarpinu eftir flokkum."
+                        },
+                        "course": {
+                            "en": "Web Programming 2 - HBV403G",
+                            "is": "Vefforritun 2 - HBV403G"
+                        },
+                        "href": "https://mic5-v5.herokuapp.com/",
+                        "repo": "https://github.com/WhackingCheese/vef2-2021-v5",
+                        "img": "../img/projects/news.png",
+                        "id": 6
+                    },
+                    {
+                        "name": {
+                            "en": "Competitive Programming Problems",
+                            "is": "Dæmi úr Keppnisforritunn"
+                        },
+                        "description": {
+                            "en": "My solutions to a bunch of competitive programming problems on kattis.com. These were assignments in the competitive programming class course and helped me write faster code.",
+                            "is": "Minar lausnir á slatta af keppnissforritunar dæmum á kattis.com. Þetta voru dæmi úr keppnisforritunar áfanga og hjálpuðu mér að skrifa hraðari kóða."
+                        },
+                        "course": {
+                            "en": "Competitive Programming – TÖL607G",
+                            "is": "Keppnisforritun – TOL607G"
+                        },
+                        "href": "https://github.com/WhackingCheese/Kattis-Problems",
+                        "repo": "https://github.com/WhackingCheese/Kattis-Problems",
+                        "img": "../img/projects/kattis.png",
+                        "id": 7
+                    }
+                ]
+            },
+            {
+                "type": {
+                    "en": "Personal Projects",
+                    "is": "Einkaverkefni"
+                },
+                "data": [
+                    {
+                        "name": {
+                            "en": "Personal Website",
+                            "is": "Persónuleg Vefsíða"
+                        },
+                        "description": {
+                            "en": "This website. Used to show anything that i want. Created with Node, Express, EJS, SCSS og js.",
+                            "is": "Þessi vefsíða. Notuð til að birta allt það sem mig langar í. Utfærð með Node, Express, EJS, SCSS og js."
+                        },
+                        "href": "https://github.com/WhackingCheese/personal-site",
+                        "repo": "https://github.com/WhackingCheese/personal-site",
+                        "id": 8
+                    },
+                    {
+                        "name": {
+                            "en": "Barbarian Bot - Discord Chat Bot",
+                            "is": "Barbarian Bot - Discord Spjallbotti"
+        
+                        },
+                        "description": {
+                            "en": "Discord chat bot with a whole bunch of features made for a couple-thousand member online community that i created and ran for a couple of years that is now derilict.",
+                            "is": "Discord spjallbotti með helling af fítusum gert fyrir nokkra þúsund meðlima netsamfélag sem ég bjó til og sá um í nokkur ár sem er nú yfirgefið."
+                        },
+                        "href": "https://github.com/WhackingCheese/Barbarian-Bot",
+                        "repo": "https://github.com/WhackingCheese/Barbarian-Bot",
+                        "img": "../img/projects/barbarianbot.png",
+                        "id": 9
+                    }
+                ]
+            }
+        ]
+    },
     "/cv": {
         "list_link": [
             "SSN",
@@ -213,7 +251,7 @@
             "LinkedIn"
         ],
         "list_project": [
-            ""
+            0, 1, 3, 5, 7
         ],
         "info": {
             "title": "Mikolaj Cymcyk",
@@ -242,8 +280,8 @@
                         "is": "BS"
                     },
                     "description": {
-                        "en": "",
-                        "is": ""
+                        "en": "Currently working towards a Computer Science degree at the University of Iceland. At this moment I've completed 170 ECTS units and have 10 left for the next semester.",
+                        "is": "Eins og er er ég að vinna að Tölvunarfræði gráðu við Háskóla Íslands. Hingað til hef ég lokið 170 ECTS einingum og á 10 eftir fyrir næstu önn."
                     },
                     "start": "2018",
                     "end": "2021",
@@ -269,8 +307,8 @@
                         "is": "Stúdentspróf"
                     },
                     "description": {
-                        "en": "",
-                        "is": ""
+                        "en": "Attended the Natural Sciences Program at the Ísafjörður Gymnasium where I received my High school diploma. I started just as the 3 year system got put in place and graduated without problem.",
+                        "is": "Var á Náttúrufræðibraut í Mennstakólanum á Ísafirði. Var í fyrsta árgangnum til að ganga í gegnum þriggja ára kerfið og útskrifaðist auðveldlega án vandræða."
                     },
                     "start": "2015",
                     "end": "2018",

@@ -1,89 +1,16 @@
-<%- include('../fragments/head.ejs') -%>
-<%- include('../fragments/header.ejs') -%>
+<%- include('../fragments/head.ejs'); -%>
+<%- include('../fragments/header.ejs'); -%>
 <div class="cv">
     <div class="cv__inner">
         <div class="cv__card">
             <div class="cv__card__inner">
                 <% if (course_draw) { %>
-                    <div class="courses">
-                        <div class="top__titles">
-                            <h1 class="top__title"><%= courses.title %></h1>
-                            <h2 class="top__subtitle"><%= courses.subtitle[lang] %></h2>
-                        </div>
-                        <table class="courses__table">
-                            <tbody class="courses__head">
-                                <tr class="courses__headers">
-                                    <% courses.headers[lang].forEach(header => { %>
-                                        <td class="courses__header"><%= header %></td> 
-                                    <% }); %>
-                                </tr>
-                            </tbody>
-                            <% courses.courses.forEach(semester => { %>
-                                <tbody class="courses__tbody">
-                                    <tr class="courses__semester">
-                                        <td class="courses__semester__inner"><%= semester.semester[lang] %></td>
-                                    </tr>
-                                    <% semester.data.forEach(course => { %> 
-                                        <tr class="courses__row">
-                                            <td class="courses__name"><%= course.course_name[lang] %></td>
-                                            <td class="courses__number"><%= course.course_number %></td>
-                                            <td class="courses__credits"><%= course.credits %></td>
-                                            <td class="courses__finished"><%= course.passed[lang] %></td>
-                                        </tr>
-                                    <% }); %>
-                                </tbody>
-                            <% }); %>
-                        </table>
-                    </div>
+                    <%- include('../fragments/cv_courses.ejs'); -%>
                 <% } else { %>
-                    <div class="top">
-                        <div class="top__titles">
-                            <h1 class="top__title"><%= data.info.title %></h1>
-                            <h2 class="top__subtitle"><%= data.info.subtitle[lang] %></h2>
-                        </div>
-                        <div class="top__about">
-                            <div class="about">
-                                <img class="about__image" src="../img/profile.jpg">
-                            </div>
-                            <div>
-                                
-                            </div>
-                        </div>
-                        <div class="top__contact">
-                            <% locales.contacts.forEach(contact => { %>
-                                <% if (data.list_link.includes(contact.type)) { %> 
-                                    <div class="contact">
-                                        <div class="contact__icon">
-                                            <% if (contact.href) { %>
-                                                <a class="contact__inner" href="<%= contact.href %>">
-                                                    <%- include(contact.svg) -%>
-                                                </a>
-                                            <% } else { %>
-                                                <div class="contact__inner">
-                                                    <%- include(contact.svg) -%>
-                                                </div>
-                                            <% } %>
-                                        </div>
-                                        <% if (contact.href) { %>
-                                            <a class="contact__text" href="<%= contact.href %>"><%= contact.text %></a>
-                                        <% } else { %>
-                                            <p class="contact__text"><%= contact.text %></p>
-                                        <% } %>
-                                    </div>
-                                <% } %>
-                            <% }); %>
-                        </div>
-                    </div>
-                    <div class="center">
+                    <%- include('../fragments/cv_profile.ejs'); -%>
+                    <div class="cvitem__container">
                         <%- include('../fragments/cv_item.ejs', {data: data.education}); -%>
-                        
-
-
-
-
-
-
-
+                        <%- include('../fragments/cv_projects.ejs'); -%>
                         <%- include('../fragments/cv_item.ejs', {data: data.experience}); -%>
                     </div>
                 <% } %>
@@ -91,5 +18,5 @@
         </div>
     </div>
 </div>
-<%- include('../fragments/footer.ejs') -%>
-<%- include('../fragments/tail.ejs') -%>
+<%- include('../fragments/footer.ejs'); -%>
+<%- include('../fragments/tail.ejs'); -%>

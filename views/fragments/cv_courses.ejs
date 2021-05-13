@@ -1,0 +1,30 @@
+<div class="courses">
+    <div class="top__titles">
+        <h1 class="profile__title"><%= courses.title %></h1>
+        <h2 class="profile__subtitle"><%= courses.subtitle[lang] %></h2>
+    </div>
+    <table class="courses__table">
+        <tbody class="courses__head">
+            <tr class="courses__headers">
+                <% courses.headers[lang].forEach(header => { %>
+                    <td class="courses__header"><%= header %></td> 
+                <% }); %>
+            </tr>
+        </tbody>
+        <% courses.courses.forEach(semester => { %>
+            <tbody class="courses__tbody">
+                <tr class="courses__semester">
+                    <td class="courses__semester__inner"><%= semester.semester[lang] %></td>
+                </tr>
+                <% semester.data.forEach(course => { %> 
+                    <tr class="courses__row">
+                        <td class="courses__name"><%= course.course_name[lang] %></td>
+                        <td class="courses__number"><%= course.course_number %></td>
+                        <td class="courses__credits"><%= course.credits %></td>
+                        <td class="courses__finished"><%= course.passed[lang] %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        <% }); %>
+    </table>
+</div>

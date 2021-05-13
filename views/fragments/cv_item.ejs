@@ -1,47 +1,49 @@
-<div class="center__item">
-    <h3 class="center__item__header"><%= data.title[lang] %></h3>
-    <% data.data.forEach(element => { %>
-        <div class="center__item__item">
-            <div class="center__item__title">
-                <h3 class="center__item__place"><%= element.title[lang] %></h3>
-                <% if (element.start != element.end) { %>
-                    <% if (show_images && element.img) { %>
-                        <h3 class="center__item__time hasimg"><%= element.start %> - <%= element.end %></h3>
+<div class="cvitem">
+    <div class="cvitem__innerhead">
+        <h3 class="cvitem__header"><%= data.title[lang] %></h3>
+        <% data.data.forEach(element => { %>
+            <div class="cvitem__item">
+                <div class="cvitem__title">
+                    <h3 class="cvitem__place"><%= element.title[lang] %></h3>
+                    <% if (element.start != element.end) { %>
+                        <% if (show_images && element.img) { %>
+                            <h3 class="cvitem__time hasimg"><%= element.start %> - <%= element.end %></h3>
+                        <% } else { %>
+                            <h3 class="cvitem__time"><%= element.start %> - <%= element.end %></h3>
+                        <% } %>
                     <% } else { %>
-                        <h3 class="center__item__time"><%= element.start %> - <%= element.end %></h3>
-                    <% } %>
-                <% } else { %>
-                    <% if (show_images && element.img) { %>
-                        <h3 class="center__item__time hasimg"><%= element.start %></h3>
-                    <% } else { %>
-                        <h3 class="center__item__time"><%= element.start %></h3>
-                    <% } %>
-                <% } %>
-            </div>
-            <div class="center__item__content">
-                <% if (show_images) { %>
-                    <div class="center__item__inner hasimg">
-                <% } else { %>
-                    <div class="center__item__inner">
-                <% } %>
-                <% if (element.sub_subtitle) { %>
-                    <h3 class="center__item__subtitle"><%= element.subtitle[lang] %> - <%= element.sub_subtitle[lang] %></h3>
-                <% } else { %>
-                    <h3 class="center__item__subtitle"><%= element.subtitle[lang] %></h3>
-                <% } %>
-                    <p class="center__item__description"><%= element.description[lang] %></p>
-                    <% if (element.href) { %>
-                        <a class="href" href="<%= element.href %>">
-                            <p class="href__inner"><%= element.href_description[lang] %></p>
-                        </a>
+                        <% if (show_images && element.img) { %>
+                            <h3 class="cvitem__time hasimg"><%= element.start %></h3>
+                        <% } else { %>
+                            <h3 class="cvitem__time"><%= element.start %></h3>
+                        <% } %>
                     <% } %>
                 </div>
-                <% if (element.img && show_images) { %>
-                    <div class="center__item__image">
-                        <img src="<%= element.img %>">
+                <div class="cvitem__content">
+                    <% if (show_images) { %>
+                        <div class="cvitem__inner hasimg">
+                    <% } else { %>
+                        <div class="cvitem__inner">
+                    <% } %>
+                    <% if (element.sub_subtitle) { %>
+                        <h3 class="cvitem__subtitle"><%= element.subtitle[lang] %> - <%= element.sub_subtitle[lang] %></h3>
+                    <% } else { %>
+                        <h3 class="cvitem__subtitle"><%= element.subtitle[lang] %></h3>
+                    <% } %>
+                        <p class="cvitem__description"><%= element.description[lang] %></p>
+                        <% if (element.href) { %>
+                            <a href="<%= element.href %>">
+                                <p class="cvitem__allcourses"><%= element.href_description[lang] %></p>
+                            </a>
+                        <% } %>
                     </div>
-                <% } %>
+                    <% if (element.img && show_images) { %>
+                        <div class="cvitem__image">
+                            <img src="<%= element.img %>">
+                        </div>
+                    <% } %>
+                </div>
             </div>
-        </div>
-    <% }); %>
+        <% }); %>
+    </div>
 </div>
