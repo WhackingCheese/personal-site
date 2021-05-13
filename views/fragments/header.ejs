@@ -4,11 +4,11 @@
             <a class="header__nav__home__inner" href="/"><p>Mikolaj Cymcyk</p></a>
         </div>
         <div class="header__nav__pages">
-            <% for(var i = 0; i < structure.length; i++) { %>
-                <a class="header__nav__pages__page" href="<%= structure[i].href %>">
-                    <p><%= structure[i].name %></p>
+            <% for(var i = 0; i < locales.structure.length; i++) { %>
+                <a class="header__nav__pages__page" href="<%= locales.structure[i].href %>">
+                    <p><%= locales.structure[i].name[lang] %></p>
                 </a>
-                <% if (i+1 < structure.length) { %>
+                <% if (i+1 < locales.structure.length) { %>
                     <span class="header__nav__seperator"></span>
                 <% } %>
             <% } %>

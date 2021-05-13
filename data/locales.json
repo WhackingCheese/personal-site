@@ -36,6 +36,29 @@
             "svg": "../svg/instagram.svg"
         }
     ],
+    "structure": [
+        {
+            "name": {
+                "en": "CV",
+                "is": "CV"
+            },
+            "href": "/cv"
+        },
+        {
+            "name": {
+                "en": "Projects",
+                "is": "Verkefni"
+            },
+            "href": "/projects"
+        },
+        {
+            "name": {
+                "en": "About",
+                "is": "Um Síðuna"
+            },
+            "href": "/about"
+        }
+    ],
     "footer_links": [
         "Email",
         "GitHub",

@@ -8,11 +8,9 @@ import favicon from 'serve-favicon';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
-import { router as indexRouter } from './src/index.js';
-import { router as aboutRouter } from './src/about.js';
-import { router as cvRouter } from './src/cv.js';
-import { router as projectsRouter } from './src/projects.js';
-import { getStructure, getCourses, getLocales } from './src/utils.js';
+import { router as appRouter } from './src/router.js';
+
+import { setLocals } from './src/utils.js';
 
 /**
  * Gets environment variables for host and port from .env file.
@@ -42,33 +40,12 @@ app.use(favicon(join(path, 'public', 'favicon.ico')));
 app.use(express.static(join(path, 'public')));
 app.set('views', [ join(path, 'views/errors'), join(path, 'views/pages')]);
 app.set('view engine', 'ejs');
-setLocals();
+setLocals(app);
 
 /**
- * Creates routing for all of my pages.
+ * Creates and sets a main router for page routing.
  */
-app.use('/', indexRouter);
-app.use('/index', (req, res) => {
-    res.status(301).redirect('/');
-});
-app.use('/about', aboutRouter);
-app.use('/cv', cvRouter);
-app.use('/update', (req, res) => {
-    setLocals();
-    res.status(200).redirect('/');
-});
-app.use('/projects', projectsRouter);
-
-/**
- * Helper function used for setting global variables for EJS.
- */
-function setLocals() {
-    app.locals.structure = getStructure();
-    app.locals.locales = getLocales();
-    app.locals.courses = getCourses();
-    app.locals.lang = "en";
-    app.locals.title = "Mikolaj Cymcyk";
-}
+app.use('/', appRouter);
 
 /**
  * Handler for 404 Not Found HTTP Status Codes.
@@ -86,6 +63,7 @@ app.use(notFoundHandler);
 /**
  * Handler for 500 Server Error HTTP Status Codes.
  * Renders and servers the user the "500.ejs" error page.
+ */
 function errorHandler(err, req, res, next) {
     res.status(500).render('error', {
         error_message_1: "500",
@@ -94,7 +72,6 @@ function errorHandler(err, req, res, next) {
     });
 }
 app.use(errorHandler);
- */
 
 /**
  * Starts the app and listens on port.
