@@ -5,6 +5,7 @@
   background-color: $--theme_color-primary;
   font-family: $--theme_font-family-0;
   height: $--header_height;
+  position: relative;
   box-shadow: $--theme_shadow;
 
   &__nav {

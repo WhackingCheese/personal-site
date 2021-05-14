@@ -99,8 +99,8 @@
             "is": "Sjá frumkóðann hér"
         },
         "see_all": {
-            "en": "See all notable projects here",
-            "is": "Sjá öllur athyglisverð verkefni hér"
+            "en": "See other notable projects here",
+            "is": "Sjá önnur athyglisverð verkefni hér"
         },
         "data": [
             {
@@ -263,8 +263,8 @@
                 "data": [
                     {
                         "name": {
-                            "en": "Personal Website",
-                            "is": "Persónuleg Vefsíða"
+                            "en": "My Own Website",
+                            "is": "Mín Eigin Vefsíða"
                         },
                         "description": {
                             "en": "This website. Used to show anything that i want. Created with Node, Express, EJS, SCSS og js.",
@@ -272,6 +272,7 @@
                         },
                         "href": "https://github.com/WhackingCheese/personal-site",
                         "repo": "https://github.com/WhackingCheese/personal-site",
+                        "img": "../img/projects/website.png",
                         "id": 8
                     },
                     {

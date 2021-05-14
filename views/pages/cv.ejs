@@ -22,6 +22,9 @@
                                 <% }); %>
                                 <% }); %>
                                 <% }); %>
+                                <a href="/projects<%= hreftail %>">
+                                    <p class="projects__seeall"><%= data.projects.see_all[lang] %></p>
+                                </a>
                             </div>
                         </div>
                         <%- include('../fragments/cv_item.ejs', {datashard: cv.experience}); -%>

@@ -28,6 +28,15 @@
         margin-top: $--theme_gutter-5;
         margin-bottom: $--theme_gutter-1;
     }
+
+    &__seeall {
+        transition: $--theme_margin-animation-time;
+        font-size: $--theme_font-size-3;
+        color: $--theme_color-font-secondary;
+        display: flex;
+        justify-content: center;
+        padding: $--theme_gutter-3;
+    }
 }
 
 .content .projects {
