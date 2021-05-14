@@ -1,7 +1,7 @@
 @import './vars';
 
 .error {
-    font-family: $--theme_font-family;
+    font-family: $--theme_font-family-0;
     margin: auto;
     max-width: $--max_width;
     position: relative;
@@ -21,9 +21,9 @@
 
     &__message {
         margin: 0;
-        padding: $--error_message-padding;
+        padding: $--theme_gutter-1;
         text-align: center;
         color: $--theme_color-font-primary;
-        font-size: $--error_message-font-size;
+        font-size: $--theme_font-size-4;
     }
 }

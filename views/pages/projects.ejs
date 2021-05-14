@@ -1,5 +1,26 @@
 <%- include('../fragments/head.ejs'); -%>
 <%- include('../fragments/header.ejs'); -%>
-<h1>Projects</h1>
+<div class="content">
+    <div class="content__container">
+        <div class="content__inner">
+            <div class="projects">
+                <div class="projects__header">
+                    <h1 class="projects__title"><%= data.projects.title[lang] %></h1>
+                    <h2 class="projects__subtitle"><%= data.projects.subtitle[lang] %></h2>
+                </div>
+                <div class="projects__content">
+                    <% data.projects.data.forEach(type => { %>
+                        <div class="projects__inner">
+                            <h2 class="projects__type"><%= type.type[lang] %></h2>
+                            <% type.data.forEach(project => { %>
+                                <%- include('../fragments/project.ejs', {project: project}) -%>
+                            <% }); %>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <%- include('../fragments/footer.ejs'); -%>
 <%- include('../fragments/tail.ejs'); -%>

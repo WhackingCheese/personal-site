@@ -3,6 +3,7 @@
 body {
   margin: 0;
   min-width: fit-content;
+  position: relative;
 }
 
 html {
@@ -16,4 +17,24 @@ a {
 
 p {
   margin: 0;
+}
+
+.content {
+  background-color: $--theme_background-color;
+  overflow: hidden;
+
+  &__container {
+    min-width: $--theme_page-width;
+    max-width: $--theme_page-width;
+    margin: 0 auto;
+    margin-bottom: $--theme_gutter-6;
+    padding-top: calc(#{$--theme_gutter-5} + #{$--theme_gutter-3});
+  }
+
+  &__inner {
+    padding: $--theme_gutter-5;
+    box-shadow: $--theme_shadow;
+    background-color: $--theme_paper-color;
+    border-radius: $--theme_gutter-0;
+  }
 }

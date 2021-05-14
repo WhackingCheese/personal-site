@@ -2,9 +2,10 @@
 @import 'vars';
 
 .header {
-  background-color: $--header_background-color;
-  font-family: $--header_font-family;
+  background-color: $--theme_color-primary;
+  font-family: $--theme_font-family-0;
   height: $--header_height;
+  box-shadow: $--theme_shadow;
 
   &__nav {
     display: flex;
@@ -17,7 +18,7 @@
 
     &__home {
       display: flex;
-      font-size: $--header_font-size;
+      font-size: $--theme_font-size-0;
       padding: $--header_padding-home;
 
       &__inner {
@@ -28,16 +29,23 @@
 
     &__pages {
       display: flex;
-      font-size: $--header_font-size-pages;
+      font-size: $--theme_font-size-2;
 
       &__page {
         padding: $--header_padding-pages;
+
+        &.header__nav__lang {
+          color: $--theme_color-font-secondary;
+          &:hover {
+            color: $--theme_color-font-primary;
+          }
+        }
       }
     }
 
     &__seperator {
-      background-color: $--header_seperator-color;
-      height: $--header_font-size-pages;
+      background-color: $--theme_color-font-primary;
+      height: $--theme_font-size-2;
       margin: $--header_padding-pages 0;
       overflow: hidden;
       padding: 0;
@@ -45,11 +53,11 @@
     }
 
     a {
-      color: $--header_font-color;
-      transition: $--header_animation-time;
+      color: $--theme_color-font-primary;
+      transition: $--theme_margin-animation-time;
 
       &:hover {
-        color: $--header_font-color-hover;
+        color: $--theme_color-font-secondary;
       }
     }
   }

@@ -4,94 +4,57 @@
 
 $--max_width: 1200px;
 
-$--offset: 20px;
-$--columns: 12;
-$--gutter: 20px;
-$--gutter-neg-half: calc(-#{$--gutter} / 2);
-$--color: hsla(204, 80%, 72%, 0.25);
-$--repeating-width: calc(100% / #{$--columns});
-$--column-width: calc((100% / #{$--columns}) - #{$--gutter});
-$--background-width: calc(100% + #{$--gutter});
+$--theme_font-size-0: 14px;
+$--theme_font-size-1: 16px;
+$--theme_font-size-2: 18px;
+$--theme_font-size-3: 20px;
+$--theme_font-size-4: 24px;
+$--theme_font-size-5: 26px;
+$--theme_font-size-6: 32px;
+$--theme_font-size-7: 42px;
+$--theme_gutter-0: 5px;
+$--theme_gutter-1: 10px;
+$--theme_gutter-2: 15px;
+$--theme_gutter-3: 20px;
+$--theme_gutter-4: 25px;
+$--theme_gutter-5: 40px;
+$--theme_gutter-6: 50px;
+$--theme_img-size-0: 35px;
+$--theme_img-size-1: 80px;
+$--theme_img-size-2: 120px;
+$--theme_img-size-3: 150px;
+$--theme_img-size-4: 200px;
+$--theme_font-family-0: 'Josefin Sans', sans-serif;
+$--theme_font-family-1: 'Ubuntu', sans-serif;
+$--theme_font-weight-0: 300;
+$--theme_font-weight-1: 400;
+$--theme_font-weight-2: 500;
 
 $--theme_color-primary: #333;
 $--theme_color-secondary: #555; 
 $--theme_color-font-primary: #fff;
 $--theme_color-font-secondary: #ff6347;
-$--theme_font-family: 'Josefin Sans', sans-serif;
-$--theme_margin-color: $--theme_color-font-primary;
-$--theme_margin-hover-color: $--theme_color-font-secondary;
-$--theme_margin-background-color: $--theme_color-primary;
-$--theme_margin-font: $--theme_font-family;
 $--theme_margin-animation-time: 0.25s;
+$--theme_background-color: #444;
+$--theme_paper-color: #fff;
+$--theme_background-text-color: #000;
+$--theme_page-width: 1000px;
+$--theme_shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.14);
 
 $--header_height: 50px;
-$--header_font-size: 14px;
-$--header_font-size-pages: 18px;
-$--header_animation-time: $--theme_margin-animation-time;
-$--header_font-family: $--theme_margin-font;
 $--header_name-letter-spacing: 6px;
-$--header_padding-pages: calc((#{$--header_height} - #{$--header_font-size-pages}) / 2);
-$--header_padding-home: calc((#{$--header_height} - #{$--header_font-size}) / 2);
+$--header_padding-pages: calc((#{$--header_height} - #{$--theme_font-size-2}) / 2);
+$--header_padding-home: calc((#{$--header_height} - #{$--theme_font-size-0}) / 2);
 $--header_seperator-width: 2px;
-$--header_seperator-color: $--theme_margin-color;
-$--header_font-color: $--theme_margin-color;
-$--header_font-color-hover: $--theme_margin-hover-color;
-$--header_background-color: $--theme_margin-background-color;
-
-$--footer_icon-size: 32px;
-$--footer_icon-padding: 10px;
-$--footer_icon-container-height: calc(#{$--footer_icon-size} + (#{$--footer_icon-padding} * 2));
-$--footer_background-color: $--theme_margin-background-color;
-$--footer_font-color: $--theme_margin-color;
-$--footer_font-family: $--theme_margin-font;
-$--footer_links-padding: 15px;
-$--footer_padding: 50px;
-$--footer_nav-font-size: 18px;
-$--footer_font-color-hover: $--theme_margin-hover-color;
-$--footer_nav-padding: 10px;
-$--footer_icon-color: $--theme_margin-color;
-$--footer_copyright-font-size: 16px;
-
+$--footer_icon-container-height: calc(#{$--theme_img-size-0} + (#{$--theme_gutter-1} * 2));
 $--error_height: calc(
     100% - (
         #{$--header_height} +
-        #{$--footer_nav-font-size} + 1px +
+        #{$--theme_font-size-2} + 1px +
         #{$--footer_icon-container-height} +
-        #{$--footer_copyright-font-size} +
-        (#{$--footer_links-padding} * 2) +
-        (#{$--footer_padding} * 2)
+        #{$--theme_font-size-1} +
+        (#{$--theme_gutter-2} * 2) +
+        (#{$--theme_gutter-6} * 2)
     )
 );
-$--error_font-family: $--theme_font-family;
-$--error_message-padding: 10px;
-$--error_message-font-size: 24px;
-
-$--cv_font-family: 'Ubuntu', sans-serif;
-$--cv_font-weight-default: 500;
-$--cv_font-weight-light: 400;
-$--cv_font-weight-lighter: 300;
-$--cv_cv-width: 1000px;
-$--cv_cv-background-color: grey;
-$--cv_cv-page-color: white;
-$--cv_cv-color-main: $--theme_color-primary;
-$--cv_cv-color-accent: $--theme_color-font-secondary;
-$--cv_cv-gutter-exlarge: 55px;
-$--cv_cv-gutter-large: 40px;
-$--cv_cv-gutter-medium: 20px;
-$--cv_cv-gutter-small: 10px;
-$--cv_cv-gutter-tiny: 5px;
-$--cv_cv-item-container-gutter: 25px;
-$--cv_cv-item-header-gutter: calc(#{$--cv_cv-item-container-gutter} + #{$--cv_cv-gutter-large});
-$--cv_cv-item-header-color: white;
-$--cv_cv-page-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.1);
-$--cv_font-size-1: 32px;
-$--cv_font-size-2: 24px;
-$--cv_font-size-3: 20px;
-$--cv_font-size-4: 18px;
-$--cv_font-size-5: 16px;
-$--cv_font-header: 26px;
-$--cv_item-image-size: 80px;
-$--cv_project-image-size: 150px;
-$--cv_transition-time: 0.25s;
-$--cv_profile-image-size: 200px;
-$--cv_profile-icon-size: 35px;
+$--cv_cv-item-header-gutter: calc(#{$--theme_gutter-4} + #{$--theme_gutter-5});

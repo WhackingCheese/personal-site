@@ -9,8 +9,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 import { router as appRouter } from './src/router.js';
-
-import { setLocals } from './src/utils.js';
+import { setLanguage, setLocals } from './src/utils.js';
 
 /**
  * Gets environment variables for host and port from .env file.
@@ -43,8 +42,10 @@ app.set('view engine', 'ejs');
 setLocals(app);
 
 /**
+ * Uses the language settler middleware for determining the languange of the page.
  * Creates and sets a main router for page routing.
  */
+app.use(setLanguage);
 app.use('/', appRouter);
 
 /**

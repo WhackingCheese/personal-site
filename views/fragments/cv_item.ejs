@@ -1,7 +1,7 @@
 <div class="cvitem">
     <div class="cvitem__innerhead">
-        <h3 class="cvitem__header"><%= data.title[lang] %></h3>
-        <% data.data.forEach(element => { %>
+        <h3 class="cvitem__header"><%= datashard.title[lang] %></h3>
+        <% datashard.data.forEach(element => { %>
             <div class="cvitem__item">
                 <div class="cvitem__title">
                     <h3 class="cvitem__place"><%= element.title[lang] %></h3>
@@ -32,7 +32,7 @@
                     <% } %>
                         <p class="cvitem__description"><%= element.description[lang] %></p>
                         <% if (element.href) { %>
-                            <a href="<%= element.href %>">
+                            <a href="<%= element.href %><%= hreftail %>">
                                 <p class="cvitem__allcourses"><%= element.href_description[lang] %></p>
                             </a>
                         <% } %>

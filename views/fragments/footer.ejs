@@ -1,15 +1,15 @@
 <footer class="footer">
     <div class="footer__inner">
         <div class="nav">
-            <% locales.structure.forEach(page => { %>
-                <a class="nav__item" href="<%= page.href %>">
+            <% data.nav.structure.forEach(page => { %>
+                <a class="nav__item" href="<%= page.href %><%= hreftail %>">
                     <p><%= page.name[lang] %></p>
                 </a>
             <% }); %>
         </div>
         <div class="footer__links">
-            <% locales.contacts.forEach(contact => { %>
-                <% if (locales.footer_links.includes(contact.type)) { %> 
+            <% data.contacts.forEach(contact => { %>
+                <% if (data.footer_links.includes(contact.type)) { %> 
                     <div class="icon__container">
                         <div class="icon">
                             <a class="icon__inner" href="<%= contact.href %>">

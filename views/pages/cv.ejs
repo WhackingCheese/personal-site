@@ -9,9 +9,22 @@
                 <% } else { %>
                     <%- include('../fragments/cv_profile.ejs'); -%>
                     <div class="cvitem__container">
-                        <%- include('../fragments/cv_item.ejs', {data: data.education}); -%>
-                        <%- include('../fragments/cv_projects.ejs'); -%>
-                        <%- include('../fragments/cv_item.ejs', {data: data.experience}); -%>
+                        <%- include('../fragments/cv_item.ejs', {datashard: cv.education}); -%>
+                        <div class="cvitem">
+                            <div class="cvitem__innerhead">
+                                <h3 class="cvitem__header"><%= data.projects.title[lang] %></h3>
+                                <% cv.list_project.forEach(id => { %>
+                                <% data.projects.data.forEach(type => { %>
+                                <% type.data.forEach(project => { %>
+                                <% if(id == project.id) { %>
+                                    <%- include('../fragments/project.ejs', {project: project}) -%>
+                                <% } %>
+                                <% }); %>
+                                <% }); %>
+                                <% }); %>
+                            </div>
+                        </div>
+                        <%- include('../fragments/cv_item.ejs', {datashard: cv.experience}); -%>
                     </div>
                 <% } %>
             </div>

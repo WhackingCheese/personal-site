@@ -15,8 +15,7 @@ async function createAbout(req, res) {
 async function createCv(req, res) {
     res.render('cv', {
         course_draw: false,
-        data: req.app.locals.locales['/cv'],
-        projects: req.app.locals.locales.projects,
+        cv: req.app.locals.data['/cv'],
         show_images: true
     });
 }
@@ -29,8 +28,24 @@ async function createCvCourses(req, res) {
 
 async function createProjects(req, res) {
     res.render('projects');
+
 }
 
+/**
+ * Gets the url params from a urls string.
+ */
+function getParams(url) {
+    if (!url) return null;
+    const splits = url.split('?');
+    if (splits.length != 2 || splits[1] == '') return null;
+    const kvpairs = splits[1].split('&');
+    var params = {};
+    kvpairs.forEach(pair => {
+        var data = pair.split('=');
+        if (data[1]) params[data[0]] = data[1];
+    });
+    return params;
+}
 
 
 

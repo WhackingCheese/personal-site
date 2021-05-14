@@ -1,15 +1,23 @@
 <header class="header">
     <section class="header__nav">
         <div class="header__nav__home">
-            <a class="header__nav__home__inner" href="/"><p>Mikolaj Cymcyk</p></a>
+            <a class="header__nav__home__inner" href="/<%= hreftail %>"><p>Mikolaj Cymcyk</p></a>
         </div>
         <div class="header__nav__pages">
-            <% for(var i = 0; i < locales.structure.length; i++) { %>
-                <a class="header__nav__pages__page" href="<%= locales.structure[i].href %>">
-                    <p><%= locales.structure[i].name[lang] %></p>
+            <% for(var i = 0; i < data.nav.structure.length; i++) { %>
+                <a class="header__nav__pages__page" href="<%= data.nav.structure[i].href %><%= hreftail %>">
+                    <p><%= data.nav.structure[i].name[lang] %></p>
                 </a>
-                <% if (i+1 < locales.structure.length) { %>
+                <% if (i+1 < data.nav.structure.length) { %>
                     <span class="header__nav__seperator"></span>
+                <% } %>
+            <% } %>
+            <% for(var i = 0; i < data.langs.length; i++) { %>
+                <% if (data.langs[i].lang != lang) { %>
+                    <span class="header__nav__seperator"></span>
+                    <a class="header__nav__pages__page header__nav__lang" href="?lang=<%= data.langs[i].lang %>">
+                        <p><%= data.langs[i].text %></p>
+                    </a>
                 <% } %>
             <% } %>
         </div>
