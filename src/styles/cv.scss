@@ -160,12 +160,16 @@ h1, h2, h3, h4 {
 }
 
 .cvitem {
-    &__back__inner {
-        color: $--theme_color-font-secondary;
+    &__back {
         font-size: $--theme_font-size-4;
         font-weight: $--theme_font-weight-2;
         display: flex;
         justify-content: center;
+        transition: $--theme_margin-animation-time;
+
+        &:hover {
+            color: $--theme_color-font-secondary;
+        }
     }
 
     &__item {
