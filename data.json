@@ -242,7 +242,7 @@
                         },
                         "description": {
                             "en": "My solutions to a bunch of competitive programming problems on kattis.com. These were assignments in the competitive programming class course and helped me to learn to write faster code.",
-                            "is": "Minar lausnir á slatta af keppnissforritunar dæmum á kattis.com. Þetta voru dæmi úr keppnisforritunar áfanga og hjálpuðu mér að læra að skrifa hraðvirkari kóða."
+                            "is": "Minar lausnir nokkrum keppnissforritunar dæmum af kattis.com. Þetta voru dæmi úr keppnisforritunar áfanga og hjálpuðu mér að læra að skrifa hraðvirkari kóða."
                         },
                         "course": {
                             "en": "Competitive Programming – TÖL607G",
@@ -334,11 +334,11 @@
             "data": [
                 {
                     "name": "Python",
-                    "rating": 4.5
+                    "rating": 5
                 },
                 {
                     "name": "Java",
-                    "rating": 4
+                    "rating": 4.5
                 },
                 {
                     "name": "C",
@@ -350,11 +350,23 @@
                 },
                 {
                     "name": "CSS",
-                    "rating": 3.5
+                    "rating": 4
+                },
+                {
+                    "name": "Node",
+                    "rating": 4.5
+                },
+                {
+                    "name": "Express",
+                    "rating": 4
                 },
                 {
                     "name": "SQL",
                     "rating": 4
+                },
+                {
+                    "name": "Git",
+                    "rating": 4.5
                 }
             ]
         }
@@ -379,8 +391,8 @@
                     "is": "BS"
                 },
                 "description": {
-                    "en": "Currently working towards a Computer Science degree at the University of Iceland. At this moment I've completed 170 ECTS units and have 10 left for the next semester.",
-                    "is": "Eins og er er ég að vinna að Tölvunarfræði gráðu við Háskóla Íslands. Hingað til hef ég lokið 170 ECTS einingum og á 10 eftir fyrir næstu önn."
+                    "en": "Currently working towards a Computer Science degree at the University of Iceland. At this moment I've completed 170 ECTS units with a first class grade and have 10 units left for the next semester. Expected to graduate in autumn 2021.",
+                    "is": "Eins og er er ég að vinna að Tölvunarfræði gráðu við Háskóla Íslands. Hingað til hef ég lokið 170 ECTS einingum með fyrstu einkunn og á 10 einingar eftir fyrir næstu önn. Áætluð útskrift er haustið 2021."
                 },
                 "start": "2018",
                 "end": "2021",
@@ -429,7 +441,7 @@
                 },
                 "subtitle": {
                     "en": "Pizzabaker, Waiter & Cashier",
-                    "is": "Pizzabakari, Þjónn & Afgreiðslumaður"
+                    "is": "Pizzubakari, Þjónn & Afgreiðslumaður"
                 },
                 "description": {
                     "en": "Performed almost all possible tasks; everything from waiting tables, servicing customers and baking pizzas to prepping and cleaning.",
@@ -463,7 +475,7 @@
                 },
                 "subtitle": {
                     "en": "General Employee",
-                    "is": "Almenn Starfsmaður"
+                    "is": "Almennur Starfsmaður"
                 },
                 "description": {
                     "en": "Threw myself at all the tasks that needed solving; from refills in the shop, servicing customers at the register and the butcher counter to preparing hot foods.",
