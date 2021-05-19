@@ -13,18 +13,16 @@ async function createAbout(req, res) {
 }
 
 async function createCv(req, res) {
-    console.log(req.query.print);
     res.render('cv', {
         show_images: true,
-        print: req.query.print
+        print: req.query.pdf
     });
 }
 
 async function createCvCourses(req, res) {
-    console.log(req.query);
     res.render('cv', {
         course_draw: true,
-        print: req.query.print
+        print: req.query.pdf
     });
 }
 

@@ -28,6 +28,15 @@
     font-weight: $--theme_font-weight-1;
     justify-content: center;
     text-align: center;
+    padding-bottom: $--theme_gutter-0;
+  }
+
+  &__sub_subtitle {
+    display: flex;
+    font-size: $--theme_font-size-2;
+    font-weight: $--theme_font-weight-1;
+    justify-content: center;
+    text-align: center;
   }
 
   &__contact {

@@ -518,6 +518,16 @@
             "en": "Overview of current and completed courses towards my Computer Science BS at the University of Iceland.",
             "is": "Yfirlit á núverandi og loknum áföngum fyrir Tölvunarfræði BS hjá Háskóla Íslands."
         },
+        "sub_subtitle": [
+            {
+                "en": "At this moment I've completed 170 ECTS units with a first class grade and have 10 units left for the next semester.",
+                "is": "Hingað til hef ég lokið 170 ECTS einingum með fyrstu einkunn og á 10 einingar eftir fyrir næstu önn."
+            },
+            {
+                "en": "Expected to graduate in autumn 2021.",
+                "is": "Áætluð útskrift er haustið 2021."
+            }
+        ],
         "degree": {
             "en": "Computer Science, BS",
             "is": "Tölvunarfræði, BS"

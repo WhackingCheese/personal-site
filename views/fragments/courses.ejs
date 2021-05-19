@@ -2,6 +2,9 @@
     <div class="top__titles">
         <h1 class="profile__title"><%= data.courses.title %></h1>
         <h2 class="profile__subtitle"><%= data.courses.subtitle[lang] %></h2>
+        <% data.courses.sub_subtitle.forEach(sub_subtitle => { %>
+            <h2 class="profile__sub_subtitle"><%= sub_subtitle[lang] %></h2>
+        <% }); %>
     </div>
     <table class="courses__table">
         <tbody class="courses__head">

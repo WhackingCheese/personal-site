@@ -1,10 +1,12 @@
 <%- include('../margins/head.ejs'); -%>
 <% if (!print) { %>
-<%- include('../margins/header.ejs'); -%>
+    <%- include('../margins/header.ejs'); -%>
 <% } %>
 <div class="cv">
     <div class="cv__inner">
-        <div class="cv__card">
+        <% if (!print) { %>
+            <div class="cv__card">
+        <% } %>
             <div class="cv__card__inner">
                 <% if (locals.course_draw) { %>
                     <%- include('../fragments/courses.ejs'); -%>
@@ -39,7 +41,9 @@
                     </div>
                 <% } %>
             </div>
-        </div>
+        <% if (!print) { %>
+            </div>
+        <% } %>
     </div>
 </div>
 <% if (!print) { %>
