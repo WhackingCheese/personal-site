@@ -1,0 +1,18 @@
+<div class="skills">
+    <% data.info.skills.data.forEach(item => { %>
+        <div class="skills__container">
+            <h3 class="skills__name"><%= item.name %></h3>
+            <div class="skills__bubbles">
+                <% for(var i = 1; i <= 5; i++) { %>
+                    <% if (item.rating >= i) { %>
+                        <div class="skills__bubble__full"></div>
+                    <% } else if (item.rating + 0.5 >= i) { %>
+                        <div class="skills__bubble__half"></div>
+                    <% } else { %>
+                        <div class="skills__bubble__empty"></div>
+                    <% } %>
+                <% } %>
+            </div>
+        </div>
+    <% }) %>
+</div>

@@ -27,6 +27,12 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="cvitem">
+                            <div class="cvitem__innerhead">
+                                <h3 class="cvitem__header"><%= data.info.skills.header[lang] %></h3>
+                                <%- include('../fragments/skills.ejs'); -%>
+                            </div>
+                        </div>
                         <%- include('../fragments/cvitem.ejs', {datashard: data.experience}); -%>
                     </div>
                 <% } %>

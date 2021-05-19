@@ -1,0 +1,46 @@
+/* stylelint-disable max-nesting-depth */
+@import '../vars';
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $--theme_gutter-5;
+
+  &__container {
+    flex-basis: calc(100% / 3);
+    padding-bottom: $--theme_gutter-3;
+  }
+
+  &__name {
+    font-size: $--theme_font-size-4;
+    padding-left: 45px;
+  }
+
+  &__bubbles {
+    display: flex;
+    padding-left: 45px;
+  }
+
+  &__bubble {
+    &__full,
+    &__half,
+    &__empty {
+      border-radius: 100%;
+      height: 30px;
+      margin: $--theme_gutter-0;
+      width: 30px;
+    }
+
+    &__full {
+      background-color: $--theme_color-4;
+    }
+
+    &__half {
+      background: linear-gradient(to right, $--theme_color-4 0%, $--theme_color-4 50%, $--theme_color-1 50%, $--theme_color-1 100%);
+    }
+
+    &__empty {
+      background-color: $--theme_color-1;
+    }
+  }
+}

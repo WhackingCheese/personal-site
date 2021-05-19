@@ -312,20 +312,52 @@
             "en": "Third year Computer Science undergraduate at the University of Iceland",
             "is": "Þriðja árs nemi í Tölvunarfræði við Háskóla Íslands"
         },
-        "data": [
+        "info": [
             {
                 "en": "A positive, diligent, punctual, and responsible person that always thoroughly enjoys tackling new and demanding challenges and projects and is always ready to learn something new. Very organized possessing excellent communication skills as well as being fluent in English, Icelandic, and Polish with a rudimentary knowledge of Danish and German.",
                 "is": "Jákvæður, duglegur, stundvís og ábyrgur einstaklingur sem hefur alltaf mjög gaman af því að takast á móti nýjum og krefjandi áskorunum og verkefnum og er alltaf tilbúinn að læra eitthvað nýtt. Vel skipulagður með góða samskiptahæfni auk þess að vera reiprennandi í Ensku, Íslensku og Pólsku með grunnkunnáttu í Dönsku og Þýsku."
             },
             {
-                "en": "One of the most active members of Nörd, The Computer Science and Software Engineering student society at the University of Iceland. Through the society, I have played an important role promoting these educational fields to future students as a Promotional Representative between 2019 and 2021 and am now serving as the Secretary of the organization for the years 2021 to 2022.",
-                "is": "Einn virkasti meðlimur Nörd, Félags Tölvunarfæði- og Hugbúnaðarverkfræðinema við Háskóla Íslands. Í gegnum félagið hef ég spilað mikilvægu hlutverki í að kynna þessi fræðasvið fyrir framtíðarnemendum sem kynningarfulltrúi félagsins milli áranna 2019 og 2021 og gegni nú hlutverki Ritara félagins fyrir árin 2021 til 2022."
-            },
-            {
                 "en": "I have many interests, but my main hobbies revolve around cooking delicious food, computers and computer hardware, movies, computer games, and the outdoors.",
                 "is": "Ég er með mörg áhugamál en þau helstu snúast um að eldamennsku á gómsætum mat, tölvur og tölvubúnaður, bíómyndir, tölvuleikir og útivist."
+            },
+            {
+                "en": "One of the most active members of Nörd, The Computer Science and Software Engineering student society at the University of Iceland. Through the society, I have played an important role promoting these educational fields to future students as a Promotional Representative between 2019 and 2021 and am now serving as the Secretary of the organization for the years 2021 to 2022.",
+                "is": "Einn virkasti meðlimur Nörd, Félags Tölvunarfæði- og Hugbúnaðarverkfræðinema við Háskóla Íslands. Í gegnum félagið hef ég spilað mikilvægu hlutverki í að kynna þessi fræðasvið fyrir framtíðarnemendum sem kynningarfulltrúi félagsins milli áranna 2019 og 2021 og gegni nú hlutverki Ritara félagins fyrir árin 2021 til 2022."
             }
-        ]
+        ],
+        "skills": {
+            "header": {
+                "en": "Skills",
+                "is": "Kunnátta"
+            },
+            "data": [
+                {
+                    "name": "Python",
+                    "rating": 4.5
+                },
+                {
+                    "name": "Java",
+                    "rating": 4
+                },
+                {
+                    "name": "C",
+                    "rating": 3.5
+                },
+                {
+                    "name": "JS",
+                    "rating": 4
+                },
+                {
+                    "name": "CSS",
+                    "rating": 3.5
+                },
+                {
+                    "name": "SQL",
+                    "rating": 4
+                }
+            ]
+        }
     },
     "education": {
         "title": {

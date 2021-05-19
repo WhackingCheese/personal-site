@@ -3,11 +3,6 @@
         <h1 class="profile__title"><%= data.info.title %></h1>
         <h2 class="profile__subtitle"><%= data.info.subtitle[lang] %></h2>
     </div>
-
-
-
-
-
     <div class="profile__about">
         <div class="about">
             <div class="about__image">
@@ -15,28 +10,17 @@
             </div>
             <div class="about__content">
                 <div class="about__inner">
-
-
-
                     <ul class="about__list">
-                        <% data.info.data.forEach(item => { %>
+                        <% data.info.info.forEach(item => { %>
                             <li class="about__item">
                                 <%= item[lang] %>
                             </li>
                         <% }); %>
                     </ul>
-
-
-
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
     <div class="profile__container">
         <div class="profile__contact">
             <% data.contacts.forEach(contact => { %>
