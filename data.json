@@ -319,11 +319,11 @@
             },
             {
                 "en": "I have many interests, but my main hobbies revolve around cooking delicious food, computers and computer hardware, movies, computer games, and the outdoors.",
-                "is": "Ég er með mörg áhugamál en þau helstu snúast um að eldamennsku á gómsætum mat, tölvur og tölvubúnaður, bíómyndir, tölvuleikir og útivist."
+                "is": "Ég er með mörg áhugamál en þau helstu snúast að eldamennsku á gómsætum mat, tölvum og tölvubúnaði, bíómyndum, tölvuleikjum og útivist."
             },
             {
                 "en": "One of the most active members of Nörd, The Computer Science and Software Engineering student society at the University of Iceland. Through the society, I have played an important role promoting these educational fields to future students as a Promotional Representative between 2019 and 2021 and am now serving as the Secretary of the organization for the years 2021 to 2022.",
-                "is": "Einn virkasti meðlimur Nörd, Félags Tölvunarfæði- og Hugbúnaðarverkfræðinema við Háskóla Íslands. Í gegnum félagið hef ég spilað mikilvægu hlutverki í að kynna þessi fræðasvið fyrir framtíðarnemendum sem kynningarfulltrúi félagsins milli áranna 2019 og 2021 og gegni nú hlutverki Ritara félagins fyrir árin 2021 til 2022."
+                "is": "Einn virkasti meðlimur Nörd, Félags Tölvunarfæði- og Hugbúnaðarverkfræðinema við Háskóla Íslands. Í félaginu hef ég gegnt mikilvægu hlutverki við að kynna þessi fræðasvið fyrir framtíðarnemendum sem kynningarfulltrúi félagsins milli áranna 2019 og 2021 og gegni nú hlutverki Ritara félagins fyrir árin 2021 til 2022."
             }
         ],
         "skills": {
@@ -358,6 +358,14 @@
                 },
                 {
                     "name": "Express",
+                    "rating": 4
+                },
+                {
+                    "name": "React",
+                    "rating": 3.5
+                },
+                {
+                    "name": "REST",
                     "rating": 4
                 },
                 {
