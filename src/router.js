@@ -15,14 +15,14 @@ async function createAbout(req, res) {
 async function createCv(req, res) {
     res.render('cv', {
         show_images: true,
-        print: req.query.pdf
+        pdf: req.query.pdf
     });
 }
 
 async function createCvCourses(req, res) {
     res.render('cv', {
         course_draw: true,
-        print: req.query.pdf
+        pdf: req.query.pdf
     });
 }
 

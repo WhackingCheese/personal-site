@@ -1,13 +1,16 @@
 <%- include('../margins/head.ejs'); -%>
-<% if (!print) { %>
+<% if (!pdf) { %>
     <%- include('../margins/header.ejs'); -%>
 <% } %>
 <div class="cv">
     <div class="cv__inner">
-        <% if (!print) { %>
+        <% if (!pdf) { %>
             <div class="cv__card">
         <% } %>
             <div class="cv__card__inner">
+                <% if (!pdf) { %>
+                    <a class="pdf" href="/Mikolaj%20Cymcyk%20<%= lang %>.pdf">PDF</a>
+                <% } %>
                 <% if (locals.course_draw) { %>
                     <%- include('../fragments/courses.ejs'); -%>
                 <% } else { %>
@@ -41,12 +44,12 @@
                     </div>
                 <% } %>
             </div>
-        <% if (!print) { %>
+        <% if (!pdf) { %>
             </div>
         <% } %>
     </div>
 </div>
-<% if (!print) { %>
+<% if (!pdf) { %>
 <%- include('../margins/footer.ejs'); -%>
 <% } %>
 <%- include('../margins/tail.ejs'); -%>
