@@ -1,0 +1,29 @@
+@import '../vars';
+
+.error {
+  font-family: $--theme_font-family-0;
+  height: 100%;
+  margin: auto;
+  max-width: $--theme_width-0;
+  position: relative;
+
+  &__parent {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__container {
+    background-color: $--theme_color-2;
+    height: $--error_height;
+  }
+
+  &__message {
+    color: $--theme_color-3;
+    font-size: $--theme_font-size-4;
+    margin: 0;
+    padding: $--theme_gutter-1;
+    text-align: center;
+  }
+}

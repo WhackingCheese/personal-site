@@ -54,8 +54,7 @@ app.use('/', appRouter);
  */
 function notFoundHandler(req, res, next) {
     res.status(404).render('error', {
-        error_message_1: "404",
-        error_message_2:  "Page Not Found",
+        error: app.locals.data.errors['404'],
         title: "404 Not Found"
     });
 }
@@ -64,15 +63,14 @@ app.use(notFoundHandler);
 /**
  * Handler for 500 Server Error HTTP Status Codes.
  * Renders and servers the user the "500.ejs" error page.
- */
 function errorHandler(err, req, res, next) {
     res.status(500).render('error', {
-        error_message_1: "500",
-        error_message_2: "Internal Server Error",
+        error: app.locals.data.errors['500'],
         title: "500 Internal Server Error"
     });
 }
 app.use(errorHandler);
+ */
 
 /**
  * Starts the app and listens on port.

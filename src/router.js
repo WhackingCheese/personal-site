@@ -14,8 +14,6 @@ async function createAbout(req, res) {
 
 async function createCv(req, res) {
     res.render('cv', {
-        course_draw: false,
-        cv: req.app.locals.data['/cv'],
         show_images: true
     });
 }
@@ -28,7 +26,6 @@ async function createCvCourses(req, res) {
 
 async function createProjects(req, res) {
     res.render('projects');
-
 }
 
 /**

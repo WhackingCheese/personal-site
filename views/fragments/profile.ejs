@@ -1,8 +1,10 @@
 <div class="profile">
     <div class="profile__titles">
-        <h1 class="profile__title"><%= cv.info.title %></h1>
-        <h2 class="profile__subtitle"><%= cv.info.subtitle[lang] %></h2>
+        <h1 class="profile__title"><%= data.info.title %></h1>
+        <h2 class="profile__subtitle"><%= data.info.subtitle[lang] %></h2>
     </div>
+
+
 
 
 
@@ -12,16 +14,33 @@
                 <img class="about__img" src="../img/profile.png">
             </div>
             <div class="about__content">
-                
+                <div class="about__inner">
+
+
+
+                    <ul class="about__list">
+                        <% data.info.data.forEach(item => { %>
+                            <li class="about__item">
+                                <%= item[lang] %>
+                            </li>
+                        <% }); %>
+                    </ul>
+
+
+
+                </div>
             </div>
         </div>
     </div>
 
 
+
+
+
     <div class="profile__container">
         <div class="profile__contact">
             <% data.contacts.forEach(contact => { %>
-                <% if (cv.list_link.includes(contact.type)) { %> 
+                <% if (data.cv.list_link.includes(contact.type)) { %> 
                     <div class="profile__contact__container">
                         <div class="profile__contact__icon">
                             <% if (contact.href) { %>

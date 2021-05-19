@@ -1,0 +1,96 @@
+/* stylelint-disable max-nesting-depth */
+@import '../vars';
+
+.cvitem {
+  &__back {
+    display: flex;
+    font-size: $--theme_font-size-4;
+    font-weight: $--theme_font-weight-2;
+    justify-content: center;
+
+    &__inner {
+      transition: $--theme_margin-animation-time;
+
+      &:hover {
+        color: $--theme_color-4;
+      }
+    }
+  }
+
+  &__item {
+    margin-top: $--theme_gutter-5;
+  }
+
+  &__container {
+    padding: 0 $--theme_gutter-4;
+  }
+
+  &__innerhead {
+    margin-top: $--theme_gutter-3;
+  }
+
+  &__header {
+    background-color: $--theme_color-1;
+    color: $--theme_color-3;
+    font-size: $--theme_font-size-5;
+    font-weight: $--theme_font-weight-1;
+    margin: 0 calc(-1 * #{$--cv_cv-item-header-gutter});
+    padding: $--theme_gutter-1 $--cv_cv-item-header-gutter;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subtitle {
+    font-size: $--theme_font-size-2;
+    font-weight: $--theme_font-weight-1;
+    padding-bottom: $--theme_gutter-0;
+  }
+
+  &__place {
+    font-size: $--theme_font-size-3;
+    font-weight: $--theme_font-weight-2;
+    padding-bottom: $--theme_gutter-0;
+  }
+
+  &__time.hasimg {
+    text-align: center;
+    width: calc(#{$--theme_img-size-1} + #{$--theme_gutter-3});
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    &.hasimg {
+      padding-right: $--theme_gutter-6;
+    }
+  }
+
+  &__description {
+    font-size: $--theme_font-size-1;
+    padding-bottom: $--theme_gutter-0;
+    text-align: justify;
+  }
+
+  &__image {
+    padding: 0 $--theme_gutter-1;
+
+    img {
+      height: $--theme_img-size-1;
+      width: $--theme_img-size-1;
+    }
+  }
+
+  &__allcourses {
+    color: $--theme_color-4;
+  }
+}

@@ -1,0 +1,33 @@
+/* stylelint-disable max-nesting-depth */
+@import '../vars';
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: $--theme_font-weight-2;
+  margin: 0;
+}
+
+.cv {
+  background-color: $--theme_color-2;
+  font-family: $--theme_font-family-1;
+
+  &__inner {
+    margin: auto;
+    max-width: $--theme_width-1;
+    min-width: $--theme_width-1;
+  }
+
+  &__card {
+    margin: auto;
+    padding: $--theme_gutter-5 0;
+
+    &__inner {
+      background-color: $--theme_color-3;
+      border-radius: $--theme_gutter-0;
+      box-shadow: $--theme_shadow;
+      padding: $--theme_gutter-5;
+    }
+  }
+}

@@ -1,7 +1,22 @@
-@import './cv';
-@import './error';
-@import './footer';
+// fragments
+@import './fragments/courses';
+@import './fragments/cvitem';
+@import './fragments/profile';
+@import './fragments/project';
+
+// margins
+@import './margins/footer';
+@import './margins/head';
+@import './margins/header';
+@import './margins/tail';
+
+// pages
+@import './pages/about';
+@import './pages/cv';
+@import './pages/error';
+@import './pages/index';
+@import './pages/projects';
+
+// globals and vars
 @import './global';
-@import './header';
-@import './projects';
 @import './vars';

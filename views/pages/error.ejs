@@ -1,12 +1,12 @@
-<%- include('../fragments/head.ejs'); -%>
-<%- include('../fragments/header.ejs'); -%>
+<%- include('../margins/head.ejs'); -%>
+<%- include('../margins/header.ejs'); -%>
 <div class="error__container">
     <div class="error">
         <div class="error__parent">
-            <p class="error__message"><%= error_message_1 %></p>
-            <p class="error__message"><%= error_message_2 %></p>
+            <p class="error__message"><%= error.error %></p>
+            <p class="error__message"><%= error.message[lang] %></p>
         </div>
     </div>
 </div>
-<%- include('../fragments/footer.ejs'); -%>
-<%- include('../fragments/tail.ejs'); -%>
+<%- include('../margins/footer.ejs'); -%>
+<%- include('../margins/tail.ejs'); -%>

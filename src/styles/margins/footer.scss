@@ -1,14 +1,14 @@
-@import './vars';
+@import '../vars';
 
 .footer {
-  background-color: $--theme_color-primary;
-  color: $--theme_color-font-primary;
-  font-family: $--theme_font-family-0;
+  background-color: $--theme_color-1;
   box-shadow: $--theme_shadow;
+  color: $--theme_color-3;
+  font-family: $--theme_font-family-0;
 
   &__inner {
     margin: auto;
-    max-width: $--max_width;
+    max-width: $--theme_width-0;
   }
 
   &__links {
@@ -20,13 +20,13 @@
   }
 
   svg:hover {
-    fill: $--theme_color-font-secondary;
+    fill: $--theme_color-4;
   }
 }
 
 .icon {
   &__svg {
-    fill: $--theme_color-font-primary;
+    fill: $--theme_color-3;
     height: $--theme_img-size-0;
     padding: $--theme_gutter-1;
     transition: $--theme_margin-animation-time;
@@ -50,13 +50,13 @@
   padding-top: $--theme_gutter-6;
 
   &__item {
-    color: $--theme_color-font-primary;
+    color: $--theme_color-3;
     font-size: $--theme_font-size-2;
     padding: 0 $--theme_gutter-1;
     transition: $--theme_margin-animation-time;
   }
 
   &__item:hover {
-    color: $--theme_color-font-secondary;
+    color: $--theme_color-4;
   }
 }

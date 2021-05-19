@@ -1,19 +1,19 @@
-<%- include('../fragments/head.ejs'); -%>
-<%- include('../fragments/header.ejs'); -%>
+<%- include('../margins/head.ejs'); -%>
+<%- include('../margins/header.ejs'); -%>
 <div class="cv">
     <div class="cv__inner">
         <div class="cv__card">
             <div class="cv__card__inner">
-                <% if (course_draw) { %>
-                    <%- include('../fragments/cv_courses.ejs'); -%>
+                <% if (locals.course_draw) { %>
+                    <%- include('../fragments/courses.ejs'); -%>
                 <% } else { %>
-                    <%- include('../fragments/cv_profile.ejs'); -%>
+                    <%- include('../fragments/profile.ejs'); -%>
                     <div class="cvitem__container">
-                        <%- include('../fragments/cv_item.ejs', {datashard: cv.education}); -%>
+                        <%- include('../fragments/cvitem.ejs', {datashard: data.education}); -%>
                         <div class="cvitem">
                             <div class="cvitem__innerhead">
                                 <h3 class="cvitem__header"><%= data.projects.title[lang] %></h3>
-                                <% cv.list_project.forEach(id => { %>
+                                <% data.cv.list_project.forEach(id => { %>
                                 <% data.projects.data.forEach(type => { %>
                                 <% type.data.forEach(project => { %>
                                 <% if(id == project.id) { %>
@@ -27,12 +27,12 @@
                                 </a>
                             </div>
                         </div>
-                        <%- include('../fragments/cv_item.ejs', {datashard: cv.experience}); -%>
+                        <%- include('../fragments/cvitem.ejs', {datashard: data.experience}); -%>
                     </div>
                 <% } %>
             </div>
         </div>
     </div>
 </div>
-<%- include('../fragments/footer.ejs'); -%>
-<%- include('../fragments/tail.ejs'); -%>
+<%- include('../margins/footer.ejs'); -%>
+<%- include('../margins/tail.ejs'); -%>

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node ./app.js",
-    "stylelint": "stylelint ./src/styles/*.scss --syntax scss",
+    "stylelint": "stylelint ./src/styles/*.scss ./src/styles/*/*.scss --syntax scss",
     "eslint": "eslint *js ./src/*.js --fix",
     "build:sass": "node-sass --source-map-enabled ./src/styles/styles.scss ./public/styles.css",
     "sass-watch": "node-sass --source-map-embed --watch ./src/styles/styles.scss ./public/styles.css",

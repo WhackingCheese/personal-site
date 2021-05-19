@@ -2,10 +2,6 @@
 
 .preload * {
   transition: none !important;
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
 }
 
 body {
@@ -19,7 +15,7 @@ html {
 }
 
 a {
-  color: #000;
+  color: $--theme_color-0;
   text-decoration: none;
 }
 
@@ -28,21 +24,21 @@ p {
 }
 
 .content {
-  background-color: $--theme_background-color;
+  background-color: $--theme_color-2;
   overflow: hidden;
 
   &__container {
-    min-width: $--theme_page-width;
-    max-width: $--theme_page-width;
     margin: 0 auto;
     margin-bottom: $--theme_gutter-6;
+    max-width: $--theme_width-1;
+    min-width: $--theme_width-1;
     padding-top: calc(#{$--theme_gutter-5} + #{$--theme_gutter-3});
   }
 
   &__inner {
-    padding: $--theme_gutter-5;
-    box-shadow: $--theme_shadow;
-    background-color: $--theme_paper-color;
+    background-color: $--theme_color-3;
     border-radius: $--theme_gutter-0;
+    box-shadow: $--theme_shadow;
+    padding: $--theme_gutter-5;
   }
 }

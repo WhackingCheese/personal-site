@@ -223,8 +223,8 @@
                             "is": "RÚV Fréttir"
                         },
                         "description": {
-                            "en": "React newsaggregator webapp that shows the newest news from the Icelandic National Broadcasting Service by category.",
-                            "is": "React fréttaraðili vefapp sem sýnir nýjustu fréttirnar frá Ríkisútvarpinu eftir flokkum."
+                            "en": "My first React app. React newsaggregator that shows the newest news from the Icelandic National Broadcasting Service by category.",
+                            "is": "Mitt fyrsta React app. React fréttaraðili sem sýnir nýjustu fréttirnar frá Ríkisútvarpinu eftir flokkum."
                         },
                         "course": {
                             "en": "Web Programming 2 - HBV403G",
@@ -241,8 +241,8 @@
                             "is": "Dæmi úr Keppnisforritunn"
                         },
                         "description": {
-                            "en": "My solutions to a bunch of competitive programming problems on kattis.com. These were assignments in the competitive programming class course and helped me write faster code.",
-                            "is": "Minar lausnir á slatta af keppnissforritunar dæmum á kattis.com. Þetta voru dæmi úr keppnisforritunar áfanga og hjálpuðu mér að skrifa hraðari kóða."
+                            "en": "My solutions to a bunch of competitive programming problems on kattis.com. These were assignments in the competitive programming class course and helped me to learn to write faster code.",
+                            "is": "Minar lausnir á slatta af keppnissforritunar dæmum á kattis.com. Þetta voru dæmi úr keppnisforritunar áfanga og hjálpuðu mér að læra að skrifa hraðvirkari kóða."
                         },
                         "course": {
                             "en": "Competitive Programming – TÖL607G",
@@ -294,7 +294,7 @@
             }
         ]
     },
-    "/cv": {
+    "cv": {
         "list_link": [
             "SSN",
             "Phone",
@@ -304,584 +304,614 @@
         ],
         "list_project": [
             0, 1, 3, 5, 7
-        ],
-        "info": {
-            "title": "Mikolaj Cymcyk",
-            "subtitle": {
-                "en": "Third year Computer Science undergraduate at the University of Iceland",
-                "is": "Þriðja árs nemi í Tölvunarfræði við Háskóla Íslands"
+        ]
+    },
+    "info": {
+        "title": "Mikolaj Cymcyk",
+        "subtitle": {
+            "en": "Third year Computer Science undergraduate at the University of Iceland",
+            "is": "Þriðja árs nemi í Tölvunarfræði við Háskóla Íslands"
+        },
+        "data": [
+            {
+                "en": "A positive, diligent, punctual, and responsible person that always thoroughly enjoys tackling new and demanding challenges and projects and is always ready to learn something new. Very organized possessing excellent communication skills as well as being fluent in English, Icelandic, and Polish with a rudimentary knowledge of Danish and German.",
+                "is": "Jákvæður, duglegur, stundvís og ábyrgur einstaklingur sem hefur alltaf mjög gaman af því að takast á móti nýjum og krefjandi áskorunum og verkefnum og er alltaf tilbúinn að læra eitthvað nýtt. Vel skipulagður með góða samskiptahæfni auk þess að vera reiprennandi í Ensku, Íslensku og Pólsku með grunnkunnáttu í Dönsku og Þýsku."
+            },
+            {
+                "en": "One of the most active members of Nörd, The Computer Science and Software Engineering student society at the University of Iceland. Through the society, I have played an important role promoting these educational fields to future students as a Promotional Representative between 2019 and 2021 and am now serving as the Secretary of the organization for the years 2021 to 2022.",
+                "is": "Einn virkasti meðlimur Nörd, Félags Tölvunarfæði- og Hugbúnaðarverkfræðinema við Háskóla Íslands. Í gegnum félagið hef ég spilað mikilvægu hlutverki í að kynna þessi fræðasvið fyrir framtíðarnemendum sem kynningarfulltrúi félagsins milli áranna 2019 og 2021 og gegni nú hlutverki Ritara félagins fyrir árin 2021 til 2022."
+            },
+            {
+                "en": "I have many interests, but my main hobbies revolve around cooking delicious food, computers and computer hardware, movies, computer games, and the outdoors.",
+                "is": "Ég er með mörg áhugamál en þau helstu snúast um að eldamennsku á gómsætum mat, tölvur og tölvubúnaður, bíómyndir, tölvuleikir og útivist."
             }
+        ]
+    },
+    "education": {
+        "title": {
+            "en": "Education",
+            "is": "Menntun"
         },
-        "education": {
-            "title": {
-                "en": "Education",
-                "is": "Menntun"
-            },
-            "data": [
-                {
-                    "title": {
-                        "en": "University of Iceland",
-                        "is": "Háskóli Íslands"
-                    },
-                    "subtitle": {
-                        "en": "Computer Science",
-                        "is": "Tölvunarfræði"
-                    },
-                    "sub_subtitle": {
-                        "en": "BS",
-                        "is": "BS"
-                    },
-                    "description": {
-                        "en": "Currently working towards a Computer Science degree at the University of Iceland. At this moment I've completed 170 ECTS units and have 10 left for the next semester.",
-                        "is": "Eins og er er ég að vinna að Tölvunarfræði gráðu við Háskóla Íslands. Hingað til hef ég lokið 170 ECTS einingum og á 10 eftir fyrir næstu önn."
-                    },
-                    "start": "2018",
-                    "end": "2021",
-                    "href": "cv/courses",
-                    "href_description": {
-                        "en": "See my course history here",
-                        "is": "Sjá mína áfangasögu hér"
-                    },
-                    "complete": false,
-                    "img": "../img/education/hi.png"
+        "data": [
+            {
+                "title": {
+                    "en": "University of Iceland",
+                    "is": "Háskóli Íslands"
                 },
-                {
-                    "title": {
-                        "en": "Ísafjörður Gymnasium",
-                        "is": "Menntaskólinn á Ísafirði"
-                    },
-                    "subtitle": {
-                        "en": "Natural Sciences Program",
-                        "is": "Náttúrufræðibraut"
-                    },
-                    "sub_subtitle": {
-                        "en": "High School Diploma",
-                        "is": "Stúdentspróf"
-                    },
-                    "description": {
-                        "en": "Attended the Natural Sciences Program at the Ísafjörður Gymnasium where I received my High school diploma. I started just as the 3 year system got put in place and graduated without problem.",
-                        "is": "Var á Náttúrufræðibraut í Mennstakólanum á Ísafirði. Var í fyrsta árgangnum til að ganga í gegnum þriggja ára kerfið og útskrifaðist auðveldlega án vandræða."
-                    },
-                    "start": "2015",
-                    "end": "2018",
-                    "complete": true,
-                    "img": "../img/education/mi.png"
-                }
+                "subtitle": {
+                    "en": "Computer Science",
+                    "is": "Tölvunarfræði"
+                },
+                "sub_subtitle": {
+                    "en": "BS",
+                    "is": "BS"
+                },
+                "description": {
+                    "en": "Currently working towards a Computer Science degree at the University of Iceland. At this moment I've completed 170 ECTS units and have 10 left for the next semester.",
+                    "is": "Eins og er er ég að vinna að Tölvunarfræði gráðu við Háskóla Íslands. Hingað til hef ég lokið 170 ECTS einingum og á 10 eftir fyrir næstu önn."
+                },
+                "start": "2018",
+                "end": "2021",
+                "href": "/cv/courses",
+                "href_description": {
+                    "en": "See my course history here",
+                    "is": "Sjá mína áfangasögu hér"
+                },
+                "complete": false,
+                "img": "../img/education/hi.png"
+            },
+            {
+                "title": {
+                    "en": "Ísafjörður Gymnasium",
+                    "is": "Menntaskólinn á Ísafirði"
+                },
+                "subtitle": {
+                    "en": "Natural Sciences Program",
+                    "is": "Náttúrufræðibraut"
+                },
+                "sub_subtitle": {
+                    "en": "High School Diploma",
+                    "is": "Stúdentspróf"
+                },
+                "description": {
+                    "en": "Attended the Natural Sciences Program at the Ísafjörður Gymnasium where I received my High school diploma. I started just as the 3 year system got put in place and graduated without problem.",
+                    "is": "Var á Náttúrufræðibraut í Mennstakólanum á Ísafirði. Var í fyrsta árgangnum til að ganga í gegnum þriggja ára kerfið og útskrifaðist auðveldlega án vandræða."
+                },
+                "start": "2015",
+                "end": "2018",
+                "complete": true,
+                "img": "../img/education/mi.png"
+            }
+        ]
+    },
+    "experience": {
+        "title": {
+            "en": "Work Experience",
+            "is": "Starfsreynsla"
+        },
+        "data": [
+            {
+                "title": {
+                    "en": "Íslenska Flatbakan",
+                    "is": "Íslenska Flatbakan"
+                },
+                "subtitle": {
+                    "en": "Pizzabaker, Waiter & Cashier",
+                    "is": "Pizzabakari, Þjónn & Afgreiðslumaður"
+                },
+                "description": {
+                    "en": "Performed almost all possible tasks; everything from waiting tables, servicing customers and baking pizzas to prepping and cleaning.",
+                    "is": "Sinnti nær öllum mögulegum hlutverkfum á staðnum; allt frá því að þjóna til borðs, afgreiðslu og pizzabaksturs til undirbúnings og þrifs."
+                },
+                "start": "2019",
+                "end": "2021",
+                "img": "../img/experience/flatbakan.png"
+            },
+            {
+                "title": {
+                    "en": "Kópavogur Municipality",
+                    "is": "Kópavogsbær"
+                },
+                "subtitle": {
+                    "en": "Work School Team Leader",
+                    "is": "Flokkstjóri Vinnuskólans"
+                },
+                "description": {
+                    "en": "Was primarily a substitute team leader, took over other team leader's groups when they got sick or went on holiday. While few or no team leaders were unavailable I worked on other projects for the municipality.",
+                    "is": "Vann aðallega í afleysingum og greip því í þegar aðrir flokkstjórar veiktust eða fóru í frí og tók yfir hópunum þeirra. Meðan vantaði fáa eða enga flokkstjóra sinnti ég í öðrum verkefnum fyrir bæjarfélagið."
+                },
+                "start": "2019",
+                "end": "2019",
+                "img": "../img/experience/kopavogur.png"
+            },
+            {
+                "title": {
+                    "en": "Melabúðin",
+                    "is": "Melabúðin"
+                },
+                "subtitle": {
+                    "en": "General Employee",
+                    "is": "Almenn Starfsmaður"
+                },
+                "description": {
+                    "en": "Threw myself at all the tasks that needed solving; from refills in the shop, servicing customers at the register and the butcher counter to preparing hot foods.",
+                    "is": "Henti mér í öll þau verkefni sem þurfti að leysa; frá áfyllingum í búðinni, afgreiðslu viðskiptavina á kassa og á kjötborðinu til undirbúnings heitra matvæla."
+                },
+                "start": "2019",
+                "end": "2019",
+                "img": "../img/experience/melabudin.png"
+            },
+            {
+                "title": {
+                    "en": "Vestfiskur",
+                    "is": "Vestfiskur"
+                },
+                "subtitle": {
+                    "en": "Factory Labourer",
+                    "is": "Starfsmaður í Framleiðslu"
+                },
+                "description": {
+                    "en": "Worked on manufacturing high-quality dried fish products. Was involved in the entire process; from the receipt of raw materials and products, through production to packaging and preparation of shipments.",
+                    "is": "Vann í framleiðslu hágæða harðfisks. Starfaði við allt ferlið; frá móttöku hráefna og vara, í gegnum alla framleiðslu til pökkunar og undirbúningu sendinga."
+                },
+                "start": "2015",
+                "end": "2018",
+                "img": "../img/experience/vestfiskur.png"
+            }
+        ]
+    },
+    "courses": {
+        "title": "Mikolaj Cymcyk",
+        "subtitle": {
+            "en": "Overview of current and completed courses towards my Computer Science BS at the University of Iceland.",
+            "is": "Yfirlit á núverandi og loknum áföngum fyrir Tölvunarfræði BS hjá Háskóla Íslands."
+        },
+        "degree": {
+            "en": "Computer Science, BS",
+            "is": "Tölvunarfræði, BS"
+        },
+        "headers": {
+            "en": [
+                "Course",
+                "Number",
+                "Units",
+                "Finished"
+            ],
+            "is": [
+                "Áfangi",
+                "Áfanganúmer",
+                "Einingar",
+                "Lokið"
             ]
         },
-        "experience": {
-            "title": {
-                "en": "Work Experience",
-                "is": "Starfsreynsla"
-            },
-            "data": [
-                {
-                    "title": {
-                        "en": "Íslenska Flatbakan",
-                        "is": "Íslenska Flatbakan"
-                    },
-                    "subtitle": {
-                        "en": "Pizzabaker, Waiter & Cashier",
-                        "is": "Pizzabakari, Þjónn & Afgreiðslumaður"
-                    },
-                    "description": {
-                        "en": "Performed almost all possible tasks; everything from waiting tables, servicing customers and baking pizzas to prepping and cleaning.",
-                        "is": "Sinnti nær öllum mögulegum hlutverkfum á staðnum; allt frá því að þjóna til borðs, afgreiðslu og pizzabaksturs til undirbúnings og þrifs."
-                    },
-                    "start": "2019",
-                    "end": "2021",
-                    "img": "../img/experience/flatbakan.png"
+        "courses": [
+            {
+                "semester": {
+                    "en": "Dec 2021",
+                    "is": "Des 2021"
                 },
-                {
-                    "title": {
-                        "en": "Kópavogur Municipality",
-                        "is": "Kópavogsbær"
+                "data": [
+                    {
+                        "course_name": {
+                            "en": "Engineering Management",
+                            "is": "Tæknistjórnun"
+                        },
+                        "course_number": "IÐN103G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Unfinished",
+                            "is": "Ólokið"
+                        }
                     },
-                    "subtitle": {
-                        "en": "Work School Team Leader",
-                        "is": "Flokkstjóri Vinnuskólans"
-                    },
-                    "description": {
-                        "en": "Was primarily a substitute team leader, took over other team leader's groups when they got sick or went on holiday. While few or no team leaders were unavailable I worked on other projects for the municipality.",
-                        "is": "Vann aðallega í afleysingum og greip því í þegar aðrir flokkstjórar veiktust eða fóru í frí og tók yfir hópunum þeirra. Meðan vantaði fáa eða enga flokkstjóra sinnti ég í öðrum verkefnum fyrir bæjarfélagið."
-                    },
-                    "start": "2019",
-                    "end": "2019",
-                    "img": "../img/experience/kopavogur.png"
-                },
-                {
-                    "title": {
-                        "en": "Melabúðin",
-                        "is": "Melabúðin"
-                    },
-                    "subtitle": {
-                        "en": "General Employee",
-                        "is": "Almenn Starfsmaður"
-                    },
-                    "description": {
-                        "en": "Threw myself at all the tasks that needed solving; from refills in the shop, servicing customers at the register and the butcher counter to preparing hot foods.",
-                        "is": "Henti mér í öll þau verkefni sem þurfti að leysa; frá áfyllingum í búðinni, afgreiðslu viðskiptavina á kassa og á kjötborðinu til undirbúnings heitra matvæla."
-                    },
-                    "start": "2019",
-                    "end": "2019",
-                    "img": "../img/experience/melabudin.png"
-                },
-                {
-                    "title": {
-                        "en": "Vestfiskur",
-                        "is": "Vestfiskur"
-                    },
-                    "subtitle": {
-                        "en": "Factory Labourer",
-                        "is": "Starfsmaður í Framleiðslu"
-                    },
-                    "description": {
-                        "en": "Worked on manufacturing high-quality dried fish products. Was involved in the entire process; from the receipt of raw materials and products, through production to packaging and preparation of shipments.",
-                        "is": "Vann í framleiðslu hágæða harðfisks. Starfaði við allt ferlið; frá móttöku hráefna og vara, í gegnum alla framleiðslu til pökkunar og undirbúningu sendinga."
-                    },
-                    "start": "2015",
-                    "end": "2018",
-                    "img": "../img/experience/vestfiskur.png"
-                }
-            ]
-        },
-        "courses": {
-            "title": "Mikolaj Cymcyk",
-            "subtitle": {
-                "en": "Overview of current and completed courses towards my Computer Science BS at the University of Iceland.",
-                "is": "Yfirlit á núverandi og loknum áföngum fyrir Tölvunarfræði BS hjá Háskóla Íslands."
-            },
-            "degree": {
-                "en": "Computer Science, BS",
-                "is": "Tölvunarfræði, BS"
-            },
-            "headers": {
-                "en": [
-                    "Course",
-                    "Number",
-                    "Units",
-                    "Finished"
-                ],
-                "is": [
-                    "Áfangi",
-                    "Áfanganúmer",
-                    "Einingar",
-                    "Lokið"
+                    {
+                        "course_name": {
+                            "en": "Introduction to Financial Accounting",
+                            "is": "Inngangur að fjárhagsbókhaldi"
+                        },
+                        "course_number": "VIÐ103G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Unfinished",
+                            "is": "Ólokið"
+                        }
+                    }
                 ]
             },
-            "courses": [
-                {
-                    "semester": {
-                        "en": "Dec 2021",
-                        "is": "Des 2021"
-                    },
-                    "data": [
-                        {
-                            "course_name": {
-                                "en": "Engineering Management",
-                                "is": "Tæknistjórnun"
-                            },
-                            "course_number": "IÐN103G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Unfinished",
-                                "is": "Ólokið"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Introduction to Financial Accounting",
-                                "is": "Inngangur að fjárhagsbókhaldi"
-                            },
-                            "course_number": "VIÐ103G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Unfinished",
-                                "is": "Ólokið"
-                            }
-                        }
-                    ]
+            {
+                "semester": {
+                    "en": "May 2021",
+                    "is": "Maí 2021"
                 },
-                {
-                    "semester": {
-                        "en": "May 2021",
-                        "is": "Maí 2021"
-                    },
-                    "data": [
-                        {
-                            "course_name": {
-                                "en": "Cybersecurity for Critical Infrastructure",
-                                "is": "Tölvuöryggi innviða"
-                            },
-                            "course_number": "HBV603M",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                "data": [
+                    {
+                        "course_name": {
+                            "en": "Cybersecurity for Critical Infrastructure",
+                            "is": "Tölvuöryggi innviða"
                         },
-                        {
-                            "course_name": {
-                                "en": "Competitive programming",
-                                "is": "Keppnisforritun"
-                            },
-                            "course_number": "TÖL607G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Web Programming 2",
-                                "is": "Vefforritun 2"
-                            },
-                            "course_number": "HBV403G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Software Project 2",
-                                "is": "Hugbúnaðarverkefni 2"
-                            },
-                            "course_number": "HBV601G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                        "course_number": "HBV603M",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
                         }
-                    ]
+                    },
+                    {
+                        "course_name": {
+                            "en": "Competitive programming",
+                            "is": "Keppnisforritun"
+                        },
+                        "course_number": "TÖL607G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Web Programming 2",
+                            "is": "Vefforritun 2"
+                        },
+                        "course_number": "HBV403G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Software Project 2",
+                            "is": "Hugbúnaðarverkefni 2"
+                        },
+                        "course_number": "HBV601G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    }
+                ]
+            },
+            {
+                "semester": {
+                    "en": "Dec 2020",
+                    "is": "Des 2020"
                 },
-                {
-                    "semester": {
-                        "en": "Dec 2020",
-                        "is": "Des 2020"
-                    },
-                    "data": [
-                        {
-                            "course_name": {
-                                "en": "Introduction to language technology",
-                                "is": "Inngangur að máltækni"
-                            },
-                            "course_number": "TÖL025M",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                "data": [
+                    {
+                        "course_name": {
+                            "en": "Introduction to language technology",
+                            "is": "Inngangur að máltækni"
                         },
-                        {
-                            "course_name": {
-                                "en": "Cryptocurrency",
-                                "is": "Rafmyntir"
-                            },
-                            "course_number": "STÆ532M",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Cloud Computing and Big Data",
-                                "is": "Skýjaforritun og stórgögn"
-                            },
-                            "course_number": "REI504M",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Software Project 1",
-                                "is": "Hugbúnaðarverkefni 1"
-                            },
-                            "course_number": "HBV501G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                        "course_number": "TÖL025M",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
                         }
-                    ]
+                    },
+                    {
+                        "course_name": {
+                            "en": "Cryptocurrency",
+                            "is": "Rafmyntir"
+                        },
+                        "course_number": "STÆ532M",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Cloud Computing and Big Data",
+                            "is": "Skýjaforritun og stórgögn"
+                        },
+                        "course_number": "REI504M",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Software Project 1",
+                            "is": "Hugbúnaðarverkefni 1"
+                        },
+                        "course_number": "HBV501G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    }
+                ]
+            },
+            {
+                "semester": {
+                    "en": "May 2020",
+                    "is": "Maí 2020"
                 },
-                {
-                    "semester": {
-                        "en": "May 2020",
-                        "is": "Maí 2020"
-                    },
-                    "data": [
-                        {
-                            "course_name": {
-                                "en": "Statistics and Data Analysis",
-                                "is": "Tölfræði og gagnavinnsla"
-                            },
-                            "course_number": "STÆ209G",
-                            "credits": "8.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                "data": [
+                    {
+                        "course_name": {
+                            "en": "Statistics and Data Analysis",
+                            "is": "Tölfræði og gagnavinnsla"
                         },
-                        {
-                            "course_name": {
-                                "en": "Computer Graphics",
-                                "is": "Tölvugrafík"
-                            },
-                            "course_number": "TÖL203M",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Analysis of Algorithms",
-                                "is": "Greining reiknirita"
-                            },
-                            "course_number": "TÖL403G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Operating Systems",
-                                "is": "Stýrikerfi"
-                            },
-                            "course_number": "TÖL401G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Software Development",
-                                "is": "Þróun hugbúnaðar"
-                            },
-                            "course_number": "HBV401G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                        "course_number": "STÆ209G",
+                        "credits": "8.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
                         }
-                    ]
+                    },
+                    {
+                        "course_name": {
+                            "en": "Computer Graphics",
+                            "is": "Tölvugrafík"
+                        },
+                        "course_number": "TÖL203M",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Analysis of Algorithms",
+                            "is": "Greining reiknirita"
+                        },
+                        "course_number": "TÖL403G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Operating Systems",
+                            "is": "Stýrikerfi"
+                        },
+                        "course_number": "TÖL401G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Software Development",
+                            "is": "Þróun hugbúnaðar"
+                        },
+                        "course_number": "HBV401G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    }
+                ]
+            },
+            {
+                "semester": {
+                    "en": "Dec 2019",
+                    "is": "Des 2019"
                 },
-                {
-                    "semester": {
-                        "en": "Dec 2019",
-                        "is": "Des 2019"
-                    },
-                    "data": [
-                        {
-                            "course_name": {
-                                "en": "Computer organization and programming",
-                                "is": "Tölvutækni og forritun"
-                            },
-                            "course_number": "TÖL309G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                "data": [
+                    {
+                        "course_name": {
+                            "en": "Computer organization and programming",
+                            "is": "Tölvutækni og forritun"
                         },
-                        {
-                            "course_name": {
-                                "en": "Formal Languages and Computability",
-                                "is": "Formleg mál og reiknanleiki"
-                            },
-                            "course_number": "TÖL301G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Computer Networks and Security",
-                                "is": "Tölvunet og öryggi"
-                            },
-                            "course_number": "TÖL305G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Programming Languages",
-                                "is": "Forritunarmál"
-                            },
-                            "course_number": "TÖL304G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Data Base Theory and Practice",
-                                "is": "Gagnasafnsfræði"
-                            },
-                            "course_number": "TÖL303G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                        "course_number": "TÖL309G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
                         }
-                    ]
+                    },
+                    {
+                        "course_name": {
+                            "en": "Formal Languages and Computability",
+                            "is": "Formleg mál og reiknanleiki"
+                        },
+                        "course_number": "TÖL301G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Computer Networks and Security",
+                            "is": "Tölvunet og öryggi"
+                        },
+                        "course_number": "TÖL305G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Programming Languages",
+                            "is": "Forritunarmál"
+                        },
+                        "course_number": "TÖL304G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Data Base Theory and Practice",
+                            "is": "Gagnasafnsfræði"
+                        },
+                        "course_number": "TÖL303G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    }
+                ]
+            },
+            {
+                "semester": {
+                    "en": "May 2019",
+                    "is": "Maí 2019"
                 },
-                {
-                    "semester": {
-                        "en": "May 2019",
-                        "is": "Maí 2019"
-                    },
-                    "data": [
-                        {
-                            "course_name": {
-                                "en": "Digital Circuit Design and Analysis - lab",
-                                "is": "Greining og hönnun stafrænna rása - verklegt"
-                            },
-                            "course_number": "TÖV202G",
-                            "credits": "2.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                "data": [
+                    {
+                        "course_name": {
+                            "en": "Digital Circuit Design and Analysis - lab",
+                            "is": "Greining og hönnun stafrænna rása - verklegt"
                         },
-                        {
-                            "course_name": {
-                                "en": "Computer Science 2",
-                                "is": "Tölvunarfræði 2"
-                            },
-                            "course_number": "TÖL203G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Mathematics and Scientific Computing",
-                                "is": "Stærðfræði og reiknifræði"
-                            },
-                            "course_number": "REI201G",
-                            "credits": "8.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Graphical User Interface Programming",
-                                "is": "Viðmótsforritun"
-                            },
-                            "course_number": "HBV201G",
-                            "credits": "8.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Digital Circuit Design and Analysis",
-                                "is": "Greining og hönnun stafrænna rása"
-                            },
-                            "course_number": "TÖV201G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                        "course_number": "TÖV202G",
+                        "credits": "2.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
                         }
-                    ]
+                    },
+                    {
+                        "course_name": {
+                            "en": "Computer Science 2",
+                            "is": "Tölvunarfræði 2"
+                        },
+                        "course_number": "TÖL203G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Mathematics and Scientific Computing",
+                            "is": "Stærðfræði og reiknifræði"
+                        },
+                        "course_number": "REI201G",
+                        "credits": "8.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Graphical User Interface Programming",
+                            "is": "Viðmótsforritun"
+                        },
+                        "course_number": "HBV201G",
+                        "credits": "8.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Digital Circuit Design and Analysis",
+                            "is": "Greining og hönnun stafrænna rása"
+                        },
+                        "course_number": "TÖV201G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    }
+                ]
+            },
+            {
+                "semester": {
+                    "en": "Dec 2018",
+                    "is": "Des 2018"
                 },
-                {
-                    "semester": {
-                        "en": "Dec 2018",
-                        "is": "Des 2018"
-                    },
-                    "data": [
-                        {
-                            "course_name": {
-                                "en": "Practical Mathematical Analysis",
-                                "is": "Hagnýt stærðfræðigreining"
-                            },
-                            "course_number": "STÆ105G",
-                            "credits": "8.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                "data": [
+                    {
+                        "course_name": {
+                            "en": "Practical Mathematical Analysis",
+                            "is": "Hagnýt stærðfræðigreining"
                         },
-                        {
-                            "course_name": {
-                                "en": "Web Programming 1",
-                                "is": "Vefforritun 1"
-                            },
-                            "course_number": "TÖL107G",
-                            "credits": "8.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Mathematical Structure",
-                                "is": "Stærðfræðimynstur"
-                            },
-                            "course_number": "TÖL104G",
-                            "credits": "8.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
-                        },
-                        {
-                            "course_name": {
-                                "en": "Computer Science 1",
-                                "is": "Tölvunarfræði 1"
-                            },
-                            "course_number": "TÖL101G",
-                            "credits": "6.0",
-                            "passed": {
-                                "en": "Yes",
-                                "is": "Já"
-                            }
+                        "course_number": "STÆ105G",
+                        "credits": "8.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
                         }
-                    ]
-                }
-            ],
-            "keys": [
-                "course_name",
-                "semester",
-                "credits",
-                "passed",
-                "course_number"
-            ]
+                    },
+                    {
+                        "course_name": {
+                            "en": "Web Programming 1",
+                            "is": "Vefforritun 1"
+                        },
+                        "course_number": "TÖL107G",
+                        "credits": "8.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Mathematical Structure",
+                            "is": "Stærðfræðimynstur"
+                        },
+                        "course_number": "TÖL104G",
+                        "credits": "8.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    },
+                    {
+                        "course_name": {
+                            "en": "Computer Science 1",
+                            "is": "Tölvunarfræði 1"
+                        },
+                        "course_number": "TÖL101G",
+                        "credits": "6.0",
+                        "passed": {
+                            "en": "Yes",
+                            "is": "Já"
+                        }
+                    }
+                ]
+            }
+        ],
+        "keys": [
+            "course_name",
+            "semester",
+            "credits",
+            "passed",
+            "course_number"
+        ]
+    },
+    "errors": {
+        "404": {
+            "error": "404",
+            "message": {
+                "en": "Page Not Found",
+                "is": "Síða Fannst Ekki"
+            }
+        },
+        "500": {
+            "error": "500",
+            "message": {
+                "en": "Internal Server Error",
+                "is": "Innri Miðlaravilla"
+            }
         }
     }
 }

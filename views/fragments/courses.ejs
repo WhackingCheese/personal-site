@@ -1,17 +1,17 @@
 <div class="courses">
     <div class="top__titles">
-        <h1 class="profile__title"><%= data['/cv'].courses.title %></h1>
-        <h2 class="profile__subtitle"><%= data['/cv'].courses.subtitle[lang] %></h2>
+        <h1 class="profile__title"><%= data.courses.title %></h1>
+        <h2 class="profile__subtitle"><%= data.courses.subtitle[lang] %></h2>
     </div>
     <table class="courses__table">
         <tbody class="courses__head">
             <tr class="courses__headers">
-                <% data['/cv'].courses.headers[lang].forEach(header => { %>
+                <% data.courses.headers[lang].forEach(header => { %>
                     <td class="courses__header"><%= header %></td> 
                 <% }); %>
             </tr>
         </tbody>
-        <% data['/cv'].courses.courses.forEach(semester => { %>
+        <% data.courses.courses.forEach(semester => { %>
             <tbody class="courses__tbody">
                 <tr class="courses__semester">
                     <td class="courses__semester__inner"><%= semester.semester[lang] %></td>
