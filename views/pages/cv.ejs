@@ -1,5 +1,7 @@
 <%- include('../margins/head.ejs'); -%>
+<% if (!print) { %>
 <%- include('../margins/header.ejs'); -%>
+<% } %>
 <div class="cv">
     <div class="cv__inner">
         <div class="cv__card">
@@ -40,5 +42,7 @@
         </div>
     </div>
 </div>
+<% if (!print) { %>
 <%- include('../margins/footer.ejs'); -%>
+<% } %>
 <%- include('../margins/tail.ejs'); -%>

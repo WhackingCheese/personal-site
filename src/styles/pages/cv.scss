@@ -17,11 +17,11 @@ h4 {
     margin: auto;
     max-width: $--theme_width-1;
     min-width: $--theme_width-1;
+    padding: $--theme_gutter-5 0;
   }
 
   &__card {
     margin: auto;
-    padding: $--theme_gutter-5 0;
 
     &__inner {
       background-color: $--theme_color-3;
