@@ -1,7 +1,10 @@
+/**
+ * Event listener for HTML load.
+ * Removes the preload class from body and prints a link into the console for an alternative version of the CV.
+ */
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.getElementsByClassName("preload")[0];
     body.classList.remove("preload");
-
     const pdf = document.getElementsByClassName("pdf")[0];
     if (pdf) {
         const params = new URLSearchParams(window.location.search);
@@ -15,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+/**
+ * Event listener for page full load.
+ * Sets print page size for the website dynamically based on page content.
+ */
 window.addEventListener("load", () => {
     const card = document.getElementsByClassName("cv__card")[0] || document.getElementsByClassName("content__inner")[0];
     if (card) {

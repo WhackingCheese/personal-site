@@ -83,6 +83,12 @@
             "text": "mikkicym",
             "href": "https://www.instagram.com/mikkicym/",
             "svg": "../svg/instagram.svg"
+        },
+        {
+            "type": "Website",
+            "text": "Website",
+            "href": "http://www.mikolajcymcyk.com",
+            "svg": "../svg/globe.svg"
         }
     ],
     "projects": {
@@ -385,19 +391,19 @@
             },
             "data": [
                 {
-                    "name": "a",
-                    "place": "b",
-                    "contact": "c"
+                    "name": "1",
+                    "place": "2",
+                    "contact": "3"
                 },
                 {
-                    "name": "d",
-                    "place": "e",
-                    "contact": "f"
+                    "name": "4",
+                    "place": "5",
+                    "contact": "6"
                 },
                 {
-                    "name": "g",
-                    "place": "h",
-                    "contact": "i"
+                    "name": "7",
+                    "place": "8",
+                    "contact": "9"
                 }
             ]
         }
