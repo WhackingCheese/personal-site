@@ -1,4 +1,6 @@
 /* stylelint-disable max-nesting-depth */
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable declaration-property-value-disallowed-list */
 @import '../vars';
 
 @media print {
@@ -28,11 +30,11 @@ h4 {
   font-family: $--theme_font-family-1;
 
   &__inner {
-    position: relative;
     margin: auto;
-    padding: $--theme_gutter-5 0;
     max-width: $--theme_width-1;
     min-width: $--theme_width-1;
+    padding: $--theme_gutter-5 0;
+    position: relative;
   }
 
   &__card {
@@ -44,14 +46,16 @@ h4 {
 }
 
 .pdf {
-  left: calc(#{$--theme_gutter-5} + #{$--theme_gutter-4});
-  top: $--theme_gutter-5 + $--theme_gutter-5 + $--theme_gutter-3;
-  position: absolute;
-  font-size: $--theme_font-size-3;
-  border: none;
   background-color: inherit;
-  font-weight: bold;
+  border: none;
+  color: $--theme_color-3;
+  font-size: $--theme_font-size-3;
+  left: $--theme_gutter-5;
   padding: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(0, 50%);
+  background: none;
 
   &:hover {
     cursor: pointer;
@@ -67,24 +71,16 @@ h4 {
   &__inner {
     display: flex;
     padding-bottom: $--theme_gutter-1;
-    justify-content: space-between;
   }
 
   &__name,
   &__place,
   &__contact {
+    flex-basis: calc(100% / 3);
     font-size: $--theme_font-size-3;
   }
 
   &__name {
     font-weight: bold;
-  }
-
-  &__place {
-
-  }
-
-  &__contact {
-
   }
 }

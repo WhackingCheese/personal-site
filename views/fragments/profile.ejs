@@ -1,6 +1,8 @@
 <div class="profile">
     <div class="profile__titles">
-        <h1 class="profile__title"><%= data.info.title %></h1>
+        <a href="/cv?lang=<%= lang %>">
+            <h1 class="profile__title"><%= data.info.title %></h1>
+        </a>
         <h2 class="profile__subtitle"><%= data.info.subtitle[lang] %></h2>
     </div>
     <div class="profile__about">
