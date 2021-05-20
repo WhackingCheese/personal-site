@@ -1,6 +1,15 @@
 @import '../vars';
 
+@media print {
+  .cvitem__back__inner {
+    color: $--theme_color-3;
+    pointer-events: none;
+  }
+}
+
 .courses {
+  padding: 0 $--theme_gutter-4;
+
   &__table {
     padding-top: calc(#{$--theme_gutter-3} + #{$--theme_gutter-1});
     width: 100%;
@@ -38,11 +47,9 @@
     font-weight: $--theme_font-weight-2;
   }
 
-  &__header:last-child {
-    text-align: center;
-  }
-
-  &__header:nth-last-child(2) {
+  &__header:last-child,
+  &__header:nth-last-child(2),
+  &__header:nth-last-child(3) {
     text-align: center;
   }
 
@@ -51,6 +58,10 @@
   }
 
   &__finished {
+    text-align: center;
+  }
+
+  &__number {
     text-align: center;
   }
 }

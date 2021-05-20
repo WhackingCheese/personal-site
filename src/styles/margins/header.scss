@@ -2,6 +2,13 @@
 /* stylelint-disable selector-class-pattern */
 @import '../vars';
 
+
+@media print {
+  .header {
+    display: none;
+  }
+}
+
 .header {
   background-color: $--theme_color-1;
   box-shadow: $--theme_shadow;

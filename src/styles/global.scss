@@ -1,5 +1,23 @@
 @import 'vars';
 
+@media print {
+  @page {
+    margin: 0;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  .content__container {
+    padding: 0 !important;
+  }
+
+  .content__inner {
+    border-radius: 0 !important;
+  }
+}
+
 .preload * {
   transition: none !important;
 }
@@ -29,10 +47,9 @@ p {
 
   &__container {
     margin: 0 auto;
-    margin-bottom: $--theme_gutter-6;
     max-width: $--theme_width-1;
     min-width: $--theme_width-1;
-    padding-top: calc(#{$--theme_gutter-5} + #{$--theme_gutter-3});
+    padding: $--theme_gutter-5 0;
   }
 
   &__inner {

@@ -3,43 +3,6 @@
         "default_lang": "is",
         "default_title": "Mikolaj Cymcyk"
     },
-    "contacts": [
-        {
-            "type": "SSN",
-            "text": "170999-3479",
-            "svg": "../svg/profile.svg"
-        },
-        {
-            "type": "Phone",
-            "text": "857-2287",
-            "href": "tel:003548572287",
-            "svg": "../svg/phone.svg"
-        },
-        {
-            "type": "Email",
-            "text": "mikolaj.cymcyk@gmail.com",
-            "href": "mailto:mikolaj.cymcyk@gmail.com",
-            "svg": "../svg/email.svg"
-        },
-        {
-            "type": "GitHub",
-            "text": "WhackingCheese",
-            "href": "https://github.com/WhackingCheese/",
-            "svg": "../svg/github.svg"
-        },
-        {
-            "type": "LinkedIn",
-            "text": "Mikolaj Cymcyk",
-            "href": "https://www.linkedin.com/in/mikolajcymcyk",
-            "svg": "../svg/linkedin.svg"
-        },
-        {
-            "type": "Instagram",
-            "text": "mikkicym",
-            "href": "https://www.instagram.com/mikkicym/",
-            "svg": "../svg/instagram.svg"
-        }
-    ],
     "langs": [
         {
             "lang": "en",
@@ -84,6 +47,43 @@
         "GitHub",
         "LinkedIn",
         "Instagram"
+    ],
+    "contacts": [
+        {
+            "type": "SSN",
+            "text": "170999-3479",
+            "svg": "../svg/profile.svg"
+        },
+        {
+            "type": "Phone",
+            "text": "857-2287",
+            "href": "tel:003548572287",
+            "svg": "../svg/phone.svg"
+        },
+        {
+            "type": "Email",
+            "text": "mikolaj.cymcyk@gmail.com",
+            "href": "mailto:mikolaj.cymcyk@gmail.com",
+            "svg": "../svg/email.svg"
+        },
+        {
+            "type": "GitHub",
+            "text": "WhackingCheese",
+            "href": "https://github.com/WhackingCheese/",
+            "svg": "../svg/github.svg"
+        },
+        {
+            "type": "LinkedIn",
+            "text": "Mikolaj Cymcyk",
+            "href": "https://www.linkedin.com/in/mikolajcymcyk",
+            "svg": "../svg/linkedin.svg"
+        },
+        {
+            "type": "Instagram",
+            "text": "mikkicym",
+            "href": "https://www.instagram.com/mikkicym/",
+            "svg": "../svg/instagram.svg"
+        }
     ],
     "projects": {
         "title": {
@@ -375,6 +375,29 @@
                 {
                     "name": "Git",
                     "rating": 4.5
+                }
+            ]
+        },
+        "references": {
+            "header": {
+                "en": "References",
+                "is": "Meðmæli"
+            },
+            "data": [
+                {
+                    "name": "a",
+                    "place": "b",
+                    "contact": "c"
+                },
+                {
+                    "name": "d",
+                    "place": "e",
+                    "contact": "f"
+                },
+                {
+                    "name": "g",
+                    "place": "h",
+                    "contact": "i"
                 }
             ]
         }

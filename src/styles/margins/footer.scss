@@ -1,5 +1,11 @@
 @import '../vars';
 
+@media print {
+  .footer {
+    display: none;
+  }
+}
+
 .footer {
   background-color: $--theme_color-1;
   box-shadow: $--theme_shadow;
