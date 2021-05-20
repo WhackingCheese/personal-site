@@ -12,7 +12,8 @@
     "sass-watch": "node-sass --source-map-embed --watch ./src/styles/styles.scss ./public/styles.css",
     "nodemon": "nodemon ./app.js",
     "browser-sync": "browser-sync start --proxy 'localhost:3000' --files 'public' './public/styles.css' './src/*'",
-    "dev": "concurrently \"npm:nodemon\" \"npm:sass-watch\" \"npm:browser-sync\""
+    "dev": "concurrently \"npm:nodemon\" \"npm:sass-watch\" \"npm:browser-sync\"",
+    "build": "concurrently \"npm:build:sass\""
   },
   "repository": {
     "type": "git",

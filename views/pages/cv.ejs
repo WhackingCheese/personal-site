@@ -3,7 +3,6 @@
 <div class="cv">
     <div class="cv__inner">
         <div class="cv__card">
-            <input class="pdf" type="button" value="PDF" onClick="window.print()">
             <% if (locals.course_draw) { %>
                 <%- include('../fragments/courses.ejs'); -%>
             <% } else { %>
@@ -36,20 +35,22 @@
                         </div>
                     <% } %>
                     <%- include('../fragments/cvitem.ejs', {datashard: data.experience}); -%>
-                    <div class="cvitem">
-                        <div class="cvitem__innerhead">
-                            <h3 class="cvitem__header"><%= data.info.references.header[lang] %></h3>
-                            <div class="reference__container">
-                                <% data.info.references.data.forEach(item => { %>
-                                    <div class="reference__inner">
-                                        <p class="reference__name"><%= item.name %></p>
-                                        <p class="reference__place"><%= item.place %></p>
-                                        <p class="reference__contact"><%= item.contact %></p>
-                                    </div>
-                                <% }); %>
-                            </div>    
+                    <% if (data.info.references.data.length != 0) { %>
+                        <div class="cvitem">
+                            <div class="cvitem__innerhead">
+                                <h3 class="cvitem__header"><%= data.info.references.header[lang] %></h3>
+                                <div class="reference__container">
+                                    <% data.info.references.data.forEach(item => { %>
+                                        <div class="reference__inner">
+                                            <p class="reference__name"><%= item.name %></p>
+                                            <p class="reference__place"><%= item.place %></p>
+                                            <p class="reference__contact"><%= item.contact %></p>
+                                        </div>
+                                    <% }); %>
+                                </div>    
+                            </div>
                         </div>
-                    </div>
+                    <% } %>
                 </div>
             <% } %>
         </div>

@@ -1,12 +1,20 @@
 /**
  * Event listener for HTML load.
- * Removes the preload class from body and prints a link into the console for an alternative version of the CV.
+ * Removes the preload class from body..
  */
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.getElementsByClassName("preload")[0];
     body.classList.remove("preload");
-    const pdf = document.getElementsByClassName("pdf")[0];
-    if (pdf) {
+});
+
+/**
+ * Event listener for page full load.
+ * Sets print page size for the website dynamically based on page content.
+ * Prints a link into the console for an alternative version of the CV
+ */
+window.addEventListener("load", () => {
+    const card = document.getElementsByClassName("cv__card")[0] || document.getElementsByClassName("content__inner")[0];
+    if (card) {
         const params = new URLSearchParams(window.location.search);
         const lang = params.get('lang') || 'is';
         const projects = document.getElementsByClassName("project");
@@ -15,16 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             console.log(`Basic Version Here: ${window.location.href.replace(window.location.search, '')}?lang=${lang}&basic=true`)
         }
-    }
-});
-
-/**
- * Event listener for page full load.
- * Sets print page size for the website dynamically based on page content.
- */
-window.addEventListener("load", () => {
-    const card = document.getElementsByClassName("cv__card")[0] || document.getElementsByClassName("content__inner")[0];
-    if (card) {
         const style = document.createElement('style');
         const width = Math.max(card.offsetWidth, card.clientWidth, card.scrollWidth);
         const height = Math.max(card.offsetHeight, card.clientHeight, card.scrollHeight) + 1;

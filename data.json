@@ -390,21 +390,7 @@
                 "is": "Meðmæli"
             },
             "data": [
-                {
-                    "name": "1",
-                    "place": "2",
-                    "contact": "3"
-                },
-                {
-                    "name": "4",
-                    "place": "5",
-                    "contact": "6"
-                },
-                {
-                    "name": "7",
-                    "place": "8",
-                    "contact": "9"
-                }
+                
             ]
         }
     },
