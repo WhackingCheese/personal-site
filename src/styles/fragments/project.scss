@@ -8,19 +8,11 @@
   font-family: $--theme_font-family-1;
 
   .project {
-    margin: 0 -$--theme_gutter-3 0 -$--theme_gutter-3;
-    padding: $--theme_gutter-3;
-
+    margin-top: $--theme_gutter-5;
+  
     img {
       height: $--theme_img-size-3;
       width: $--theme_img-size-3;
-    }
-
-    &__inner {
-      background-color: $--theme_color-3;
-      border-radius: $--theme_gutter-0;
-      box-shadow: $--theme_shadow;
-      padding: calc(#{$--theme_gutter-3} + #{$--theme_gutter-1});
     }
 
     &__name {

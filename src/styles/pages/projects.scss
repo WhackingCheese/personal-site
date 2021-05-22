@@ -1,6 +1,11 @@
 @import '../vars';
 
 .projects {
+  &__content {
+    padding: $--theme_gutter-4;
+    padding-top: 0;
+  }
+
   &__header {
     align-items: center;
     color: $--theme_color-0;
@@ -22,11 +27,13 @@
   }
 
   &__type {
-    color: $--theme_color-0;
-    font-size: $--theme_font-size-4;
+    background-color: $--theme_color-1;
+    color: $--theme_color-3;
+    font-size: $--theme_font-size-5;
     font-weight: $--theme_font-weight-1;
-    margin-bottom: $--theme_gutter-1;
+    margin: 0 calc(-1 * #{$--cv_cv-item-header-gutter});
     margin-top: $--theme_gutter-5;
+    padding: $--theme_gutter-1 $--cv_cv-item-header-gutter;
   }
 
   &__seeall {

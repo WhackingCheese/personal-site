@@ -6,6 +6,11 @@
   .cvitem__back__inner {
     color: $--theme_color-3;
     pointer-events: none;
+
+    &:hover {
+      color: $--theme_color-3;
+      pointer-events: none;
+    }
   }
 }
 

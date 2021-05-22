@@ -22,11 +22,12 @@
   }
 
   &__container {
-    padding: 0 $--theme_gutter-4;
+    padding: $--theme_gutter-4;
+    padding-top: 0;
   }
 
   &__innerhead {
-    margin-top: $--theme_gutter-3;
+    margin-top: $--theme_gutter-5;
   }
 
   &__header {

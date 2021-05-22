@@ -86,7 +86,7 @@
         },
         {
             "type": "Website",
-            "text": "Website",
+            "text": "mikolajcymcyk.com",
             "href": "http://www.mikolajcymcyk.com",
             "svg": "../svg/globe.svg"
         }
@@ -306,7 +306,8 @@
             "Phone",
             "Email",
             "GitHub",
-            "LinkedIn"
+            "LinkedIn",
+            "Website"
         ],
         "list_project": [
             0, 1, 3, 5, 7
@@ -348,7 +349,7 @@
                 },
                 {
                     "name": "C",
-                    "rating": 3.5
+                    "rating": 3
                 },
                 {
                     "name": "JS",
@@ -372,7 +373,7 @@
                 },
                 {
                     "name": "REST",
-                    "rating": 4
+                    "rating": 3.5
                 },
                 {
                     "name": "SQL",
