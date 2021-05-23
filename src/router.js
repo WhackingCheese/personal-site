@@ -1,56 +1,44 @@
+/* Imports for the router */
 import express from 'express';
-
 import { setLocals } from './utils.js';
 
+/* Router variables */
 export const router = express.Router();
 
+/* Index page router function */
 async function createIndex(req, res) {
     res.render('index');
 }
 
+/* About page router function */
 async function createAbout(req, res) {
     res.render('about');
 }
 
+/* CV page router function */
 async function createCv(req, res) {
-    res.render('cv', {
-        show_images: true,
-        basic: req.query.basic
-    });
+    res.render('cv');
 }
 
+/* CV Courses page router function */
 async function createCvCourses(req, res) {
     res.render('cv', {
-        course_draw: true,
-        basic: req.query.basic
+        course_draw: true
     });
 }
 
+/* Project page router function */
 async function createProjects(req, res) {
     res.render('projects');
 }
 
-/**
- * Gets the url params from a urls string.
- */
-function getParams(url) {
-    if (!url) return null;
-    const splits = url.split('?');
-    if (splits.length != 2 || splits[1] == '') return null;
-    const kvpairs = splits[1].split('&');
-    var params = {};
-    kvpairs.forEach(pair => {
-        var data = pair.split('=');
-        if (data[1]) params[data[0]] = data[1];
-    });
-    return params;
-}
-
+/* Router page definitions */
 router.get('/', createIndex);
 router.get('/cv', createCv);
 router.get('/cv/courses', createCvCourses);
 router.get('/projects', createProjects);
 router.get('/about', createAbout);
 
+/* Router redirect and update page definitions */
 router.use('/index', (req, res) => res.status(301).redirect('/'));
 router.use('/update', (req, res) => { setLocals(req.app); res.status(200).redirect('/'); });

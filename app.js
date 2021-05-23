@@ -1,15 +1,11 @@
-/**
- * Imports for the app.
- */
+/* Imports for the app */
 import express from 'express';
 import dotenv from 'dotenv';
 import favicon from 'serve-favicon';
-
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-
 import { router as appRouter } from './src/router.js';
-import { setLanguage, setLocals } from './src/utils.js';
+import { setLocals, setParams, getLanguageCookie, changeLanguage } from './src/utils.js';
 
 /**
  * Gets environment variables for host and port from .env file.
@@ -42,10 +38,12 @@ app.set('view engine', 'ejs');
 setLocals(app);
 
 /**
- * Uses the language settler middleware for determining the languange of the page.
+ * Makes the app use all required middlewares.
  * Creates and sets a main router for page routing.
  */
-app.use(setLanguage);
+app.use(setParams);
+app.use(getLanguageCookie);
+app.use(changeLanguage);
 app.use('/', appRouter);
 
 /**
@@ -63,6 +61,7 @@ app.use(notFoundHandler);
 /**
  * Handler for 500 Server Error HTTP Status Codes.
  * Renders and servers the user the "500.ejs" error page.
+ */
 function errorHandler(err, req, res, next) {
     res.status(500).render('error', {
         error: app.locals.data.errors['500'],
@@ -70,11 +69,8 @@ function errorHandler(err, req, res, next) {
     });
 }
 app.use(errorHandler);
- */
 
-/**
- * Starts the app and listens on port.
- */
+/* Starts the app and listens on port */
 app.listen(port, () => {
     console.info(`Server running at http://${host}:${port}/`);
 });

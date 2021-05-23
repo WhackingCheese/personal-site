@@ -2,7 +2,7 @@
     <div class="footer__inner">
         <div class="nav">
             <% data.nav.structure.forEach(page => { %>
-                <a class="nav__item" href="<%= page.href %><%= hreftail %>">
+                <a class="nav__item" href="<%= page.href %>">
                     <p><%= page.name[lang] %></p>
                 </a>
             <% }); %>

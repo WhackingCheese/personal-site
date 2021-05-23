@@ -6,25 +6,17 @@
                 <div class="cvitem__title">
                     <h3 class="cvitem__place"><%= element.title[lang] %></h3>
                     <% if (element.start != element.end) { %>
-                        <% if (show_images && element.img) { %>
-                            <h3 class="cvitem__time hasimg"><%= element.start %> - <%= element.end %></h3>
-                        <% } else { %>
+                        <% if (typeof element.end == "string") { %>
                             <h3 class="cvitem__time"><%= element.start %> - <%= element.end %></h3>
+                        <% } else { %>
+                            <h3 class="cvitem__time"><%= element.start %> - <%= element.end[lang] %></h3>
                         <% } %>
                     <% } else { %>
-                        <% if (show_images && element.img) { %>
-                            <h3 class="cvitem__time hasimg"><%= element.start %></h3>
-                        <% } else { %>
-                            <h3 class="cvitem__time"><%= element.start %></h3>
-                        <% } %>
+                        <h3 class="cvitem__time"><%= element.start %></h3>
                     <% } %>
                 </div>
                 <div class="cvitem__content">
-                    <% if (show_images) { %>
-                        <div class="cvitem__inner hasimg">
-                    <% } else { %>
-                        <div class="cvitem__inner">
-                    <% } %>
+                    <div class="cvitem__inner">
                     <% if (element.sub_subtitle) { %>
                         <h3 class="cvitem__subtitle"><%= element.subtitle[lang] %> - <%= element.sub_subtitle[lang] %></h3>
                     <% } else { %>
@@ -32,16 +24,14 @@
                     <% } %>
                         <p class="cvitem__description"><%= element.description[lang] %></p>
                         <% if (element.href) { %>
-                            <a href="<%= element.href %><%= hreftail %>">
+                            <a href="<%= element.href %>">
                                 <p class="cvitem__allcourses"><%= element.href_description[lang] %></p>
                             </a>
                         <% } %>
                     </div>
-                    <% if (element.img && show_images) { %>
-                        <div class="cvitem__image">
-                            <img src="<%= element.img %>">
-                        </div>
-                    <% } %>
+                    <div class="cvitem__image">
+                        <img src="<%= element.img %>">
+                    </div>
                 </div>
             </div>
         <% }); %>

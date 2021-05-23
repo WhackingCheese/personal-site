@@ -56,9 +56,9 @@
     padding-bottom: $--theme_gutter-0;
   }
 
-  &__time.hasimg {
+  &__time {
     text-align: center;
-    width: calc(#{$--theme_img-size-1} + #{$--theme_gutter-3});
+    width: calc(#{$--theme_img-size-1} + #{$--theme_gutter-4});
   }
 
   &__content {
@@ -70,10 +70,7 @@
   &__inner {
     display: flex;
     flex-direction: column;
-
-    &.hasimg {
-      padding-right: $--theme_gutter-6;
-    }
+    padding-right: $--theme_gutter-6;
   }
 
   &__description {

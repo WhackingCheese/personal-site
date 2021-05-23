@@ -9,7 +9,7 @@
                 <%- include('../fragments/profile.ejs'); -%>
                 <div class="cvitem__container">
                     <%- include('../fragments/cvitem.ejs', {datashard: data.education}); -%>
-                    <% if (!(basic && basic == "true")) { %>
+                    <% if (!(locals.params.basic == "true")) { %>
                         <div class="cvitem">
                             <div class="cvitem__innerhead">
                                 <h3 class="cvitem__header"><%= data.projects.title[lang] %></h3>
@@ -22,7 +22,7 @@
                                 <% }); %>
                                 <% }); %>
                                 <% }); %>
-                                <a href="/projects<%= hreftail %>">
+                                <a href="/projects">
                                     <p class="projects__seeall"><%= data.projects.see_all[lang] %></p>
                                 </a>
                             </div>
