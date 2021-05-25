@@ -73,6 +73,7 @@ export function changeLanguage(req, res, next) {
             maxAge: langCookieAge
         });
         res.redirect(req._parsedOriginalUrl.pathname);
+    } else {
+        next();
     }
-    next();
 }
