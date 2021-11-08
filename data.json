@@ -460,6 +460,26 @@
         "data": [
             {
                 "title": {
+                    "en": "Sæplast",
+                    "is": "Sæplast"
+                },
+                "subtitle": {
+                    "en": "Data Analysis - Summer Intern",
+                    "is": "Gagnagreining - Sumarstarf"
+                },
+                "description": {
+                    "en": "",
+                    "is": ""
+                },
+                "start": "2021",
+                "end": {
+                    "en": "Now",
+                    "is": "Núna"
+                },
+                "img": "../img/experience/saeplast.png"
+            },
+            {
+                "title": {
                     "en": "Icelandic Red Cross",
                     "is": "Rauði Kross Íslands"
                 },
